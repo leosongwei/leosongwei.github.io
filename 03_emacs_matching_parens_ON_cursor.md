@@ -17,6 +17,6 @@ Emacs很神烦，默认设置下，当你的方块光标指向一个后括号的
 (add-function :around show-paren-data-function #'my-show-paren-any)
 ```
 
-代码参考自：http://stackoverflow.com/a/25649189/4516042
+这个代码是在栈爆网上找到的[1]，然而原答案在用快捷键移动光标的时候不工作，且代码看起来很奇怪，搞不懂他为什么那样写，故修改了一下。
 
-原答案在用快捷键移动光标的时候不工作，故修改了一下。
+[1] Emacs: Matching parenthesis when cursor is ON closing parenthesis http://stackoverflow.com/a/25649189/4516042
