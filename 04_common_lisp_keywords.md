@@ -10,6 +10,7 @@ keyword就是以冒号开头的符号，它们会直接导入到keyword包中。
 3. 这个符号被设定为一个常量。
 
 在SBCL里面跑了一下ANSI Common Lisp的例子，若是不写成keyword，在测试包中正常执行的函数，在包外面执行的时候就坑了：
+
 ```common lisp
 CL-USER> 
 ;;; from test.lisp
