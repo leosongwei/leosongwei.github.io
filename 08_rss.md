@@ -3,4 +3,6 @@
 
 详见`rssgen.lisp`，构建rss.xml，也构建README.md的文章列表（多了一个README.md.human）。感觉XML真是一个令人恼火的东西啊。
 
+一开始考虑过quicklisp里面那个cl-markdown库，想要能生成带格式的。然而那个东西依赖很多个奇怪的库（或许是不愿意手写parser？），且都不小，看起来很不舒服，于是就没用。或许我该去写个依赖干净一点的cl-markdown-lite库，这样就能在RSS里面输出合理的格式了。
+
 写这个东西重燃了我折腾博客的兴趣，有些像小时候折腾QQ空间的那种快乐。
