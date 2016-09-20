@@ -1,4 +1,3 @@
-;#!/usr/bin/sbcl --non-interactive
 (ql:quickload :s-xml)
 (ql:quickload :cl-ppcre)
 
