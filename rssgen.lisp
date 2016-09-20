@@ -142,7 +142,7 @@
 
 (defun rss-sexp ()
   (let ((title "凉拌茶叶的博客")
-        (link "https://github.com/leosongwei/blog")
+        (link "https://github.com/leosongwei/blog/blob/master/README.md")
         (description "就是一个博客……")
         (rss-file (concatenate 'string *home* "rss.xml")))
     `(:|rss| (:@ (:|version| "2.0")
