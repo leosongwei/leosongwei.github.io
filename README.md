@@ -18,10 +18,10 @@
 
 （刚更新过的在上面）
 
+* [喜欢的软件](./02_favorite_software.md)
 * [GnuPG](./07_gpg.md)
 * [写了一个rss生成器](./08_rss.md)
 * [SBCL读文件](./06_sbcl_reading_file.md)
-* [喜欢的软件](./02_favorite_software.md)
 * [Lisp的本质](./05_essence_of_lisp.md)
 * [Common Lisp Keywords](./04_common_lisp_keywords.md)
 * [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
