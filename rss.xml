@@ -9,7 +9,7 @@ https://github.com/leosongwei/blog</link>
 <description>
 &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
 <lastBuildDate>
-Tue, 20 Sep 2016 17:05:03 +0000</lastBuildDate>
+Tue, 20 Sep 2016 17:13:08 +0000</lastBuildDate>
 <language>
 zh-cn</language>
 <docs>
@@ -20,9 +20,9 @@ GnuPG</title>
 <link>
 https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
 <description>
-&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;`./attachment/leo_songwei.asc`&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x6307;&#x7EB9;&#x662F;&#xFF1A;&lt;/p&gt;&lt;p&gt;`36D0&amp;nbsp;8649&amp;nbsp;4FF1&amp;nbsp;653D&amp;nbsp;8137&amp;nbsp;BE94&amp;nbsp;C293&amp;nbsp;0408&amp;nbsp;1661&amp;nbsp;4B93`&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;`./attachment/leo_songwei.asc`&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x6307;&#x7EB9;&#x662F;&#xFF1A;&lt;/p&gt;&lt;p&gt;`36D0&amp;nbsp;8649&amp;nbsp;4FF1&amp;nbsp;653D&amp;nbsp;8137&amp;nbsp;BE94&amp;nbsp;C293&amp;nbsp;0408&amp;nbsp;1661&amp;nbsp;4B93`&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#x914D;&#x7F6E;Git&#x7B7E;&#x540D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201C;secret&amp;nbsp;key&amp;nbsp;not&amp;nbsp;available&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;`git&amp;nbsp;config&amp;nbsp;--global&amp;nbsp;user.signingkey&amp;nbsp;16614B93`&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;</description>
 <pubDate>
-Tue, 20 Sep 2016 16:58:58 +0000</pubDate>
+Tue, 20 Sep 2016 17:12:39 +0000</pubDate>
 <guid>
 https://github.com/leosongwei/blog/blob/master/07_gpg.md</guid>
 </item>
