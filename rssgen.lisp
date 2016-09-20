@@ -3,7 +3,8 @@
 
 (defpackage :rssgen
   (:use :cl :cl-user :s-xml)
-  (:export output-rss))
+  (:export output-rss
+           build-readme))
 (in-package :rssgen)
 
 (defparameter *timezone* +8)
@@ -62,7 +63,11 @@
                                      :file x
                                      :cldate (file-write-date x)))
                                   all-files)))
-    (sort file+cldate-lst #'> :key #'file+cldate-cldate)))
+    (remove-if (lambda (x)
+                 (string= "README.md"
+                          (file-namestring
+                           (file+cldate-file x))))
+               (sort file+cldate-lst #'> :key #'file+cldate-cldate))))
 ;;;; (list-articles)
 
 
@@ -172,8 +177,32 @@
                             (char string1 i))
                    out)))))))
 
+(defun build-readme ()
+  (with-open-file (in #p"./README.md.human")
+    (with-open-file (out #p"README.md"
+                         :direction :output
+                         :if-exists :supersede)
+      (do ((line (read-line in nil)
+                 (read-line in nil)))
+          ((null line))
+        (format out "~A~%" line))
+      (format out "~%文章列表~%")
+      (format out "-------~%~%")
+      (let ((articles (list-articles)))
+        (mapcar (lambda (a)
+                  (let ((title (extract-title a))
+                        (mdlink (concatenate 'string
+                                             "./"
+                                             (file-namestring
+                                              (file+cldate-file a)))))
+                    (format out
+                            "* [~A](~A)~%"
+                            title mdlink)))
+                articles)))))
+
 (in-package :cl-user)
 
+(rssgen:build-readme)
 (rssgen:output-rss)
 (format t "Done")
-(sb-ext:exit)
+;(sb-ext:exit)
