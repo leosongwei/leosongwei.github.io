@@ -164,17 +164,14 @@
                 "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
         (print-xml (rss-sexp) :stream s
                    :input-type :sxml)
-        (let ((string2 (make-output-string)) ;; break with ">"
-              (len (length string1)))
-          (with-output-to-string (s string2)
-            (dotimes (i len)
-              (princ (funcall (lambda (x)
-                                (if (equal x #\>)
-                                    (format nil ">~%")
-                                    x))
-                              (char string1 i))
-                     s)))
-          string2)))))
+        (let ((len (length string1)))
+          (dotimes (i len)
+            (princ (funcall (lambda (x)
+                              (if (equal x #\>)
+                                  (format nil ">~%")
+                                  x))
+                            (char string1 i))
+                   out)))))))
 
 (in-package :cl-user)
 
