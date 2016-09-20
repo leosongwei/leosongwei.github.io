@@ -1,9 +1,10 @@
-#!/usr/bin/sbcl --non-interactive
+;#!/usr/bin/sbcl --non-interactive
 (ql:quickload :s-xml)
 (ql:quickload :cl-ppcre)
 
 (defpackage :rssgen
-  (:use :cl :cl-user :s-xml))
+  (:use :cl :cl-user :s-xml)
+  (:export output-rss))
 (in-package :rssgen)
 
 (defparameter *timezone* +8)
@@ -157,10 +158,23 @@
            :direction :output
            :external-format :utf-8
            :if-exists :supersede)
-    (format out
-            "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
-    (print-xml (rss-sexp) :stream out
-               :input-type :sxml)))
+    (let ((string1 (make-output-string)))
+      (with-output-to-string (s string1)
+        (format s
+                "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
+        (print-xml (rss-sexp) :stream s
+                   :input-type :sxml)
+        (let ((string2 (make-output-string)) ;; break with ">"
+              (len (length string1)))
+          (with-output-to-string (s string2)
+            (dotimes (i len)
+              (princ (funcall (lambda (x)
+                                (if (equal x #\>)
+                                    (format nil ">~%")
+                                    x))
+                              (char string1 i))
+                     s)))
+          string2)))))
 
 (in-package :cl-user)
 
