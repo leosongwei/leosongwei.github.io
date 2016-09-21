@@ -9,6 +9,10 @@
 
 (defparameter *timezone* +8)
 
+(defun make-output-string ()
+  (make-array '(0) :element-type 'character
+              :fill-pointer 0 :adjustable t))
+
 (defun build-date (y m d hh mm ss)
   (let ((date-input-str
          (format nil
@@ -37,6 +41,35 @@
                    (return))))
       (setf rfc-2822 (subseq rfc-2822 0 new-line-point)))
     rfc-2822))
+
+(defun build-date-format (format y m d hh mm ss)
+  (let ((date-output (make-output-string))
+        (input-str  (format nil
+                            "~A-~A-~A ~A:~A:~A ~A"
+                            y m d hh mm ss
+                            (if (>= *timezone* 0)
+                                (format nil "+~A" *timezone*)
+                                (format nil "~A" *timezone*)))))
+    (with-output-to-string (out date-output)
+      (if (= 0
+             (sb-ext:process-exit-code
+              (sb-ext:run-program
+               "/bin/date"
+               `("-d" ,input-str
+                      ,(concatenate 'string "+" format))
+               :output out)))
+          nil (error "build-date-now-format: `date' error")))
+    (with-output-to-string (output)
+      (with-input-from-string (in date-output)
+        (princ (read-line in nil nil) output)))))
+;;;; (build-date-format "%Y-%m-%d %H:%M" 2015 03 20 15 48 26)
+
+(defun build-date-format-lisp (format lisp-date)
+  (multiple-value-bind
+	(second minute hour date month year)
+      (decode-universal-time lisp-date)
+    (build-date-format format year month date hour minute second)))
+;;;; (build-date-format-lisp "%Y-%m-%d %H:%M" (get-universal-time))
 
 (defun build-date-lisp (lisp-date)
   (multiple-value-bind
@@ -91,9 +124,6 @@
       (read-line in))))
 ;;;; (extract-title (car (list-articles)))
 
-(defun make-output-string ()
-  (make-array '(0) :element-type 'character
-              :fill-pointer 0 :adjustable t))
 
 (defun extract-body (file+cldate)
   (let ((file (file+cldate-file file+cldate))
@@ -202,8 +232,11 @@
                                              (file-namestring
                                               (file+cldate-file a)))))
                     (format out
-                            "* [~A](~A)~%"
-                            title mdlink)))
+                            "* [~A](~A) ~A~%"
+                            title mdlink
+                            (build-date-format-lisp
+                             "%Y-%m-%d %H:%M"
+                             (file+cldate-cldate a)))))
                 articles)))))
 
 (in-package :cl-user)
