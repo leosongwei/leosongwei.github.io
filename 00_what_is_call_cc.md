@@ -112,5 +112,6 @@ call/cc接受一个函数（这个函数只接受1个参数），call/cc立即�
 Scheme在标准里面有规定要实现TCO；GCC开-O2有TCO；Java和Clojure没有TCO（所以说Clojure是异端）；Common Lisp的很多实现有TCO，如SBCL有，然而有的实现又没有。CPython没有TCO（知乎上有人说“敢于在 CPython 中大量使用递归是对 CPython 实现的公然侮辱”）。[[2]](#[2])
 
 ###引用资料
-<a name="[1]">[1]</a> R6RS http://www.r6rs.org
-<a name="[2]">[2]</a> 怎么样才算是精通 Python？ https://www.zhihu.com/question/19794855
+
+* <a name="[1]">[1]</a> R6RS http://www.r6rs.org
+* <a name="[2]">[2]</a> 怎么样才算是精通 Python？ https://www.zhihu.com/question/19794855

@@ -9,7 +9,7 @@ https://github.com/leosongwei/blog/blob/master/README.md</link>
 <description>
 &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
 <lastBuildDate>
-Wed, 21 Sep 2016 13:33:06 +0000</lastBuildDate>
+Wed, 21 Sep 2016 13:33:50 +0000</lastBuildDate>
 <language>
 zh-cn</language>
 <docs>
@@ -90,10 +90,13 @@ https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
 &lt;p&gt;&#x8FD9;&#x4E2A;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x59CB;&#x7EC8;&#x53EA;&#x9700;&#x8981;&#x5728;&#x6808;&#x4E0A;&#x7EF4;&#x6301;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;&#x6808;&#x5E27;&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x51FD;&#x6570;&#x7684;&#x7EED;&#x5EF6;&#x90FD;&#x662F;&lt;code&gt;(abc [])&lt;/code&gt;&#x3002;&lt;/p&gt;
 &lt;p&gt;Scheme&#x5728;&#x6807;&#x51C6;&#x91CC;&#x9762;&#x6709;&#x89C4;&#x5B9A;&#x8981;&#x5B9E;&#x73B0;TCO&#xFF1B;GCC&#x5F00;-O2&#x6709;TCO&#xFF1B;Java&#x548C;Clojure&#x6CA1;&#x6709;TCO&#xFF08;&#x6240;&#x4EE5;&#x8BF4;Clojure&#x662F;&#x5F02;&#x7AEF;&#xFF09;&#xFF1B;Common Lisp&#x7684;&#x5F88;&#x591A;&#x5B9E;&#x73B0;&#x6709;TCO&#xFF0C;&#x5982;SBCL&#x6709;&#xFF0C;&#x7136;&#x800C;&#x6709;&#x7684;&#x5B9E;&#x73B0;&#x53C8;&#x6CA1;&#x6709;&#x3002;CPython&#x6CA1;&#x6709;TCO&#xFF08;&#x77E5;&#x4E4E;&#x4E0A;&#x6709;&#x4EBA;&#x8BF4;&#x201C;&#x6562;&#x4E8E;&#x5728; CPython &#x4E2D;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x662F;&#x5BF9; CPython &#x5B9E;&#x73B0;&#x7684;&#x516C;&#x7136;&#x4FAE;&#x8FB1;&#x201D;&#xFF09;&#x3002;&lt;a href=&quot;#[2]&quot;&gt;[2]&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;&#x5F15;&#x7528;&#x8D44;&#x6599;&quot;&gt;&#x5F15;&#x7528;&#x8D44;&#x6599;&lt;/h3&gt;
-&lt;p&gt;&lt;a name=&quot;[1]&quot;&gt;[1]&lt;/a&gt; R6RS http://www.r6rs.org &lt;a name=&quot;[2]&quot;&gt;[2]&lt;/a&gt; &#x600E;&#x4E48;&#x6837;&#x624D;&#x7B97;&#x662F;&#x7CBE;&#x901A; Python&#xFF1F; https://www.zhihu.com/question/19794855&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a name=&quot;[1]&quot;&gt;[1]&lt;/a&gt; R6RS http://www.r6rs.org&lt;/li&gt;
+&lt;li&gt;&lt;a name=&quot;[2]&quot;&gt;[2]&lt;/a&gt; &#x600E;&#x4E48;&#x6837;&#x624D;&#x7B97;&#x662F;&#x7CBE;&#x901A; Python&#xFF1F; https://www.zhihu.com/question/19794855&lt;/li&gt;
+&lt;/ul&gt;
 </description>
 <pubDate>
-Wed, 21 Sep 2016 13:32:58 +0000</pubDate>
+Wed, 21 Sep 2016 13:33:46 +0000</pubDate>
 <guid>
 https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</guid>
 </item>
