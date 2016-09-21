@@ -64,7 +64,7 @@ call/cc接受一个函数（这个函数只接受1个参数），call/cc立即�
 
 我们可以想像一个无穷递归的函数：
 
-```Common Lisp
+```CommonLisp
 (defun have-a-good-idea ()
   (found-a-company)
   (fail)
@@ -75,13 +75,13 @@ call/cc接受一个函数（这个函数只接受1个参数），call/cc立即�
 
 但是程序语言为什么要保存所有的栈帧呢？有没有我们可以不维持这么多栈帧的情况呢？有的，观察这个`have-a-good-idea`函数，对于计算：
 
-```Common Lisp
+```CommonLisp
 (think (have-a-good-idea))
 ```
 
 其中，每一层`have-a-good-idea`的续延都是上一层的`have-a-good-idea`里面的最后一个式子。我们又知道，`defun`定义出来的函数所返回的结果取决于最后一个表达式，即`(have-a-good-idea)`，也就是说，每一层的have-a-good-idea的续延其实都可以往上追溯到这个续延：`(think [])`。因为所有的`(have-a-good-idea)`调用的续延都是一样的，在调用`(have-a-good-idea)`时，就可以每次都把上一级的`(have-a-good-idea)`栈帧毁掉，那么就永远都只有两层栈帧：
 
-```Common Lisp
+```CommonLisp
 1. (have-a-good-idea)
 0. (think [])
 ```
@@ -90,7 +90,7 @@ call/cc接受一个函数（这个函数只接受1个参数），call/cc立即�
 
 当我们有很多个不同的函数时，也可以享受到尾递归优化：
 
-``` Common Lisp
+``` CommonLisp
 (defun a ()
   (do-something)
   (b))
