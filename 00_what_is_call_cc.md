@@ -114,4 +114,5 @@ Scheme在标准里面有规定要实现TCO；GCC开-O2有TCO；Java和Clojure没
 ###引用资料
 
 * <a name="[1]">[1]</a> R6RS http://www.r6rs.org
+
 * <a name="[2]">[2]</a> 怎么样才算是精通 Python？ https://www.zhihu.com/question/19794855
