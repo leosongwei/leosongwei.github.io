@@ -2,7 +2,7 @@
 (ql:quickload :cl-ppcre)
 
 (defpackage :rssgen
-  (:use :cl :cl-user :s-xml)
+  (:use :cl :cl-user :s-xml :cl-ppcre)
   (:export output-rss
            build-readme))
 (in-package :rssgen)
@@ -124,7 +124,6 @@
       (read-line in))))
 ;;;; (extract-title (car (list-articles)))
 
-
 (defun extract-body (file+cldate)
   (let ((file (file+cldate-file file+cldate))
         (mkd (make-output-string))
@@ -149,7 +148,8 @@
                         "-t" "html")
                  :input in :output s)))
             nil (error (format nil "EXTRACT-BODY: pandoc error")))))
-    xml))
+    (regex-replace-all "<img src=\"." xml "<img src=\"https://raw.githubusercontent.com/leosongwei/blog/master")))
+
 ;;;;(extract-body (car (list-articles)))
 
 (defun item-sexp (file+cldate)
