@@ -164,8 +164,9 @@
                                       (file+cldate-file file+cldate))))
                (pubdate (build-date-lisp (file+cldate-cldate
                                           file+cldate)))
-               (guid    (concatenate 'string link (princ (file+cldate-cldate
-                                                          file+cldate)))))
+               (guid    (concatenate 'string link
+                                     (format nil "~A" (file+cldate-cldate
+                                                       file+cldate)))))
           `(:|item|
              (:|title| ,title)
              (:|link| ,link)
