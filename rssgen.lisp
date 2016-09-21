@@ -240,7 +240,12 @@
                                            (file+cldate-file a)))))
                  (format
                   out
-                  "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>~%"
+"<tr><td>
+<a href=\"~A\">
+<b>~A</b>
+</a></td>
+<td><code>~A</code></td>
+</tr>~%"
                   mdlink title
                   (build-date-format-lisp
                    "%Y年%m月%d日 %H:%M"
