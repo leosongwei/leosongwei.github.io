@@ -172,7 +172,7 @@
              (:|link| ,link)
              (:|description| ,body)
              (:|pubDate| ,pubdate)
-             (:|guid| ,link))))
+             (:|guid| ,guid))))
     (condition (e) (progn (format t "ITEM-SEXP in trouble, ABORT:~%")
                           (format t "    ~S~%" e)
                           '(:|item|) ;; no to break whole xml
@@ -230,20 +230,24 @@
       (let ((articles (list-articles)))
         (format out "<table><tbody>~%")
         (format out "<tr><td>文章</td><td>更新日期</td></tr>~%")
-        (mapcar (lambda (a)
-                  (let ((title (extract-title a))
-                        (mdlink (concatenate 'string
-                                             "./"
-                                             (file-namestring
-                                              (file+cldate-file a)))))
-                    (format
-                     out
-                     "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>~%"
-                     mdlink title
-                     (build-date-format-lisp
-                      "%Y年%m月%d日 %H:%M"
-                      (file+cldate-cldate a)))))
-                articles)
+        (mapcar
+         (lambda (a)
+           (handler-case
+               (let ((title  (extract-title a))
+                     (mdlink (concatenate 'string
+                                          "./"
+                                          (file-namestring
+                                           (file+cldate-file a)))))
+                 (format
+                  out
+                  "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>~%"
+                  mdlink title
+                  (build-date-format-lisp
+                   "%Y年%m月%d日 %H:%M"
+                   (file+cldate-cldate a))))
+             (condition (e)
+               (format t "    build-readme got ERROR: ~S~%" e))))
+         articles)
         (format out "</tbody></table>")))))
 
 (in-package :cl-user)
