@@ -56,6 +56,12 @@
   file
   cldate)
 
+(defun string-begin-with (match string)
+  (let ((len (length match)))
+    (and (>= (length string) len)
+         (string= match
+                  (subseq string 0 len)))))
+
 (defun list-articles ()
   (let* ((all-files (directory "./*.md"))
          (file+cldate-lst (mapcar (lambda (x)
@@ -64,9 +70,9 @@
                                      :cldate (file-write-date x)))
                                   all-files)))
     (remove-if (lambda (x)
-                 (string= "README.md"
-                          (file-namestring
-                           (file+cldate-file x))))
+                 (string-begin-with "README"
+                                    (file-namestring
+                                     (file+cldate-file x))))
                (sort file+cldate-lst #'> :key #'file+cldate-cldate))))
 ;;;; (list-articles)
 
@@ -85,59 +91,59 @@
       (read-line in))))
 ;;;; (extract-title (car (list-articles)))
 
-(defun convert-html-entity (x output-stream)
-  (princ
-   (case x
-     ;; (#\& "&amp;")
-     ;; (#\" "&quot;")
-     ;; (#\< "&lt;")
-     ;; (#\> "&gt;")
-     (#\Tab "&nbsp;&nbsp;&nbsp;&nbsp;")
-     (#\Space "&nbsp;")
-     (#\Newline "<br/>")
-     (otherwise x))
-   output-stream))
-;;;; (convert-html-entity #\Newline *standard-output*)
-;;;; (convert-html-entity #\a *standard-output*)
-
 (defun make-output-string ()
   (make-array '(0) :element-type 'character
               :fill-pointer 0 :adjustable t))
 
 (defun extract-body (file+cldate)
   (let ((file (file+cldate-file file+cldate))
-        (body (make-output-string)))
-    (with-output-to-string (s body)
+        (mkd (make-output-string))
+        (xml (make-output-string)))
+    (with-output-to-string (s mkd)
       (with-open-file (in file)
-        (read-line in)
-        (read-line in)
+        (if (not (and (read-line in nil nil)
+                      (read-line in nil nil)))
+            (error (format nil "EXTRACT-BODY: file too short: ~A~%"
+                           file)))
         (do ((line (read-line in nil)
                    (read-line in nil)))
             ((null line))
-          (format s "<p>~A</p>" line))))
-    (let ((output (make-output-string))
-          (len    (length body)))
-      (with-output-to-string (s output)
-        (dotimes (i len)
-          (convert-html-entity (char body i) s))
-      output))))
+          (format s "~A~%" line))))
+    (with-output-to-string (s xml)
+      (with-input-from-string (in mkd)
+        (if (= 0
+               (sb-ext:process-exit-code
+                (sb-ext:run-program
+                 "/usr/bin/pandoc"
+                 `("-f" "markdown"
+                        "-t" "html")
+                 :input in :output s)))
+            nil (error (format nil "EXTRACT-BODY: pandoc error")))))
+    xml))
 ;;;;(extract-body (car (list-articles)))
 
 (defun item-sexp (file+cldate)
-  (let ((title (extract-title file+cldate))
-        (body (extract-body file+cldate))
-        (link (concatenate 'string
-                           *home*
-                           (file-namestring
-                            (file+cldate-file file+cldate))))
-        (pubdate (build-date-lisp (file+cldate-cldate
-                                   file+cldate))))
-    `(:|item|
-       (:|title| ,title)
-       (:|link| ,link)
-       (:|description| ,body)
-       (:|pubDate| ,pubdate)
-       (:|guid| ,link))))
+  (handler-case
+      (progn
+        (format t "Processing: ~A~%" (file+cldate-file file+cldate))
+        (let ((title (extract-title file+cldate))
+              (body (extract-body file+cldate))
+              (link (concatenate 'string
+                                 *home*
+                                 (file-namestring
+                                  (file+cldate-file file+cldate))))
+              (pubdate (build-date-lisp (file+cldate-cldate
+                                         file+cldate))))
+          `(:|item|
+             (:|title| ,title)
+             (:|link| ,link)
+             (:|description| ,body)
+             (:|pubDate| ,pubdate)
+             (:|guid| ,link))))
+    (condition (e) (progn (format t "ITEM-SEXP in trouble, ABORT:~%")
+                          (format t "    ~S~%" e)
+                          '(:|item|) ;; no to break whole xml
+                          ))))
 ;;;; (item-sexp (car (list-articles)))
 
 (defun rss-sexp ()
@@ -157,6 +163,7 @@
          ,@(mapcar #'item-sexp (list-articles))))))
 
 (defun output-rss ()
+  (format t "OUTPUT-RSS~%")
   (with-open-file
       (out #p"./rss.xml"
            :direction :output
@@ -178,7 +185,8 @@
                    out)))))))
 
 (defun build-readme ()
-  (with-open-file (in #p"./README.md.human")
+  (format t "BUILD-README:~%")
+  (with-open-file (in #p"./README_human.md")
     (with-open-file (out #p"README.md"
                          :direction :output
                          :if-exists :supersede)
@@ -203,4 +211,8 @@
 (rssgen:build-readme)
 (rssgen:output-rss)
 (format t "Done")
-(sb-ext:exit)
+
+(if (find-package :swank) ;; check if in dev mode
+    nil
+    (sb-ext:exit))
+
