@@ -238,7 +238,7 @@
                      "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>~%"
                      mdlink title
                      (build-date-format-lisp
-                      "%Y-%m-%d %H:%M"
+                      "%Y年%m月%d日 %H:%M"
                       (file+cldate-cldate a)))))
                 articles)
         (format out "</tbody></table>")))))
