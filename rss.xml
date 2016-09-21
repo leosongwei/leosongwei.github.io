@@ -9,11 +9,61 @@ https://github.com/leosongwei/blog/blob/master/README.md</link>
 <description>
 &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
 <lastBuildDate>
-Wed, 21 Sep 2016 04:25:52 +0000</lastBuildDate>
+Wed, 21 Sep 2016 12:50:08 +0000</lastBuildDate>
 <language>
 zh-cn</language>
 <docs>
 https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+<item>
+<title>
+What is CALL/CC?</title>
+<link>
+https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
+<description>
+&lt;p&gt;TAG: #LISP #Scheme&lt;/p&gt;
+&lt;p&gt;Scheme&#x628A;&#x7EED;&#x5EF6;&#x5F53;&#x4F5C;&#x7B2C;&#x4E00;&#x7EA7;&#x7C7B;&#x578B;&#x6765;&#x5BF9;&#x5F85;&#x3002;&#x8981;&#x7406;&#x89E3;call/cc&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7406;&#x89E3;&#x6982;&#x5FF5;&#x201C;&#x7EED;&#x5EF6;&#x201D;&#xFF08;Continuation&#xFF09;&#x3002;&#x4EFB;&#x4F55;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7EED;&#x5EF6;&#xFF0C;&#x5373;&#x90A3;&#x4E2A;&#x5728;&#x7B49;&#x5F85;&#x8BE5;&#x8BA1;&#x7B97;&#x7684;&#x503C;&#x7684;&#x4E1C;&#x897F;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x5982;&#x5F0F;&#x5B50;&lt;code&gt;(+ 1 (+ 2 3))&lt;/code&gt;&#x4E2D;&#x7684;&#x8BA1;&#x7B97;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x7EED;&#x5EF6;&#x4E3A;&lt;code&gt;(+ 1 [])&lt;/code&gt;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x201C;[]&#x201D;&#x6307;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x503C;&#x6240;&#x8981;&#x586B;&#x8FDB;&#x53BB;&#x7684;&#x5730;&#x65B9;&#x3002;&#x82E5;&#x662F;&#x5199;&#x6210;&#x8C03;&#x7528;&#x6808;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x6837;&#xFF1A;&lt;/p&gt;
+&lt;pre class=&quot;sourceCode scheme&quot;&gt;&lt;code class=&quot;sourceCode scheme&quot;&gt;&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;. (&lt;span class=&quot;kw&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;)
+&lt;span class=&quot;dv&quot;&gt;0&lt;/span&gt;. (&lt;span class=&quot;kw&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt; [])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x53EF;&#x4EE5;&#x660E;&#x663E;&#x5730;&#x770B;&#x51FA;&#xFF0C;&#x8981;&#x5B8C;&#x6210;&#x7B2C;0&#x5C42;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x9700;&#x8981;&#x7B2C;1&#x5C42;&#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x7B2C;0&#x5C42;&#x770B;&#x4F5C;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5B83;&#x201C;&#x7B49;&#x5F85;&#x201D;&#x4E00;&#x4E2A;&#x503C;&#xFF08;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF09;&#x6765;&#x5B8C;&#x6210;&#x8BA1;&#x7B97;&#x3002;&#x5982;&#x6B64;&#x4E00;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x4FBF;&#x53EF;&#x4EE5;&#x628A;&#x7EED;&#x5EF6;&#x4EE5;&#x7C7B;&#x4F3C;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#xFF0C;&#x5E76;&#x80FD;&#x50CF;&#x51FD;&#x6570;&#x4E00;&#x6837;&#x8C03;&#x7528;&#xFF08;&#x7136;&#x800C;&#x5E76;&#x4E0D;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF09;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x89C2;&#x5BDF;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#xFF1A;&lt;/p&gt;
+&lt;pre class=&quot;sourceCode scheme&quot;&gt;&lt;code class=&quot;sourceCode scheme&quot;&gt;(&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; *k* &lt;/span&gt;&amp;#39;())
+
+(&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; &lt;/span&gt;(f)
+  (&lt;span class=&quot;kw&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;33&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;call/cc&lt;/span&gt;
+     (&lt;span class=&quot;kw&quot;&gt;lambda&lt;/span&gt; (k)
+       (set! *k* k)
+       &lt;span class=&quot;dv&quot;&gt;200&lt;/span&gt;))))
+
+&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;. (f) &lt;span class=&quot;kw&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;233&lt;/span&gt;
+&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;. (*k* &lt;span class=&quot;dv&quot;&gt;2200&lt;/span&gt;) &lt;span class=&quot;kw&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;2233&lt;/span&gt;
+&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;. (&lt;span class=&quot;kw&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;666&lt;/span&gt; (*k* &lt;span class=&quot;dv&quot;&gt;1000&lt;/span&gt;)) &lt;span class=&quot;kw&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;1033&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;call/cc&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF08;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x63A5;&#x53D7;1&#x4E2A;&#x53C2;&#x6570;&#xFF09;&#xFF0C;call/cc&#x7ACB;&#x5373;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x628A;&#x5F53;&#x524D;&#x7684;&#x7EED;&#x5EF6;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x7ED9;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF08;R6RS&#x628A;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x79F0;&#x4E3A;&#x201C;Escape Procedure&#x201D;&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF08;200&#xFF09;&#x88AB;&#x4F5C;&#x4E3A;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x4F20;&#x9001;&#x7ED9;&#x7EED;&#x5EF6;&lt;code&gt;(+ 33 [])&lt;/code&gt;&#xFF0C;&#x6240;&#x4EE5;&#x8BA1;&#x7B97;1&#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x662F;233&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x5176;&#x4E2D;&#xFF0C;&#x6211;&#x4FDD;&#x5B58;&#x4E86;&#x8FD9;&#x4E2A;&#x7EED;&#x5EF6;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5728;&#x51FD;&#x6570;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7EED;&#x5EF6;&#x3002;&#x73B0;&#x5728;&#x89C2;&#x5BDF;&#x8BA1;&#x7B97;2&#xFF0C;&#x6211;&#x4EEC;&#x5582;&#x7ED9;&#x7EED;&#x5EF6;&#x4E00;&#x4E2A;&#x503C;&#xFF08;2200&#xFF09;&#xFF0C;&lt;code&gt;(+ 33 [])&lt;/code&gt;&#x5C31;&#x8BA1;&#x7B97;&#x51FA;&#x4E86;2233&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8BA1;&#x7B97;3&#x662F;&#x6BD4;&#x8F83;&#x6709;&#x8DA3;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x8BA1;&#x7B97;&lt;code&gt;(*k* 1000)&lt;/code&gt;&#x7684;&#x7EED;&#x5EF6;&lt;code&gt;(+ 666 [])&lt;/code&gt;&#x5E76;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x3002;&#x5728;Scheme&#x4E2D;&#xFF0C;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x7EED;&#x5EF6;&#x65F6;&#xFF0C;&#x8BA1;&#x7B97;&#x5C31;&#x4E22;&#x6389;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x7EED;&#x5EF6;&#xFF08;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;&#x6574;&#x4E2A;&#x6808;&#x88AB;&#x66FF;&#x6362;&#x4E86;&#xFF0C;&#x786E;&#x5B9E;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5B9E;&#x73B0;&#xFF09;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x503C;1033&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x793A;&#x4F8B;&#xFF0C;&#x5F53;&#x4F5C;&#x201C;Return&#x201D;&#x6765;&#x4F7F;&#x7528;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&#x9012;&#x5F52;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x8868;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x7B26;&#x53F7;&#xFF0C;&#x627E;&#x5230;&#x4E86;&#x5C31;&#x8FD4;&#x56DE;&#x7B26;&#x53F7;&#x7684;&#x201C;&#x4F4D;&#x7F6E;&#x201D;&#x3002;&lt;/p&gt;
+&lt;pre class=&quot;sourceCode scheme&quot;&gt;&lt;code class=&quot;sourceCode scheme&quot;&gt;(&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; call/cc &lt;/span&gt;&lt;span class=&quot;kw&quot;&gt;call-with-current-continuation&lt;/span&gt;)
+
+(&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; &lt;/span&gt;(test lst id)
+  (&lt;span class=&quot;kw&quot;&gt;call/cc&lt;/span&gt;
+    (&lt;span class=&quot;kw&quot;&gt;lambda&lt;/span&gt; (ret)
+      (&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; &lt;/span&gt;(check lst)
+        (&lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;pair?&lt;/span&gt; lst)
+          (&lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;eq?&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;car&lt;/span&gt; lst) id)
+            (ret lst)
+            (check (&lt;span class=&quot;kw&quot;&gt;cdr&lt;/span&gt; lst)))
+          (ret &lt;span class=&quot;dv&quot;&gt;#f&lt;/span&gt;)))
+      (check lst))))
+
+(user)&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt; (test &amp;#39;(a b c d e f) &amp;#39;e)
+(e f)&lt;/code&gt;&lt;/pre&gt;
+</description>
+<pubDate>
+Wed, 21 Sep 2016 12:49:35 +0000</pubDate>
+<guid>
+https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</guid>
+</item>
 <item>
 <title>
 &#x56FE;&#x7247;&#x6D4B;&#x8BD5;</title>
@@ -384,34 +434,6 @@ https://github.com/leosongwei/blog/blob/master/01_maximus.md</link>
 Tue, 31 May 2016 08:09:59 +0000</pubDate>
 <guid>
 https://github.com/leosongwei/blog/blob/master/01_maximus.md</guid>
-</item>
-<item>
-<title>
-What is CALL/CC?</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
-<description>
-&lt;p&gt;TAG: #LISP #Scheme&lt;/p&gt;
-&lt;p&gt;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8DF3;&#x8F6C;&#x673A;&#x5236;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7528;&#x6CD5;&#xFF1A;&lt;/p&gt;
-&lt;p&gt;&#x9012;&#x5F52;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x8868;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x7B26;&#x53F7;&#xFF0C;&#x627E;&#x5230;&#x4E86;&#x5C31;&#x8FD4;&#x56DE;&#x7B26;&#x53F7;&#x7684;&#x201C;&#x4F4D;&#x7F6E;&#x201D;&#x3002;&lt;/p&gt;
-&lt;pre class=&quot;sourceCode scheme&quot;&gt;&lt;code class=&quot;sourceCode scheme&quot;&gt;(&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; &lt;/span&gt;(test lst id)
-  (&lt;span class=&quot;kw&quot;&gt;call/cc&lt;/span&gt;
-    (&lt;span class=&quot;kw&quot;&gt;lambda&lt;/span&gt; (ret)
-      (&lt;span class=&quot;kw&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; &lt;/span&gt;(check lst)
-        (&lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;pair?&lt;/span&gt; lst)
-          (&lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;eq?&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;car&lt;/span&gt; lst) id)
-            (ret lst)
-            (check (&lt;span class=&quot;kw&quot;&gt;cdr&lt;/span&gt; lst)))
-          (ret &lt;span class=&quot;dv&quot;&gt;#f&lt;/span&gt;)))
-      (check lst))))
-
-(user)&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt; (test &amp;#39;(a b c d e f) &amp;#39;e)
-(e f)&lt;/code&gt;&lt;/pre&gt;
-</description>
-<pubDate>
-Tue, 31 May 2016 08:04:03 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</guid>
 </item>
 </channel>
 </rss>
