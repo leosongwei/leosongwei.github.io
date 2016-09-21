@@ -235,7 +235,6 @@
                     (format
                      out
                      "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>"
-                     "* [~A](~A) ~A~%"
                      mdlink title
                      (build-date-format-lisp
                       "%Y-%m-%d %H:%M"
