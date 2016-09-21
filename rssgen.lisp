@@ -156,14 +156,16 @@
   (handler-case
       (progn
         (format t "Processing: ~A~%" (file+cldate-file file+cldate))
-        (let ((title (extract-title file+cldate))
-              (body (extract-body file+cldate))
-              (link (concatenate 'string
-                                 *home*
-                                 (file-namestring
-                                  (file+cldate-file file+cldate))))
-              (pubdate (build-date-lisp (file+cldate-cldate
-                                         file+cldate))))
+        (let* ((title   (extract-title file+cldate))
+               (body    (extract-body file+cldate))
+               (link    (concatenate 'string
+                                     *home*
+                                     (file-namestring
+                                      (file+cldate-file file+cldate))))
+               (pubdate (build-date-lisp (file+cldate-cldate
+                                          file+cldate)))
+               (guid    (concatenate 'string link (princ (file+cldate-cldate
+                                                          file+cldate)))))
           `(:|item|
              (:|title| ,title)
              (:|link| ,link)
