@@ -226,7 +226,7 @@
         (format out "~A~%" line))
       (let ((articles (list-articles)))
         (format out "<table><tbody>~%")
-        (format out "<tr><td>文章</td><td>日期</td></tr>~%")
+        (format out "<tr><td>文章</td><td>更新日期</td></tr>~%")
         (mapcar (lambda (a)
                   (let ((title (extract-title a))
                         (mdlink (concatenate 'string
