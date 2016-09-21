@@ -8,5 +8,5 @@ else
 fi
 
 sbcl --load rssgen.lisp
-git commit -am $COMMIT_MSG
+git commit -am "$COMMIT_MSG"
 git push
