@@ -226,6 +226,7 @@
         (format out "~A~%" line))
       (let ((articles (list-articles)))
         (format out "<table><tbody>~%")
+        (format out "<tr><td>文章</td><td>日期</td></tr>~%")
         (mapcar (lambda (a)
                   (let ((title (extract-title a))
                         (mdlink (concatenate 'string
@@ -234,7 +235,7 @@
                                               (file+cldate-file a)))))
                     (format
                      out
-                     "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>"
+                     "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>~%"
                      mdlink title
                      (build-date-format-lisp
                       "%Y-%m-%d %H:%M"
