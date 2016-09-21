@@ -9,7 +9,7 @@ https://github.com/leosongwei/blog/blob/master/README.md</link>
 <description>
 &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
 <lastBuildDate>
-Wed, 21 Sep 2016 12:50:08 +0000</lastBuildDate>
+Wed, 21 Sep 2016 13:20:09 +0000</lastBuildDate>
 <language>
 zh-cn</language>
 <docs>
@@ -58,9 +58,25 @@ https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
 
 (user)&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt; (test &amp;#39;(a b c d e f) &amp;#39;e)
 (e f)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;tcotail-call-optimization&quot;&gt;TCO&#xFF08;Tail Call Optimization&#xFF09;&lt;/h3&gt;
+&lt;p&gt;&#x7406;&#x89E3;&#x4E86;&#x201C;&#x7EED;&#x5EF6;&#x201D;&#xFF0C;&#x5C31;&#x80FD;&#x7406;&#x89E3;TCO&#xFF08;&#x5C3E;&#x8C03;&#x7528;&#x4F18;&#x5316;&#xFF09;&#x4E86;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x60F3;&#x50CF;&#x4E00;&#x4E2A;&#x65E0;&#x7A77;&#x9012;&#x5F52;&#x7684;&#x51FD;&#x6570;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Common Lisp (defun have-a-good-idea ()   (found-a-company)   (fail)   (have-a-good-idea))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x82E5;&#x4F60;&#x201C;&#x521B;&#x4E1A;&#x5E76;&#x5931;&#x8D25;&#x201D;&#x7684;&#x901F;&#x5EA6;&#x8DB3;&#x591F;&#x5FEB;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x4F1F;&#x5927;&#x7684;&#x70B9;&#x5B50;&#x5C31;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;&#x5E27;&#xFF0C;&#x5F88;&#x5FEB;&#x6808;&#x5C31;&#x8017;&#x5C3D;&#x4E86;&#x3002;&#x5F88;&#x591A;&#x573A;&#x5408;&#xFF0C;&#x5199;&#x9012;&#x5F52;&#x6709;&#x4E00;&#x5B9A;&#x4F18;&#x52BF;&#xFF08;&#x5982;&#x66F4;&#x597D;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x65B9;&#x4FBF;&#x7528;&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x8BC1;&#x660E;&#x7B49;&#xFF09;&#xFF0C;&#x7136;&#x800C;&#x5F53;&#x6570;&#x636E;&#x91CF;&#x5F88;&#x5927;&#x65F6;&#xFF08;&#x6216;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B83;&#x65E0;&#x7A77;&#x5FAA;&#x73AF;&#x65F6;&#xFF09;&#xFF0C;&#x5C31;&#x5F88;&#x5BB9;&#x6613;&#x628A;&#x6808;&#x8017;&#x5C3D;&#x3002;&#x6309;&#x7167;&#x201C;&#x5E38;&#x8BC6;&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5E94;&#x8BE5;&#x5C11;&#x7528;&#x9012;&#x5F52;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x4F46;&#x662F;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x7684;&#x6808;&#x5E27;&#x5462;&#xFF1F;&#x6709;&#x6CA1;&#x6709;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0D;&#x7EF4;&#x6301;&#x8FD9;&#x4E48;&#x591A;&#x6808;&#x5E27;&#x7684;&#x60C5;&#x51B5;&#x5462;&#xFF1F;&#x6709;&#x7684;&#xFF0C;&#x89C2;&#x5BDF;&#x8FD9;&#x4E2A;&lt;code&gt;have-a-good-idea&lt;/code&gt;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x4E8E;&#x8BA1;&#x7B97;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Common Lisp (think (have-a-good-idea))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x5176;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&lt;code&gt;have-a-good-idea&lt;/code&gt;&#x7684;&#x7EED;&#x5EF6;&#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5C42;&#x7684;&lt;code&gt;have-a-good-idea&lt;/code&gt;&#x91CC;&#x9762;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5F0F;&#x5B50;&#x3002;&#x6211;&#x4EEC;&#x53C8;&#x77E5;&#x9053;&#xFF0C;&lt;code&gt;defun&lt;/code&gt;&#x5B9A;&#x4E49;&#x51FA;&#x6765;&#x7684;&#x51FD;&#x6570;&#x6240;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x53D6;&#x51B3;&#x4E8E;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5373;&lt;code&gt;(have-a-good-idea)&lt;/code&gt;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x7684;have-a-good-idea&#x7684;&#x7EED;&#x5EF6;&#x5176;&#x5B9E;&#x90FD;&#x53EF;&#x4EE5;&#x5F80;&#x4E0A;&#x8FFD;&#x6EAF;&#x5230;&#x8FD9;&#x4E2A;&#x7EED;&#x5EF6;&#xFF1A;&lt;code&gt;(think [])&lt;/code&gt;&#x3002;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x7684;&lt;code&gt;(have-a-good-idea)&lt;/code&gt;&#x8C03;&#x7528;&#x7684;&#x7EED;&#x5EF6;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5728;&#x8C03;&#x7528;&lt;code&gt;(have-a-good-idea)&lt;/code&gt;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6BCF;&#x6B21;&#x90FD;&#x628A;&#x4E0A;&#x4E00;&#x7EA7;&#x7684;&lt;code&gt;(have-a-good-idea)&lt;/code&gt;&#x6808;&#x5E27;&#x6BC1;&#x6389;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x6C38;&#x8FDC;&#x90FD;&#x53EA;&#x6709;&#x4E24;&#x5C42;&#x6808;&#x5E27;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Common Lisp 1. (have-a-good-idea) 0. (think [])&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x8FD9;&#x8DDF;&#x5FAA;&#x73AF;&#x5C31;&#x6CA1;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x4E86;&#xFF0C;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4EAB;&#x53D7;&#x5230;&#x9012;&#x5F52;&#x5199;&#x6CD5;&#x7684;&#x79CD;&#x79CD;&#x597D;&#x5904;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x5F53;&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4EAB;&#x53D7;&#x5230;&#x5C3E;&#x9012;&#x5F52;&#x4F18;&#x5316;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;``` Common Lisp (defun a () (do-something) (b))&lt;/p&gt;
+&lt;p&gt;(defun b () (do-something) (c))&lt;/p&gt;
+&lt;p&gt;(defun c () (do-something) (d)) ...&lt;/p&gt;
+&lt;p&gt;(abc (a)) ```&lt;/p&gt;
+&lt;p&gt;&#x8FD9;&#x4E2A;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x59CB;&#x7EC8;&#x53EA;&#x9700;&#x8981;&#x5728;&#x6808;&#x4E0A;&#x7EF4;&#x6301;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;&#x6808;&#x5E27;&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x51FD;&#x6570;&#x7684;&#x7EED;&#x5EF6;&#x90FD;&#x662F;&lt;code&gt;(abc [])&lt;/code&gt;&#x3002;&lt;/p&gt;
 </description>
 <pubDate>
-Wed, 21 Sep 2016 12:49:35 +0000</pubDate>
+Wed, 21 Sep 2016 13:19:30 +0000</pubDate>
 <guid>
 https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</guid>
 </item>
