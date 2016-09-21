@@ -225,19 +225,23 @@
           ((null line))
         (format out "~A~%" line))
       (let ((articles (list-articles)))
+        (format out "<table><tbody>~%")
         (mapcar (lambda (a)
                   (let ((title (extract-title a))
                         (mdlink (concatenate 'string
                                              "./"
                                              (file-namestring
                                               (file+cldate-file a)))))
-                    (format out
-                            "* [~A](~A) ~A~%"
-                            title mdlink
-                            (build-date-format-lisp
-                             "%Y-%m-%d %H:%M"
-                             (file+cldate-cldate a)))))
-                articles)))))
+                    (format
+                     out
+                     "<tr><td><a href=\"~A\">~A</a></td><td>~A</td></tr>"
+                     "* [~A](~A) ~A~%"
+                     mdlink title
+                     (build-date-format-lisp
+                      "%Y-%m-%d %H:%M"
+                      (file+cldate-cldate a)))))
+                articles)
+        (format out "</tbody></table>")))))
 
 (in-package :cl-user)
 
