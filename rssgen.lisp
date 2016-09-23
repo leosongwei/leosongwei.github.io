@@ -1,3 +1,4 @@
+(in-package :cl-user)
 (ql:quickload :s-xml)
 (ql:quickload :cl-ppcre)
 
@@ -7,7 +8,29 @@
            build-readme))
 (in-package :rssgen)
 
+(defparameter *log-stream* *standard-output*)
+
+(defun logging (place level msg)
+  (format *log-stream*
+          (concatenate
+           'string
+           (with-output-to-string (space)
+             (dotimes (i level) (princ "    " space)))
+           (format nil "~A: " place)
+           msg (string #\Newline))))
+;;;;(logging #'logging 1 "test")
+
 (defparameter *timezone* +8)
+
+(defmacro concstr (&rest strings)
+  `(concatenate 'string ,@strings))
+
+(defun println-strs (strings)
+  (if (consp strings)
+      (concatenate 'string (car strings)
+                   (string #\Newline)
+                   (println-strs (cdr strings)))
+      nil))
 
 (defun make-output-string ()
   (make-array '(0) :element-type 'character
@@ -109,7 +132,6 @@
                (sort file+cldate-lst #'> :key #'file+cldate-cldate))))
 ;;;; (list-articles)
 
-
 (defparameter *home*
   "https://github.com/leosongwei/blog/blob/master/")
 
@@ -153,9 +175,11 @@
 ;;;;(extract-body (car (list-articles)))
 
 (defun item-sexp (file+cldate)
+  (logging #'item-sexp 1 (format nil "Processing: ~A"
+                                 (file+cldate-file file+cldate)))
   (handler-case
       (progn
-        (format t "Processing: ~A~%" (file+cldate-file file+cldate))
+
         (let* ((title   (extract-title file+cldate))
                (body    (extract-body file+cldate))
                (link    (concatenate 'string
@@ -173,10 +197,9 @@
              (:|description| ,body)
              (:|pubDate| ,pubdate)
              (:|guid| ,guid))))
-    (condition (e) (progn (format t "ITEM-SEXP in trouble, ABORT:~%")
-                          (format t "    ~S~%" e)
-                          '(:|item|) ;; no to break whole xml
-                          ))))
+    (condition (e) (progn (logging #'item-sexp 2
+                                   (format nil "~S, Abort!" e))
+                          nil))))
 ;;;; (item-sexp (car (list-articles)))
 
 (defun rss-sexp ()
@@ -193,67 +216,79 @@
          (:|lastBuildDate| ,(build-date-now))
          (:|language| "zh-cn")
          (:|docs| ,rss-file)
-         ,@(mapcar #'item-sexp (list-articles))))))
+         ,@(remove-if (lambda (x) (eq x nil))
+                      (mapcar #'item-sexp (list-articles)))))))
 
 (defun output-rss ()
-  (format t "OUTPUT-RSS~%")
-  (with-open-file
-      (out #p"./rss.xml"
-           :direction :output
-           :external-format :utf-8
-           :if-exists :supersede)
-    (let ((string1 (make-output-string)))
-      (with-output-to-string (s string1)
-        (format s
-                "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
-        (print-xml (rss-sexp) :stream s
-                   :input-type :sxml)
-        (let ((len (length string1)))
-          (dotimes (i len)
-            (princ (funcall (lambda (x)
-                              (if (equal x #\>)
-                                  (format nil ">~%")
-                                  x))
-                            (char string1 i))
-                   out)))))))
+  (logging #'output-rss 0 "Output RSS.....")
+  (handler-case
+      (progn
+        (with-open-file
+            (out #p"./rss.xml"
+                 :direction :output
+                 :external-format :utf-8
+                 :if-exists :supersede)
+          (let ((string1 (make-output-string)))
+            (with-output-to-string (s string1)
+              (format s
+                      "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
+              (print-xml (rss-sexp) :stream s
+                         :input-type :sxml)
+              (let ((len (length string1)))
+                (dotimes (i len)
+                  (princ (funcall (lambda (x)
+                                    (if (equal x #\>)
+                                        (format nil ">~%")
+                                        x))
+                                  (char string1 i))
+                         out)))))))
+    (condition (e) (logging #'output-rss 0 (format nil "~S" e)))))
+
+(defun build-readme-line (file+cldate stream)
+  (logging #'build-readme-line 1
+           (format nil "Processing: ~A" (file+cldate-file file+cldate)))
+  (handler-case
+      (let ((title  (extract-title file+cldate))
+            (mdlink (concatenate 'string
+                                 "./"
+                                 (file-namestring
+                                  (file+cldate-file file+cldate)))))
+        (format
+         stream
+         #.(println-strs '("<tr><td>"
+                           "<a href=\"~A\">"
+                           "<b>~A</b>"
+                           "</a></td>"
+                           "<td><code>~A</code></td>"
+                           "</tr>"))
+         mdlink title
+         (build-date-format-lisp
+          "%Y年%m月%d日 %H:%M"
+          (file+cldate-cldate file+cldate))))
+    (condition (e)
+      (logging #'build-readme-line 2 (format nil "~S" e)))))
 
 (defun build-readme ()
-  (format t "BUILD-README:~%")
-  (with-open-file (in #p"./README_human.md")
-    (with-open-file (out #p"README.md"
-                         :direction :output
-                         :if-exists :supersede)
-      (do ((line (read-line in nil)
-                 (read-line in nil)))
-          ((null line))
-        (format out "~A~%" line))
-      (let ((articles (list-articles)))
-        (format out "<table><tbody>~%")
-        (format out "<tr><td>文章</td><td>更新日期</td></tr>~%")
-        (mapcar
-         (lambda (a)
-           (handler-case
-               (let ((title  (extract-title a))
-                     (mdlink (concatenate 'string
-                                          "./"
-                                          (file-namestring
-                                           (file+cldate-file a)))))
-                 (format
-                  out
-"<tr><td>
-<a href=\"~A\">
-<b>~A</b>
-</a></td>
-<td><code>~A</code></td>
-</tr>~%"
-                  mdlink title
-                  (build-date-format-lisp
-                   "%Y年%m月%d日 %H:%M"
-                   (file+cldate-cldate a))))
-             (condition (e)
-               (format t "    build-readme got ERROR: ~S~%" e))))
-         articles)
-        (format out "</tbody></table>")))))
+  (logging #'build-readme 0 "Building......")
+  (handler-case
+      (progn
+        (with-open-file (in #p"./README_human.md")
+          (with-open-file (out #p"README.md"
+                               :direction :output
+                               :if-exists :supersede)
+            (do ((line (read-line in nil)
+                       (read-line in nil)))
+                ((null line))
+              (format out "~A~%" line))
+            (let ((articles (list-articles)))
+              (format out "<table><tbody>~%")
+              (format out "<tr><td>文章</td><td>更新日期</td></tr>~%")
+              (mapcar
+               (lambda (a)
+                 (build-readme-line a out))
+               articles)
+              (format out "</tbody></table>")))))
+    (condition (e) (logging #'build-readme 0 (format nil "~S" e)))))
 
 (in-package :cl-user)
 
