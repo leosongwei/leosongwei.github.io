@@ -198,7 +198,7 @@
              (:|pubDate| ,pubdate)
              (:|guid| ,guid))))
     (condition (e) (progn (logging #'item-sexp 2
-                                   (format nil "~S, Abort!" e))
+                                   (format nil "ERROR: ~S, Abort!" e))
                           nil))))
 ;;;; (item-sexp (car (list-articles)))
 
@@ -220,7 +220,7 @@
                       (mapcar #'item-sexp (list-articles)))))))
 
 (defun output-rss ()
-  (logging #'output-rss 0 "Output RSS.....")
+  (logging #'output-rss 0 "Output RSS......")
   (handler-case
       (progn
         (with-open-file
@@ -242,7 +242,7 @@
                                         x))
                                   (char string1 i))
                          out)))))))
-    (condition (e) (logging #'output-rss 0 (format nil "~S" e)))))
+    (condition (e) (logging #'output-rss 1 (format nil "ERROR:~S!" e)))))
 
 (defun build-readme-line (file+cldate stream)
   (logging #'build-readme-line 1
@@ -266,7 +266,7 @@
           "%Y年%m月%d日 %H:%M"
           (file+cldate-cldate file+cldate))))
     (condition (e)
-      (logging #'build-readme-line 2 (format nil "~S" e)))))
+      (logging #'build-readme-line 2 (format nil "ERROR: ~S, Abort!" e)))))
 
 (defun build-readme ()
   (logging #'build-readme 0 "Building......")
@@ -288,7 +288,7 @@
                  (build-readme-line a out))
                articles)
               (format out "</tbody></table>")))))
-    (condition (e) (logging #'build-readme 0 (format nil "~S" e)))))
+    (condition (e) (logging #'build-readme 1 (format nil "ERROR: ~S!" e)))))
 
 (in-package :cl-user)
 
