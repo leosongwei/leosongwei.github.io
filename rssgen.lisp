@@ -229,10 +229,10 @@
                  :direction :output
                  :external-format :utf-8
                  :if-exists :supersede)
-
           (format out
                   "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
           (print-xml (rss-sexp)
+                     :input-type :sxml
                      :pretty t
                      :stream out)))
     (condition (e) (logging #'output-rss 1 (format nil "ERROR:~S!" e)))))
