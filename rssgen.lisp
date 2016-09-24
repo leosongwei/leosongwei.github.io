@@ -161,6 +161,7 @@
             ((null line))
           (format s "~A~%" line))))
     (with-output-to-string (s xml)
+      (princ #\Newline s) ;; a new line, saves git storage usage
       (with-input-from-string (in mkd)
         (if (= 0
                (sb-ext:process-exit-code
@@ -228,20 +229,12 @@
                  :direction :output
                  :external-format :utf-8
                  :if-exists :supersede)
-          (let ((string1 (make-output-string)))
-            (with-output-to-string (s string1)
-              (format s
-                      "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
-              (print-xml (rss-sexp) :stream s
-                         :input-type :sxml)
-              (let ((len (length string1)))
-                (dotimes (i len)
-                  (princ (funcall (lambda (x)
-                                    (if (equal x #\>)
-                                        (format nil ">~%")
-                                        x))
-                                  (char string1 i))
-                         out)))))))
+
+          (format out
+                  "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>~%")
+          (print-xml (rss-sexp)
+                     :pretty t
+                     :stream out)))
     (condition (e) (logging #'output-rss 1 (format nil "ERROR:~S!" e)))))
 
 (defun build-readme-line (file+cldate stream)

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-<title>
-&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/README.md</link>
-<description>
-&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-<lastBuildDate>
-Fri, 23 Sep 2016 08:12:20 +0000</lastBuildDate>
-<language>
-zh-cn</language>
-<docs>
-https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
-<item>
-<title>
-What is CALL/CC?</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
-<description>
+<rss>
+  <@>
+    <version>2.0</version>
+    <xmlns:atom>http://www.w3.org/2005/Atom</xmlns:atom>
+  </@>
+  <channel>
+    <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
+    <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
+    <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
+    <lastBuildDate>Sat, 24 Sep 2016 00:57:27 +0000</lastBuildDate>
+    <language>zh-cn</language>
+    <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>What is CALL/CC?</title>
+      <link>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
+      <description>
 &lt;p&gt;TAG: #LISP #Scheme&lt;/p&gt;
 &lt;p&gt;Scheme&#x628A;&#x7EED;&#x5EF6;&#x5F53;&#x4F5C;&#x7B2C;&#x4E00;&#x7EA7;&#x7C7B;&#x578B;&#x6765;&#x5BF9;&#x5F85;&#x3002;&#x8981;&#x7406;&#x89E3;call/cc&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7406;&#x89E3;&#x6982;&#x5FF5;&#x201C;&#x7EED;&#x5EF6;&#x201D;&#xFF08;Continuation&#xFF09;&#x3002;&#x4EFB;&#x4F55;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7EED;&#x5EF6;&#xFF0C;&#x5373;&#x90A3;&#x4E2A;&#x5728;&#x7B49;&#x5F85;&#x8BE5;&#x8BA1;&#x7B97;&#x7684;&#x503C;&#x7684;&#x4E1C;&#x897F;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x5982;&#x5F0F;&#x5B50;&lt;code&gt;(+ 1 (+ 2 3))&lt;/code&gt;&#x4E2D;&#x7684;&#x8BA1;&#x7B97;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x7EED;&#x5EF6;&#x4E3A;&lt;code&gt;(+ 1 [])&lt;/code&gt;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x201C;[]&#x201D;&#x6307;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x503C;&#x6240;&#x8981;&#x586B;&#x8FDB;&#x53BB;&#x7684;&#x5730;&#x65B9;&#x3002;&#x82E5;&#x662F;&#x5199;&#x6210;&#x8C03;&#x7528;&#x6808;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x6837;&#xFF1A;&lt;/p&gt;
@@ -95,47 +91,35 @@ https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
 &lt;li&gt;&lt;p&gt;&lt;a name=&quot;[2]&quot;&gt;[2]&lt;/a&gt; &#x600E;&#x4E48;&#x6837;&#x624D;&#x7B97;&#x662F;&#x7CBE;&#x901A; Python&#xFF1F; https://www.zhihu.com/question/19794855&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-<pubDate>
-Wed, 21 Sep 2016 13:34:19 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md3683453659</guid>
-</item>
-<item>
-<title>
-&#x56FE;&#x7247;&#x6D4B;&#x8BD5;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/&#x56FE;&#x7247;&#x6D4B;&#x8BD5;.md</link>
-<description>
+      <pubDate>Wed, 21 Sep 2016 13:34:19 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md3683453659</guid>
+    </item>
+    <item>
+      <title>&#x56FE;&#x7247;&#x6D4B;&#x8BD5;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/&#x56FE;&#x7247;&#x6D4B;&#x8BD5;.md</link>
+      <description>
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/leosongwei/blog/master/attachment/lisplogo_fancy_256.png&quot; alt=&quot;lisp&quot; /&gt;&lt;/p&gt;
 </description>
-<pubDate>
-Wed, 21 Sep 2016 03:59:24 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/&#x56FE;&#x7247;&#x6D4B;&#x8BD5;.md3683419164</guid>
-</item>
-<item>
-<title>
-&#x5199;&#x4E86;&#x4E00;&#x4E2A;rss&#x751F;&#x6210;&#x5668;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/08_rss.md</link>
-<description>
+      <pubDate>Wed, 21 Sep 2016 03:59:24 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/&#x56FE;&#x7247;&#x6D4B;&#x8BD5;.md3683419164</guid>
+    </item>
+    <item>
+      <title>&#x5199;&#x4E86;&#x4E00;&#x4E2A;rss&#x751F;&#x6210;&#x5668;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/08_rss.md</link>
+      <description>
 &lt;p&gt;&#x8BE6;&#x89C1;&lt;code&gt;rssgen.lisp&lt;/code&gt;&#xFF0C;&#x6784;&#x5EFA;rss.xml&#xFF0C;&#x4E5F;&#x6784;&#x5EFA;README.md&#x7684;&#x6587;&#x7AE0;&#x5217;&#x8868;&#xFF08;&#x591A;&#x4E86;&#x4E00;&#x4E2A;README.md.human&#xFF09;&#x3002;&#x611F;&#x89C9;XML&#x771F;&#x662F;&#x4E00;&#x4E2A;&#x4EE4;&#x4EBA;&#x607C;&#x706B;&#x7684;&#x4E1C;&#x897F;&#x554A;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x4E00;&#x5F00;&#x59CB;&#x8003;&#x8651;&#x8FC7;quicklisp&#x91CC;&#x9762;&#x90A3;&#x4E2A;cl-markdown&#x5E93;&#xFF0C;&#x60F3;&#x8981;&#x80FD;&#x751F;&#x6210;&#x5E26;&#x683C;&#x5F0F;&#x7684;&#x3002;&#x7136;&#x800C;&#x90A3;&#x4E2A;&#x4E1C;&#x897F;&#x4F9D;&#x8D56;&#x5F88;&#x591A;&#x4E2A;&#x5947;&#x602A;&#x7684;&#x5E93;&#xFF08;&#x6216;&#x8BB8;&#x662F;&#x4E0D;&#x613F;&#x610F;&#x624B;&#x5199;parser&#xFF1F;&#xFF09;&#xFF0C;&#x4E14;&#x90FD;&#x4E0D;&#x5C0F;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x4E0D;&#x8212;&#x670D;&#xFF0C;&#x4E8E;&#x662F;&#x5C31;&#x6CA1;&#x7528;&#x3002;&#x6216;&#x8BB8;&#x6211;&#x8BE5;&#x53BB;&#x5199;&#x4E2A;&#x4F9D;&#x8D56;&#x5E72;&#x51C0;&#x4E00;&#x70B9;&#x7684;cl-markdown-lite&#x5E93;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x5728;RSS&#x91CC;&#x9762;&#x8F93;&#x51FA;&#x5408;&#x7406;&#x7684;&#x683C;&#x5F0F;&#x4E86;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x5199;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x91CD;&#x71C3;&#x4E86;&#x6211;&#x6298;&#x817E;&#x535A;&#x5BA2;&#x7684;&#x5174;&#x8DA3;&#xFF0C;&#x6709;&#x4E9B;&#x50CF;&#x5C0F;&#x65F6;&#x5019;&#x6298;&#x817E;QQ&#x7A7A;&#x95F4;&#x7684;&#x90A3;&#x79CD;&#x5FEB;&#x4E50;&#x3002;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&#x7A81;&#x7136;&#x60F3;&#x5230;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x8C03;&#x7528;pandoc&#x8F93;&#x51FA;html&#xFF0C;&#x6548;&#x679C;&#x8FD8;&#x4E0D;&#x9519;&#x3002;&lt;/p&gt;
 </description>
-<pubDate>
-Wed, 21 Sep 2016 02:48:15 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/08_rss.md3683414895</guid>
-</item>
-<item>
-<title>
-&#x559C;&#x6B22;&#x7684;&#x8F6F;&#x4EF6;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/02_favorite_software.md</link>
-<description>
+      <pubDate>Wed, 21 Sep 2016 02:48:15 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/08_rss.md3683414895</guid>
+    </item>
+    <item>
+      <title>&#x559C;&#x6B22;&#x7684;&#x8F6F;&#x4EF6;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/02_favorite_software.md</link>
+      <description>
 &lt;p&gt;&#x6700;&#x540E;&#x7F16;&#x8F91;&#x4E8E;2016&#x5E74;&#x3002;&lt;/p&gt;
 &lt;h2 id=&quot;&#x7F51;&#x7EDC;&quot;&gt;&#x7F51;&#x7EDC;&lt;/h2&gt;
 &lt;ul&gt;
@@ -305,17 +289,13 @@ https://github.com/leosongwei/blog/blob/master/02_favorite_software.md</link>
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-<pubDate>
-Tue, 20 Sep 2016 17:29:13 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/02_favorite_software.md3683381353</guid>
-</item>
-<item>
-<title>
-GnuPG</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
-<description>
+      <pubDate>Tue, 20 Sep 2016 17:29:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/02_favorite_software.md3683381353</guid>
+    </item>
+    <item>
+      <title>GnuPG</title>
+      <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
+      <description>
 &lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;&lt;code&gt;./attachment/leo_songwei.asc&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&#x6307;&#x7EB9;&#x662F;&#xFF1A; &lt;code&gt;36D0 8649 4FF1 653D 8137 BE94 C293 0408 1661 4B93&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;
@@ -323,31 +303,23 @@ https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
 &lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
 </description>
-<pubDate>
-Tue, 20 Sep 2016 17:12:39 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/07_gpg.md3683380359</guid>
-</item>
-<item>
-<title>
-SBCL&#x8BFB;&#x6587;&#x4EF6;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/06_sbcl_reading_file.md</link>
-<description>
+      <pubDate>Tue, 20 Sep 2016 17:12:39 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3683380359</guid>
+    </item>
+    <item>
+      <title>SBCL&#x8BFB;&#x6587;&#x4EF6;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/06_sbcl_reading_file.md</link>
+      <description>
 &lt;p&gt;Tag: Lisp; SBCL; file; stream; io; type; very slow;&lt;/p&gt;
 &lt;p&gt;SBCL&#x91CC;&#x9762;&#x8BFB;&#x5199;&#x6587;&#x4EF6;&#x5343;&#x4E07;&#x4E0D;&#x8981;&#x5199;&lt;code&gt;'unsigned-byte&lt;/code&gt;&#xFF0C;&#x8001;&#x8001;&#x5B9E;&#x5B9E;&#x5199;&lt;code&gt;'(unsigned-byte 8)&lt;/code&gt;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x6B7B;&#x6162;&#xFF01;&lt;/p&gt;
 </description>
-<pubDate>
-Wed, 07 Sep 2016 16:08:50 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/06_sbcl_reading_file.md3682253330</guid>
-</item>
-<item>
-<title>
-Lisp&#x7684;&#x672C;&#x8D28;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/05_essence_of_lisp.md</link>
-<description>
+      <pubDate>Wed, 07 Sep 2016 16:08:50 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/06_sbcl_reading_file.md3682253330</guid>
+    </item>
+    <item>
+      <title>Lisp&#x7684;&#x672C;&#x8D28;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/05_essence_of_lisp.md</link>
+      <description>
 &lt;p&gt;&#x4ECA;&#x5929;&#x5728;CDLUG&#x7684;&#x6D3B;&#x52A8;&#x4E0A;&#x505A;&#x4E86;&#x9898;&#x4E3A;&#x201C;Lisp&#x4E0E;S&#x8868;&#x8FBE;&#x5F0F;&#x201D;&#x7684;&#x5206;&#x4EAB;&#x3002;&#x8BB2;&#x4E86;&#x5F88;&#x591A;&#x5185;&#x5BB9;&#xFF0C;&#x8BB2;Lisp&#x53EF;&#x4EE5;&#x662F;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#xFF0C;&#x552F;&#x72EC;&#x5FD8;&#x4E86;&#x5BF9;Lisp&#x672C;&#x8D28;&#x7684;&#x603B;&#x7ED3;&#xFF1A;Lisp&#x4EC0;&#x4E48;&#x4E5F;&#x4E0D;&#x662F;&#x3002;&lt;/p&gt;
 &lt;p&gt;bug&#x54E5;&#x5BF9;Lisp&#x7684;&#x76F4;&#x89C2;&#x8BA4;&#x8BC6;&#x662F;&#x5BF9;&#x7684;&#xFF1A;&#x6CA1;&#x770B;&#x51FA;Lisp&#x597D;&#x5728;&#x54EA;&#x91CC;&#x3002;&#x6211;&#x7684;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#x4E00;&#x76F4;&#x662F;&#x201C;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x80FD;&#x505A;&#x7684;Lisp&#x90FD;&#x80FD;&#x505A;&#x201D;&#xFF1B;&#x6211;&#x6F5C;&#x610F;&#x8BC6;&#x4E2D;&#x4E00;&#x5B9A;&#x89C9;&#x5F97;&#x8FD9;&#x53E5;&#x8BDD;&#x592A;low&#x4E86;&#xFF0C;&#x4F46;&#x5F53;&#x65F6;&#x6211;&#x5E76;&#x8BF4;&#x4E0D;&#x51FA;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x53E5;&#x8BDD;low&#xFF0C;&#x672C;&#x6587;&#x53EF;&#x4EE5;&#x89E3;&#x91CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x53E5;&#x8BDD;&#x5F88;low&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x201C;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x80FD;&#x505A;&#x7684;Lisp&#x90FD;&#x80FD;&#x505A;&#x201D;&#xFF0C;&#x53CD;&#x8FC7;&#x6765;&#x7684;&#x611F;&#x89C9;&#x5C31;&#x662F;&#x201C;Lisp&#x80FD;&#x505A;&#x7684;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x90FD;&#x80FD;&#x505A;&#x201D;&#xFF0C;&#x90A3;&#x786E;&#x5B9E;&#x4F53;&#x73B0;&#x4E0D;&#x51FA;&#x201C;Lisp&#x597D;&#x5728;&#x54EA;&#x91CC;&#x201D;&#x3002;&lt;/p&gt;
@@ -360,17 +332,13 @@ https://github.com/leosongwei/blog/blob/master/05_essence_of_lisp.md</link>
 &lt;p&gt;&lt;strong&gt;&#x7528;&#x4E86;Lisp&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x4F7F;&#x4F60;&#x5199;&#x7A0B;&#x5E8F;&#x7684;&#x6C34;&#x5E73;&#x5F97;&#x5230;&#x63D0;&#x5347;&#xFF1B;&#x76F8;&#x53CD;&#xFF0C;Java&#x786E;&#x5B9E;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5F88;&#x591A;&#x5927;&#x5B66;&#x73A9;&#x4E86;&#x4E09;&#x5E74;&#x7684;&#x540C;&#x5B66;&#x5728;&#x7ECF;&#x8FC7;&#x51E0;&#x4E2A;&#x6708;&#x57F9;&#x8BAD;&#x540E;&#x5199;&#x51FA;&#x8FBE;&#x5230;&#x6807;&#x51C6;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&lt;/strong&gt;&#x5982;&#x679C;&#x4F60;&#x611F;&#x89C9;&#x5904;&#x5904;&#x53D7;&#x9650;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5E94;&#x8BE5;&#x73B0;&#x5728;&#x5C31;&#x5F00;&#x59CB;&#x5B66;&#x4E60;Lisp&#xFF0C;&#x8FD9;&#x8BA9;&#x4F60;&#x611F;&#x5230;&#x81EA;&#x7531;&#x4E0E;&#x89E3;&#x653E;&#x3002;&#x5982;&#x679C;&#x4F60;&#x611F;&#x89C9;&#x7801;&#x529B;&#x4E0D;&#x8DB3;&#xFF08;&#x8FDE;&#x201C;&#x501F;&#x201D;&#x7684;&#x80FD;&#x529B;&#x90FD;&#x5F88;&#x6B20;&#x7F3A;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5C31;&#x9700;&#x8981;Java&#x4E4B;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x6765;&#x4E3A;&#x4F60;&#x63D0;&#x4F9B;&#x201C;&#x601D;&#x60F3;&#x201D;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x8FD9;&#x6B21;&#x6F14;&#x8BB2;&#x7684;&#x5E7B;&#x706F;&#x7247;&#x5728;&amp;quot;./attachment/cdlug1608.lisp&amp;quot;&#xFF0C;&#x9700;&#x8981;&#x7528;cl-slider&#x6253;&#x5F00;&#xFF08;https://github.com/leosongwei/cl-slider &#xFF09;&lt;/p&gt;
 </description>
-<pubDate>
-Sat, 27 Aug 2016 15:35:40 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/05_essence_of_lisp.md3681300940</guid>
-</item>
-<item>
-<title>
-Common Lisp Keywords</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/04_common_lisp_keywords.md</link>
-<description>
+      <pubDate>Sat, 27 Aug 2016 15:35:40 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/05_essence_of_lisp.md3681300940</guid>
+    </item>
+    <item>
+      <title>Common Lisp Keywords</title>
+      <link>https://github.com/leosongwei/blog/blob/master/04_common_lisp_keywords.md</link>
+      <description>
 &lt;p&gt;&#x4E4B;&#x524D;&#x4E0D;&#x4ED4;&#x7EC6;&#xFF0C;&#x73B0;&#x5728;&#x624D;&#x53D1;&#x73B0;Common Lisp&#x91CC;&#x9762;&#x6709;&#x4E00;&#x79CD;&#x53EB;&#x505A;keyword&#x7684;&#x4E1C;&#x897F;&#x3002;&lt;/p&gt;
 &lt;p&gt;keyword&#x5C31;&#x662F;&#x4EE5;&#x5192;&#x53F7;&#x5F00;&#x5934;&#x7684;&#x7B26;&#x53F7;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x76F4;&#x63A5;&#x5BFC;&#x5165;&#x5230;keyword&#x5305;&#x4E2D;&#x3002;&#x6839;&#x636E;The Hyper Spec&#x91CC;&#x9762;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;keyword&#x4F1A;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x5F71;&#x54CD;&#xFF1A;&lt;/p&gt;
 &lt;ol style=&quot;list-style-type: decimal&quot;&gt;
@@ -421,17 +389,13 @@ NIL
 CL-USER&amp;gt; &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Common Lisp&#x8FD9;&#x73A9;&#x610F;&#x513F;&#x5751;&#x8FD8;&#x771F;&#x591A;&#x3002;&lt;/p&gt;
 </description>
-<pubDate>
-Sun, 21 Aug 2016 10:46:06 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/04_common_lisp_keywords.md3680765166</guid>
-</item>
-<item>
-<title>
-Emacs&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/03_emacs_matching_parens_ON_cursor.md</link>
-<description>
+      <pubDate>Sun, 21 Aug 2016 10:46:06 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/04_common_lisp_keywords.md3680765166</guid>
+    </item>
+    <item>
+      <title>Emacs&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/03_emacs_matching_parens_ON_cursor.md</link>
+      <description>
 &lt;p&gt;tags: Emacs; Parentheses matching; Cursor;&lt;/p&gt;
 &lt;p&gt;Emacs&#x5F88;&#x795E;&#x70E6;&#xFF0C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E0B;&#xFF0C;&#x5F53;&#x4F60;&#x7684;&#x65B9;&#x5757;&#x5149;&#x6807;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x540E;&#x62EC;&#x53F7;&#x7684;&#x65F6;&#x5019;&#xFF08;&#x201C;)&#x201D;&#xFF09;&#xFF0C;&#x5B83;&#x4E0D;&#x4F1A;&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;&#xFF0C;&#x800C;&#x662F;&#x4F1A;&#x5339;&#x914D;&#x8FD9;&#x4E4B;&#x524D;&#x7684;&#x4E00;&#x4E2A;&#x540E;&#x62EC;&#x53F7;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x5B9E;&#x73B0;&#x60F3;Vim&#x4E00;&#x6837;&#x6B63;&#x786E;&#x7684;&#x62EC;&#x53F7;&#x5339;&#x914D;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;&lt;/p&gt;
@@ -445,17 +409,13 @@ https://github.com/leosongwei/blog/blob/master/03_emacs_matching_parens_ON_curso
 &lt;p&gt;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x662F;&#x5728;&#x6808;&#x7206;&#x7F51;&#x4E0A;&#x627E;&#x5230;&#x7684;[1]&#xFF0C;&#x7136;&#x800C;&#x539F;&#x7B54;&#x6848;&#x5728;&#x7528;&#x5FEB;&#x6377;&#x952E;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E14;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x5947;&#x602A;&#xFF0C;&#x641E;&#x4E0D;&#x61C2;&#x4ED6;&#x4E3A;&#x4EC0;&#x4E48;&#x90A3;&#x6837;&#x5199;&#xFF0C;&#x6545;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E0B;&#x3002;&lt;/p&gt;
 &lt;p&gt;[1] Emacs: Matching parenthesis when cursor is ON closing parenthesis http://stackoverflow.com/a/25649189/4516042&lt;/p&gt;
 </description>
-<pubDate>
-Sun, 10 Jul 2016 02:34:23 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/03_emacs_matching_parens_ON_cursor.md3677106863</guid>
-</item>
-<item>
-<title>
-Maximus</title>
-<link>
-https://github.com/leosongwei/blog/blob/master/01_maximus.md</link>
-<description>
+      <pubDate>Sun, 10 Jul 2016 02:34:23 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/03_emacs_matching_parens_ON_cursor.md3677106863</guid>
+    </item>
+    <item>
+      <title>Maximus</title>
+      <link>https://github.com/leosongwei/blog/blob/master/01_maximus.md</link>
+      <description>
 &lt;p&gt;TAG: Gnome3; Gnome Shell; maximus; Window Manager; Decorator; Title Bar; &#x6807;&#x9898;&#x680F;; Maximize Window; &#x6700;&#x5927;&#x5316;;&lt;/p&gt;
 &lt;p&gt;&#x201C;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x201D;Gnome3&#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x5E73;&#x677F;&#x7535;&#x8111;&#x8BBE;&#x8BA1;&#x7684;&#x684C;&#x9762;&#x73AF;&#x5883;&#xFF0C;&#x867D;&#x7136;&#x5E76;&#x6CA1;&#x6709;&#x591A;&#x5C11;&#x5E73;&#x677F;&#x7535;&#x8111;&#x5B9E;&#x9645;&#x652F;&#x6301;&#x5B83;&#x3002;&#x7531;&#x4E8E;&#x4ED6;&#x4EEC;&#x4EBA;&#x5F88;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x73B0;&#x5728;&#x4E5F;&#x662F;Linux&#x4E0A;&#x6700;&#x597D;&#x7684;&#x3001;&#x6700;&#x7A33;&#x5B9A;&#x7684;&#x684C;&#x9762;&#x73AF;&#x5883;&#x4E4B;&#x4E00;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x65B0;KDE&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x5B9E;&#x5728;&#x662F;&#x4E0D;&#x6562;&#x606D;&#x7EF4;&#xFF1A;&#x8FD0;&#x8F6C;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;&#x4F1A;&#x51FA;&#x73B0;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x7528;&#x53BB;&#x5F88;&#x591A;CPU&#x65F6;&#x95F4;&#xFF0C;&#x4F7F;&#x5F97;&#x7535;&#x8111;&#x53D8;&#x5F97;&#x70EB;&#x70EB;&#x7684;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x5361;&#x5361;&#x7684;&#xFF0C;CPU&#x98CE;&#x6247;&#x5435;&#x5435;&#x7684;&#x3002;KDE&#x793E;&#x533A;&#x6709;&#x4E2A;&#x9648;&#x5E74;&#x8001;&#x5E16;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x67D0;&#x4EBA;&#x9047;&#x5230;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x4E00;&#x5F00;&#x59CB;&#x4F3C;&#x4E4E;&#x8FD8;&#x80FD;&#x591F;&#x4FEE;&#x590D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7ED3;&#x679C;&#xFF0C;&#x540E;&#x6765;&#x8DDF;&#x8D34;&#x7684;&#x4EBA;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x4ECE;14&#x5E74;&#x53D1;&#xFF0C;&#x5230;16&#x5E74;&#x8FD8;&#x6709;&#x4EBA;&#x56DE;&#x590D;&#x8BF4;&#x4E5F;&#x6709;&#x7C7B;&#x4F3C;&#x75C7;&#x72B6;&#xFF0C;&#x539F;&#x56E0;&#x4E5F;&#x662F;&#x5343;&#x5947;&#x767E;&#x602A;&#x2026;&#x2026;[1]&lt;/p&gt;
@@ -466,10 +426,8 @@ https://github.com/leosongwei/blog/blob/master/01_maximus.md</link>
 &lt;p&gt;&#x53E6;&#x5916;&#x5410;&#x69FD;&#x4E00;&#x4E2A;&#xFF1A;Gnome Shell&#x7684;&#x8BBE;&#x7F6E;&#x9AD8;&#x5EA6;&#x4F9D;&#x8D56;&#x4E8E;Gnome Tweak Tool&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x7684;&#x5B58;&#x5728;&#x5C31;&#x662F;&#x5BF9;Gnome Shell&#x8D2B;&#x4E4F;&#x7684;&#x914D;&#x7F6E;&#x529F;&#x80FD;&#x7684;&#x5632;&#x8BBD;&#x3002;&#x5C31;&#x50CF;Wine 4 Windows&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;&#x5B8C;&#x5168;&#x662F;&#x5FAE;&#x8F6F;&#x7684;&#x7CDF;&#x7CD5;&#x7684;&#x517C;&#x5BB9;&#x80FD;&#x529B;&#x7684;&#x5632;&#x8BBD;&#x4E00;&#x6837;&#x3002;&lt;/p&gt;
 &lt;p&gt;[1] plasmashell high CPU load https://forum.kde.org/viewtopic.php?f=289&amp;amp;t=121533&amp;amp;start=45 [2] Package Details: maximus 0.4.14-6 https://aur.archlinux.org/packages/maximus/&lt;/p&gt;
 </description>
-<pubDate>
-Tue, 31 May 2016 08:09:59 +0000</pubDate>
-<guid>
-https://github.com/leosongwei/blog/blob/master/01_maximus.md3673670999</guid>
-</item>
-</channel>
+      <pubDate>Tue, 31 May 2016 08:09:59 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/01_maximus.md3673670999</guid>
+    </item>
+  </channel>
 </rss>
