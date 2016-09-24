@@ -217,7 +217,8 @@
          (:|lastBuildDate| ,(build-date-now))
          (:|language| "zh-cn")
          (:|docs| ,rss-file)
-         ,@(remove-if (lambda (x) (eq x nil))
+         ;; remove error output
+         ,@(remove-if #'null
                       (mapcar #'item-sexp (list-articles)))))))
 
 (defun output-rss ()
