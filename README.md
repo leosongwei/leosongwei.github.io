@@ -22,6 +22,12 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期</td></tr>
 <tr><td>
+<a href="./07_gpg.md">
+<b>GnuPG</b>
+</a></td>
+<td><code>2016年09月26日 11:36</code></td>
+</tr>
+<tr><td>
 <a href="./00_what_is_call_cc.md">
 <b>What is CALL/CC?</b>
 </a></td>
@@ -44,12 +50,6 @@
 <b>喜欢的软件</b>
 </a></td>
 <td><code>2016年09月21日 01:29</code></td>
-</tr>
-<tr><td>
-<a href="./07_gpg.md">
-<b>GnuPG</b>
-</a></td>
-<td><code>2016年09月21日 01:12</code></td>
 </tr>
 <tr><td>
 <a href="./06_sbcl_reading_file.md">
