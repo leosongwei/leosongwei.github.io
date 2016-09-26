@@ -11,10 +11,10 @@
 <img src="./attachment/lisplogo_fancy_256.png" alt="(made-with-lisp)" width="72"/>
 
 ## GnuPG
-我的公钥在这里：[./attachment/leo_songwei.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/leo_songwei.asc)
+我的公钥在这里（最近换了新的）：[./attachment/leo_songwei_201609.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/leo_songwei_201609.asc)
 
 指纹是：
-`36D0 8649 4FF1 653D 8137 BE94 C293 0408 1661 4B93`
+`5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E`
 
 文章列表
 --------
