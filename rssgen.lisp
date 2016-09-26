@@ -32,6 +32,25 @@
                    (println-strs (cdr strings)))
       nil))
 
+(defun parse-tags (tags-line)
+  "Functions:
+    0. verify if tags-line valid
+    1. seperate with semicolon & coloan & comma
+    2. abandon first element (that is `Tags:')
+    3. capitalize all tags
+    4. remove all spaces before or after tags,
+       substitude all space characters to underline
+   Return: list of tags converted to symbol"
+  (if (null (all-matches "(?i)tag(s?)(?-i):(.*;)+" tags-line))
+      (error "PARSE-TAGS: ERROR: invalid tags-line!"))
+  (let ((tag-lst (cdr (split "(\\s)*(:|;|,)(\\s)*|\\s+$" tags-line))))
+    (setf tag-lst (mapcar (lambda (x)
+                            (string-upcase
+                             (regex-replace-all "\\s" x "-")))
+                          tag-lst))
+    (mapcar #'intern tag-lst)))
+;; (parse-tags "Tags: hi, 233 haha; sdf ; 哦 ")
+
 (defun make-output-string ()
   (make-array '(0) :element-type 'character
               :fill-pointer 0 :adjustable t))
