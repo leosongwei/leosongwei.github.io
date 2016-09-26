@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Mon, 26 Sep 2016 03:37:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Sep 2016 03:42:17 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -24,14 +24,15 @@ sub   4096R/771ED4FB 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]&lt;
 &lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
 &lt;h2 id=&quot;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&quot;&gt;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&lt;/h2&gt;
-&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoked.asc&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&quot;gpg&quot;&gt;&lt;code&gt;pub   4096R/16614B93 2015-01-29 [&#x5DF2;&#x540A;&#x9500;&#xFF1A;2016-09-26]
 &#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 36D0 8649 4FF1 653D 8137  BE94 C293 0408 1661 4B93
 uid                  Song Wei (&#x5B8B;&#x4E3A;) &amp;lt;leo_songwei@outlook.com&amp;gt;
 uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x540A;&#x9500;&#x8BC1;&#x4E66;&#x89C1;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoke.asc&lt;/code&gt;&lt;/p&gt;
 </description>
-      <pubDate>Mon, 26 Sep 2016 03:36:29 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3683849789</guid>
+      <pubDate>Mon, 26 Sep 2016 03:42:07 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3683850127</guid>
     </item>
     <item>
       <title>What is CALL/CC?</title>

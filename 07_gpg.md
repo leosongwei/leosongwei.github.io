@@ -23,7 +23,7 @@ sub   4096R/771ED4FB 2016-09-26 [有效至：2017-09-26]
 吊销了旧的密钥对
 ----------------
 
-被吊销的密钥的信息：
+被吊销的密钥的信息：`./attachment/leo_songwei_revoked.asc`
 
 ```gpg
 pub   4096R/16614B93 2015-01-29 [已吊销：2016-09-26]
@@ -31,3 +31,5 @@ pub   4096R/16614B93 2015-01-29 [已吊销：2016-09-26]
 uid                  Song Wei (宋为) <leo_songwei@outlook.com>
 uid                  leo_song (Song Wei) <leo_songwei@126.com>
 ```
+
+吊销证书见：`./attachment/leo_songwei_revoke.asc`
