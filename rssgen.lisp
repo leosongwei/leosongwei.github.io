@@ -216,7 +216,7 @@
           (format out "TAGS~%----~%~%")
           (maphash (lambda (k v)
                      v
-                     (format out "[[~A]](###~A) " k k))
+                     (format out "[[~A]](#~A) " k k))
                    *tags-hash*)
           (format out "~%~%")
           (maphash (lambda (k v)
