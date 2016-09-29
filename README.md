@@ -7,6 +7,8 @@
 
 留言请提ISSUE。
 
+RSS订阅会又“重复”，这是一个特性而非bug。凡是我改动过的文章，都会被RSS阅读器认为是新的，所以会再出现一遍。
+
 <a href="https://github.com/leosongwei/blog/raw/master/rss.xml"><img src="./attachment/rss.jpg" alt="[RSS]" width="72"/>**RSS订阅**</a>
 <img src="./attachment/lisplogo_fancy_256.png" alt="(made-with-lisp)" width="72"/>
 
