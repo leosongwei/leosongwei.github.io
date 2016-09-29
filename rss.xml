@@ -5,40 +5,116 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Mon, 26 Sep 2016 15:07:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Sep 2016 01:51:39 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
-      <title>GnuPG</title>
-      <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
+      <title>TAGS</title>
+      <link>https://github.com/leosongwei/blog/blob/master/tags.md</link>
       <description>
-&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_201609.asc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&#x65B0;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pub   4096R/C583B54E 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]
-&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
-uid                  Song Wei (Leo, &#x51C9;&#x62CC;&#x8336;&#x53F6;, 2016.09) &amp;lt;leo_songwei@outlook.com&amp;gt;
-uid                  Leo Song (126&#x90AE;&#x7BB1;) &amp;lt;leo_songwei@126.com&amp;gt;
-sub   4096R/771ED4FB 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x914D;&#x7F6E;Git&#x7B7E;&#x540D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201C;secret key not available&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
-&lt;h2 id=&quot;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&quot;&gt;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&lt;/h2&gt;
-&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoked.asc&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;gpg&quot;&gt;&lt;code&gt;pub   4096R/16614B93 2015-01-29 [&#x5DF2;&#x540A;&#x9500;&#xFF1A;2016-09-26]
-&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 36D0 8649 4FF1 653D 8137  BE94 C293 0408 1661 4B93
-uid                  Song Wei (&#x5B8B;&#x4E3A;) &amp;lt;leo_songwei@outlook.com&amp;gt;
-uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x540A;&#x9500;&#x8BC1;&#x4E66;&#x89C1;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoke.asc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;###LISP&quot;&gt;[LISP]&lt;/a&gt; &lt;a href=&quot;###SCHEME&quot;&gt;[SCHEME]&lt;/a&gt; &lt;a href=&quot;###GPG&quot;&gt;[GPG]&lt;/a&gt; &lt;a href=&quot;###ENCRYPT&quot;&gt;[ENCRYPT]&lt;/a&gt; &lt;a href=&quot;###PUBLIC-KEY&quot;&gt;[PUBLIC-KEY]&lt;/a&gt; &lt;a href=&quot;###SBCL&quot;&gt;[SBCL]&lt;/a&gt; &lt;a href=&quot;###FILE&quot;&gt;[FILE]&lt;/a&gt; &lt;a href=&quot;###STREAM&quot;&gt;[STREAM]&lt;/a&gt; &lt;a href=&quot;###IO&quot;&gt;[IO]&lt;/a&gt; &lt;a href=&quot;###TYPE&quot;&gt;[TYPE]&lt;/a&gt; &lt;a href=&quot;###VERY-SLOW&quot;&gt;[VERY-SLOW]&lt;/a&gt; &lt;a href=&quot;###EMACS&quot;&gt;[EMACS]&lt;/a&gt; &lt;a href=&quot;###PARENTHESES-MATCHING&quot;&gt;[PARENTHESES-MATCHING]&lt;/a&gt; &lt;a href=&quot;###CURSOR&quot;&gt;[CURSOR]&lt;/a&gt; &lt;a href=&quot;###GNOME3&quot;&gt;[GNOME3]&lt;/a&gt; &lt;a href=&quot;###GNOME-SHELL&quot;&gt;[GNOME-SHELL]&lt;/a&gt; &lt;a href=&quot;###MAXIMUS&quot;&gt;[MAXIMUS]&lt;/a&gt; &lt;a href=&quot;###WINDOW-MANAGER&quot;&gt;[WINDOW-MANAGER]&lt;/a&gt; &lt;a href=&quot;###DECORATOR&quot;&gt;[DECORATOR]&lt;/a&gt; &lt;a href=&quot;###TITLE-BAR&quot;&gt;[TITLE-BAR]&lt;/a&gt; &lt;a href=&quot;###&#x6807;&#x9898;&#x680F;&quot;&gt;[&#x6807;&#x9898;&#x680F;]&lt;/a&gt; &lt;a href=&quot;###MAXIMIZE-WINDOW&quot;&gt;[MAXIMIZE-WINDOW]&lt;/a&gt; &lt;a href=&quot;###&#x6700;&#x5927;&#x5316;&quot;&gt;[&#x6700;&#x5927;&#x5316;]&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;lisp&quot;&gt;LISP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./00_what_is_call_cc.md&quot;&gt;What is CALL/CC?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;scheme&quot;&gt;SCHEME&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./00_what_is_call_cc.md&quot;&gt;What is CALL/CC?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;gpg&quot;&gt;GPG&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./07_gpg.md&quot;&gt;GnuPG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;encrypt&quot;&gt;ENCRYPT&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./07_gpg.md&quot;&gt;GnuPG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;public-key&quot;&gt;PUBLIC-KEY&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./07_gpg.md&quot;&gt;GnuPG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sbcl&quot;&gt;SBCL&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;file&quot;&gt;FILE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;stream&quot;&gt;STREAM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;io&quot;&gt;IO&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;type&quot;&gt;TYPE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;very-slow&quot;&gt;VERY-SLOW&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./06_sbcl_reading_file.md&quot;&gt;SBCL&#x8BFB;&#x6587;&#x4EF6;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;emacs&quot;&gt;EMACS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./03_emacs_matching_parens_ON_cursor.md&quot;&gt;Emacs&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;parentheses-matching&quot;&gt;PARENTHESES-MATCHING&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./03_emacs_matching_parens_ON_cursor.md&quot;&gt;Emacs&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;cursor&quot;&gt;CURSOR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./03_emacs_matching_parens_ON_cursor.md&quot;&gt;Emacs&#x5339;&#x914D;&#x5149;&#x6807;&#x4E0A;&#x7684;&#x62EC;&#x53F7;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;gnome3&quot;&gt;GNOME3&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;gnome-shell&quot;&gt;GNOME-SHELL&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;maximus&quot;&gt;MAXIMUS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;window-manager&quot;&gt;WINDOW-MANAGER&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;decorator&quot;&gt;DECORATOR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;title-bar&quot;&gt;TITLE-BAR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;&#x6807;&#x9898;&#x680F;&quot;&gt;&#x6807;&#x9898;&#x680F;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;maximize-window&quot;&gt;MAXIMIZE-WINDOW&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;&#x6700;&#x5927;&#x5316;&quot;&gt;&#x6700;&#x5927;&#x5316;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./01_maximus.md&quot;&gt;Maximus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-      <pubDate>Mon, 26 Sep 2016 03:42:07 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3683850127</guid>
+      <pubDate>Thu, 29 Sep 2016 01:47:49 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/tags.md3684102469</guid>
     </item>
     <item>
       <title>What is CALL/CC?</title>
       <link>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md</link>
       <description>
-&lt;p&gt;TAG: #LISP #Scheme&lt;/p&gt;
+&lt;p&gt;TAG: LISP; Scheme;&lt;/p&gt;
 &lt;p&gt;Scheme&#x628A;&#x7EED;&#x5EF6;&#x5F53;&#x4F5C;&#x7B2C;&#x4E00;&#x7EA7;&#x7C7B;&#x578B;&#x6765;&#x5BF9;&#x5F85;&#x3002;&#x8981;&#x7406;&#x89E3;call/cc&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7406;&#x89E3;&#x6982;&#x5FF5;&#x201C;&#x7EED;&#x5EF6;&#x201D;&#xFF08;Continuation&#xFF09;&#x3002;&#x4EFB;&#x4F55;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7EED;&#x5EF6;&#xFF0C;&#x5373;&#x90A3;&#x4E2A;&#x5728;&#x7B49;&#x5F85;&#x8BE5;&#x8BA1;&#x7B97;&#x7684;&#x503C;&#x7684;&#x4E1C;&#x897F;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x5982;&#x5F0F;&#x5B50;&lt;code&gt;(+ 1 (+ 2 3))&lt;/code&gt;&#x4E2D;&#x7684;&#x8BA1;&#x7B97;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x7EED;&#x5EF6;&#x4E3A;&lt;code&gt;(+ 1 [])&lt;/code&gt;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x201C;[]&#x201D;&#x6307;&lt;code&gt;(+ 2 3)&lt;/code&gt;&#x7684;&#x503C;&#x6240;&#x8981;&#x586B;&#x8FDB;&#x53BB;&#x7684;&#x5730;&#x65B9;&#x3002;&#x82E5;&#x662F;&#x5199;&#x6210;&#x8C03;&#x7528;&#x6808;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x6837;&#xFF1A;&lt;/p&gt;
 &lt;pre class=&quot;sourceCode scheme&quot;&gt;&lt;code class=&quot;sourceCode scheme&quot;&gt;&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;. (&lt;span class=&quot;kw&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;)
@@ -113,8 +189,35 @@ uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;
 &lt;li&gt;&lt;p&gt;&lt;a name=&quot;[2]&quot;&gt;[2]&lt;/a&gt; &#x600E;&#x4E48;&#x6837;&#x624D;&#x7B97;&#x662F;&#x7CBE;&#x901A; Python&#xFF1F; https://www.zhihu.com/question/19794855&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <pubDate>Wed, 21 Sep 2016 13:34:19 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md3683453659</guid>
+      <pubDate>Thu, 29 Sep 2016 01:41:28 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md3684102088</guid>
+    </item>
+    <item>
+      <title>GnuPG</title>
+      <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
+      <description>
+&lt;p&gt;tags: gpg; encrypt; public key;&lt;/p&gt;
+&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_201609.asc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x65B0;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pub   4096R/C583B54E 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]
+&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
+uid                  Song Wei (Leo, &#x51C9;&#x62CC;&#x8336;&#x53F6;, 2016.09) &amp;lt;leo_songwei@outlook.com&amp;gt;
+uid                  Leo Song (126&#x90AE;&#x7BB1;) &amp;lt;leo_songwei@126.com&amp;gt;
+sub   4096R/771ED4FB 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x914D;&#x7F6E;Git&#x7B7E;&#x540D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201C;secret key not available&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
+&lt;h2 id=&quot;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&quot;&gt;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&lt;/h2&gt;
+&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoked.asc&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;gpg&quot;&gt;&lt;code&gt;pub   4096R/16614B93 2015-01-29 [&#x5DF2;&#x540A;&#x9500;&#xFF1A;2016-09-26]
+&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 36D0 8649 4FF1 653D 8137  BE94 C293 0408 1661 4B93
+uid                  Song Wei (&#x5B8B;&#x4E3A;) &amp;lt;leo_songwei@outlook.com&amp;gt;
+uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x540A;&#x9500;&#x8BC1;&#x4E66;&#x89C1;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoke.asc&lt;/code&gt;&lt;/p&gt;
+</description>
+      <pubDate>Thu, 29 Sep 2016 01:02:30 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3684099750</guid>
     </item>
     <item>
       <title>&#x56FE;&#x7247;&#x6D4B;&#x8BD5;</title>

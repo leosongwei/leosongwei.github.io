@@ -5,10 +5,14 @@
 (defpackage :rssgen
   (:use :cl :cl-user :s-xml :cl-ppcre)
   (:export output-rss
-           build-readme))
+           build-readme
+           output-tags))
 (in-package :rssgen)
 
 (defparameter *log-stream* *standard-output*)
+
+(defparameter *home*
+  "https://github.com/leosongwei/blog/blob/master/")
 
 (defun logging (place level msg)
   (format *log-stream*
@@ -20,7 +24,7 @@
            msg (string #\Newline))))
 ;;;;(logging #'logging 1 "test")
 
-(defparameter *timezone* +8)
+(defparameter *timezone* +10)
 
 (defmacro concstr (&rest strings)
   `(concatenate 'string ,@strings))
@@ -31,25 +35,6 @@
                    (string #\Newline)
                    (println-strs (cdr strings)))
       nil))
-
-(defun parse-tags (tags-line)
-  "Functions:
-    0. verify if tags-line valid
-    1. seperate with semicolon & coloan & comma
-    2. abandon first element (that is `Tags:')
-    3. capitalize all tags
-    4. remove all spaces before or after tags,
-       substitude all space characters to underline
-   Return: list of tags converted to symbol"
-  (if (null (all-matches "(?i)tag(s?)(?-i):(.*;)+" tags-line))
-      (error "PARSE-TAGS: ERROR: invalid tags-line!"))
-  (let ((tag-lst (cdr (split "(\\s)*(:|;|,)(\\s)*|\\s+$" tags-line))))
-    (setf tag-lst (mapcar (lambda (x)
-                            (string-upcase
-                             (regex-replace-all "\\s" x "-")))
-                          tag-lst))
-    (mapcar #'intern tag-lst)))
-;; (parse-tags "Tags: hi, 233 haha; sdf ; 哦 ")
 
 (defun make-output-string ()
   (make-array '(0) :element-type 'character
@@ -151,8 +136,99 @@
                (sort file+cldate-lst #'> :key #'file+cldate-cldate))))
 ;;;; (list-articles)
 
-(defparameter *home*
-  "https://github.com/leosongwei/blog/blob/master/")
+(defun select-article (file)
+  (remove-if (lambda (fc)
+               (null (all-matches
+                      file
+                      (file-namestring
+                       (file+cldate-file fc)))))
+             (list-articles)))
+
+(defun make-mdlink (file+cldate)
+  (concatenate 'string "./"
+               (file-namestring
+                (file+cldate-file file+cldate))))
+
+;;;; ('tag . file+cldate file+cldate ...)
+(defparameter *tags-hash* nil)
+(setf *tags-hash* (make-hash-table))
+
+(defun parse-tags (tags-line)
+  "Functions:
+    0. verify if tags-line valid
+    1. seperate with semicolon & coloan & comma
+    2. abandon first element (that is `Tags:')
+    3. capitalize all tags
+    4. remove all spaces before or after tags,
+       substitude all space characters to underline
+   Return: list of tags converted to symbol"
+  (if (null (all-matches "(?i)tag(s?)(?-i):(.*;)+" tags-line))
+      (error "PARSE-TAGS: ERROR: invalid tags-line!"))
+  (let ((tag-lst (cdr (split "(\\s)*(:|;|,)(\\s)*|\\s+$"
+                             tags-line))))
+    (setf tag-lst (mapcar (lambda (x)
+                            (string-upcase
+                             (regex-replace-all "\\s" x "-")))
+                          tag-lst))
+    (mapcar #'intern tag-lst)))
+;; (parse-tags "Tags: hi, 233 haha; sdf ; 哦 ")
+
+(defun extract-tags (file+cldate)
+  "0. abandon waste lines at the head of file
+   1. extract the first line with content
+   2. if not match -> no tags
+      (ignore tags appear at elsewhere."
+  (let ((f (file+cldate-file file+cldate)))
+    (logging #'extract-tags 1 (format nil "parsing tags: ~A" f))
+    (handler-case
+        (with-open-file (in f)
+          (let (tags-line)
+            (do ((line (read-line in nil nil)
+                       (read-line in nil nil)))
+                ((null line))
+              (if (all-matches "^(?i)tag(s?)" line)
+                  (progn (setf tags-line line)
+                         (return)))
+              (if (all-matches "^$" "")
+                  'empty-line
+                  (return)))
+            (if tags-line
+                (let ((tags-lst (parse-tags tags-line)))
+                  (mapcar (lambda (x)
+                            (push file+cldate (gethash x *tags-hash*)))
+                          tags-lst)
+                  tags-lst)
+                nil)))
+      (condition (e) (logging #'extract-title 2 (format nil "ERROR:~S!" e)))
+      )))
+
+(defun output-tags ()
+  (logging #'output-tags 0 "Output tags")
+  (handler-case
+      (progn
+        (setf *tags-hash* (make-hash-table))
+        (mapcar #'extract-tags (list-articles))
+        (logging #'output-tags 1 "writing file")
+        (with-open-file (out #p"./tags.md"
+                             :direction :output
+                             :external-format :utf-8
+                             :if-exists :supersede)
+          (format out "TAGS~%----~%~%")
+          (maphash (lambda (k v)
+                     v
+                     (format out "[[~A]](###~A) " k k))
+                   *tags-hash*)
+          (format out "~%~%")
+          (maphash (lambda (k v)
+                     (format out "###~A~%~%" k)
+                     (dolist (file+cldate v)
+                       (format out "* [~A](~A)~%"
+                               (extract-title file+cldate)
+                               (make-mdlink file+cldate)))
+                     (format out "~%"))
+                   *tags-hash*)))
+    (condition (e)
+      (logging #'output-tags 1 (format nil "ERROR: ~S, Abort!" e)))))
 
 (defun build-link (filepath)
   (concatenate 'string
@@ -307,6 +383,7 @@
 
 (rssgen:build-readme)
 (rssgen:output-rss)
+(rssgen:output-tags)
 (format t "Done")
 
 (if (find-package :swank) ;; check if in dev mode

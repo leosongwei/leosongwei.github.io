@@ -10,6 +10,8 @@
 <a href="https://github.com/leosongwei/blog/raw/master/rss.xml"><img src="./attachment/rss.jpg" alt="[RSS]" width="72"/>**RSS订阅**</a>
 <img src="./attachment/lisplogo_fancy_256.png" alt="(made-with-lisp)" width="72"/>
 
+* [标签云](./tags.md)
+
 ## GnuPG
 我的公钥在这里（最近换了新的）：[./attachment/leo_songwei_201609.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/leo_songwei_201609.asc)
 

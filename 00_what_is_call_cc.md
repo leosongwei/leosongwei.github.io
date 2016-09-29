@@ -1,7 +1,7 @@
 What is CALL/CC?
 ================
 
-TAG: #LISP #Scheme
+TAG: LISP; Scheme;
 
 Scheme把续延当作第一级类型来对待。要理解call/cc如何使用，首先需要理解概念“续延”（Continuation）。任何的计算，都有一个续延，即那个在等待该计算的值的东西。
 

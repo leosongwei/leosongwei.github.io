@@ -1,6 +1,8 @@
 GnuPG
 -----
 
+tags: gpg; encrypt; public key;
+
 我的公钥在这里：`./attachment/leo_songwei_201609.asc`
 
 新密钥的信息：
