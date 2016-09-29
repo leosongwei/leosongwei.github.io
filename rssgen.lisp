@@ -198,8 +198,8 @@
                             (push file+cldate (gethash x *tags-hash*)))
                           tags-lst)
                   tags-lst)
-                nil)))
-      (condition (e) (logging #'extract-title 2 (format nil "ERROR:~S!" e)))
+                (logging #'extract-tags 2 "no tags"))))
+      (condition (e) (logging #'extract-tags 2 (format nil "ERROR:~S!" e)))
       )))
 
 (defun output-tags ()
@@ -216,7 +216,7 @@
           (format out "TAGS~%----~%~%")
           (maphash (lambda (k v)
                      v
-                     (format out "[[~A]](#~A) " k k))
+                     (format out "|[[~A]](#~A)|" k k))
                    *tags-hash*)
           (format out "~%~%")
           (maphash (lambda (k v)
