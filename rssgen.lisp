@@ -130,9 +130,13 @@
                                      :cldate (file-write-date x)))
                                   all-files)))
     (remove-if (lambda (x)
-                 (string-begin-with "README"
-                                    (file-namestring
-                                     (file+cldate-file x))))
+                 (or
+                  (string-begin-with "tags.md"
+                                     (file-namestring
+                                      (file+cldate-file x)))
+                  (string-begin-with "README"
+                                     (file-namestring
+                                      (file+cldate-file x)))))
                (sort file+cldate-lst #'> :key #'file+cldate-cldate))))
 ;;;; (list-articles)
 

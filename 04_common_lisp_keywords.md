@@ -1,6 +1,8 @@
 Common Lisp Keywords
 ====================
 
+tags: common lisp; lisp; keyword;
+
 之前不仔细，现在才发现Common Lisp里面有一种叫做keyword的东西。
 
 keyword就是以冒号开头的符号，它们会直接导入到keyword包中。根据The Hyper Spec里面的描述，创建一个keyword会有以下三个影响：

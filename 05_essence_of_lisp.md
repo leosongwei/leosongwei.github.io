@@ -1,6 +1,8 @@
 Lisp的本质
 ==========
 
+tags: lisp; programming language; cdlug;
+
 今天在CDLUG的活动上做了题为“Lisp与S表达式”的分享。讲了很多内容，讲Lisp可以是很多东西，唯独忘了对Lisp本质的总结：Lisp什么也不是。
 
 bug哥对Lisp的直观认识是对的：没看出Lisp好在哪里。我的中心思想一直是“其它语言能做的Lisp都能做”；我潜意识中一定觉得这句话太low了，但当时我并说不出为什么这句话low，本文可以解释为什么这句话很low。
