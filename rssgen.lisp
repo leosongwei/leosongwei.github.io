@@ -220,7 +220,7 @@
                    *tags-hash*)
           (format out "~%~%")
           (maphash (lambda (k v)
-                     (format out "###~A~%~%" k)
+                     (format out "###~A<a name=\"~A\"/>~%~%" k k)
                      (dolist (file+cldate v)
                        (format out "* [~A](~A)~%"
                                (extract-title file+cldate)
