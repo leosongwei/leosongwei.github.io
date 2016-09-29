@@ -207,30 +207,39 @@
       )))
 
 (defun output-tags ()
-  (logging #'output-tags 0 "Output tags")
+  (logging #'output-tags 0 "output tags")
   (handler-case
-      (progn
-        (setf *tags-hash* (make-hash-table))
+      (let* (tags)
+        ;; extract articles tags to *tags-hash*
         (mapcar #'extract-tags (list-articles))
-        (logging #'output-tags 1 "writing file")
+        (maphash (lambda (k v)
+                   v
+                   (push k tags))
+                 *tags-hash*)
+        (setf tags
+              (sort tags
+                    (lambda (a b)
+                      (string< (symbol-name a)
+                               (symbol-name b)))))
+        (logging #'output-tags 1 "writting file...")
         (with-open-file (out #p"./tags.md"
                              :direction :output
                              :external-format :utf-8
                              :if-exists :supersede)
           (format out "TAGS~%----~%~%")
-          (maphash (lambda (k v)
-                     v
-                     (format out "[[~A](#~A)] " k k))
-                   *tags-hash*)
+          (mapcar (lambda (tag)
+                    (format out "[[~A](#~A)] " tag tag))
+                  tags)
           (format out "~%~%")
-          (maphash (lambda (k v)
-                     (format out "###~A<a name=\"~A\"/>~%~%" k k)
-                     (dolist (file+cldate v)
-                       (format out "* [~A](~A)~%"
-                               (extract-title file+cldate)
-                               (make-mdlink file+cldate)))
-                     (format out "~%"))
-                   *tags-hash*)))
+          (mapcar (lambda (tag)
+                    (format out "###~A<a name=\"~A\"/>~%~%" tag tag)
+                    (let ((v (gethash tag *tags-hash*)))
+                      (dolist (file+cldate v)
+                        (format out "* [~A](~A)~%"
+                                (extract-title file+cldate)
+                                (make-mdlink file+cldate))))
+                    (format out "~%"))
+                  tags)))
     (condition (e)
       (logging #'output-tags 1 (format nil "ERROR: ~S, Abort!" e)))))
 
