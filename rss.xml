@@ -5,9 +5,21 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Thu, 29 Sep 2016 03:12:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Sep 2016 12:59:32 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Systemd&#x5173;&#x673A;&#x8D85;&#x65F6;&#x8BBE;&#x7F6E;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/systemd_timeout.md</link>
+      <description>
+&lt;p&gt;tags: systemd; linux; very slow;&lt;/p&gt;
+&lt;p&gt;Linux&#x7684;USB&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x662F;&#x6709;&#x8BB8;&#x591A;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x62D4;&#x6389;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x3001;U&#x76D8;&#x540E;&#xFF0C;&#x7CFB;&#x7EDF;&#x8FD8;&#x4EE5;&#x4E3A;&#x5B83;&#x4EEC;&#x662F;&#x63D2;&#x7740;&#x7684;&#xFF0C;&#x597D;&#x50CF;&#x5E76;&#x4E0D;&#x4F1A;&#x8D85;&#x65F6;&#xFF0C;&#x603B;&#x4E4B;&#x5C31;&#x662F;&#x6B7B;&#x6389;&#x4E86;&#x3002;&#x7136;&#x800C;Systemd&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x8BBE;&#x5B9A;&#x5F97;&#x7279;&#x522B;&#x957F;&#xFF0C;&#x770B;&#x5230;Linux&#x5173;&#x673A;&#x65F6;systemd&#x4E0D;&#x65AD;&#x63D0;&#x793A;&#x8BF4;&#x8FD8;&#x6709;&#x4EFB;&#x52A1;&#x6CA1;&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x7B49;&#x5F85;90&#x79D2;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x611F;&#x89C9;&#x5C31;&#x50CF;&#x91CD;&#x542F;Windows&#xFF0C;&#x53D1;&#x73B0;&#x8981;&#x66F4;&#x65B0;30&#x5206;&#x949F;&#x4E00;&#x6837;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x6539;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;&lt;code&gt;/etc/systemd/system.conf&lt;/code&gt;&#xFF0C;&#x628A;&#x91CC;&#x9762;&#x7684;&lt;code&gt;DefaultTimeoutStopSec&lt;/code&gt;&#x8BBE;&#x5B9A;&#x6210;15&#x79D2;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x53CD;&#x6B63;&#x7B14;&#x8BB0;&#x672C;&#x4E0A;&#x6CA1;&#x4EC0;&#x4E48;&#x91CD;&#x8981;&#x6570;&#x636E;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x6BCF;&#x6B21;&#x6211;&#x91CD;&#x88C5;&#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x90FD;&#x8981;&#x641C;&#x7D22;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8C37;&#x6B4C;&#x53C8;&#x53CD;&#x5E94;&#x4E0D;&#x8FC7;&#x6765;&#xFF0C;&#x662F;&#x4EE5;&#x5199;&#x4E86;&#x8FD9;&#x4E48;&#x4E00;&#x7BC7;&#x535A;&#x5BA2;&#x6765;&#x8BB0;&#x5F55;&#x3002;&lt;/p&gt;
+</description>
+      <pubDate>Thu, 29 Sep 2016 12:59:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/systemd_timeout.md3684142753</guid>
+    </item>
     <item>
       <title>&#x5199;&#x4E86;&#x4E00;&#x4E2A;rss&#x751F;&#x6210;&#x5668;</title>
       <link>https://github.com/leosongwei/blog/blob/master/08_rss.md</link>

@@ -7,7 +7,7 @@
 
 留言请提ISSUE。
 
-RSS订阅会又“重复”，这是一个特性而非bug。凡是我改动过的文章，都会被RSS阅读器认为是新的，所以会再出现一遍。
+RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改动过的文章，都会被RSS阅读器认为是新的，所以会再出现一遍。
 
 <a href="https://github.com/leosongwei/blog/raw/master/rss.xml"><img src="./attachment/rss.jpg" alt="[RSS]" width="72"/>**RSS订阅**</a>
 <img src="./attachment/lisplogo_fancy_256.png" alt="(made-with-lisp)" width="72"/>
@@ -25,6 +25,12 @@ RSS订阅会又“重复”，这是一个特性而非bug。凡是我改动过�
 
 <table><tbody>
 <tr><td>文章</td><td>更新日期</td></tr>
+<tr><td>
+<a href="./systemd_timeout.md">
+<b>Systemd关机超时设置</b>
+</a></td>
+<td><code>2016年09月29日 22:59</code></td>
+</tr>
 <tr><td>
 <a href="./08_rss.md">
 <b>写了一个rss生成器</b>
