@@ -5,9 +5,21 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 08 Oct 2016 06:07:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Oct 2016 06:40:56 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x590F;&#x4EE4;&#x65F6;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/&#x590F;&#x4EE4;&#x65F6;.md</link>
+      <description>
+&lt;p&gt;&#x56E0;&#x4E3A;&#x60F3;&#x5230;&#x8981;&#x6765;&#x6089;&#x5C3C;&#xFF0C;&#x6691;&#x5047;&#x91CC;&#x9762;&#x5199;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7A0B;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD8;&#x7279;&#x5730;&#x52A0;&#x4E0A;&#x4E86;&#x4E00;&#x4E2A;&#x65F6;&#x533A;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6709;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x6765;&#x8BBE;&#x5B9A;&#x73B0;&#x5728;&#x6240;&#x5728;&#x7684;&#x65F6;&#x533A;&#xFF0C;&#x4EE4;&#x6211;&#x4EAB;&#x53D7;&#x5230;&#x4E86;&#x9020;&#x8F6E;&#x5B50;&#x7684;&#x4E50;&#x8DA3;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x5728;&#x98DE;&#x673A;&#x4E0A;&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x529F;&#x80FD;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x53D1;&#x73B0;&#x65F6;&#x95F4;&#x5BF9;&#x4E0D;&#x4E0A;&#xFF0C;&#x67E5;&#x6765;&#x67E5;&#x53BB;&#xFF0C;&#x53D1;&#x73B0;&#x603B;&#x662F;&#x591A;&#x4E86;1&#x5C0F;&#x65F6;&#xFF0C;&#x67E5;&#x4E0D;&#x51FA;&#x6765;&#x4E3A;&#x5565;&#xFF0C;&#x4EE5;&#x4E3A;&#x662F;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6765;&#x4E86;&#x8FC7;&#x540E;&#xFF0C;&#x4E5F;&#x5F00;&#x4E86;NTP&#xFF0C;&#x8FD8;&#x662F;&#x5728;&#x5176;&#x4ED6;&#x573A;&#x5408;&#x591A;&#x6B21;&#x9047;&#x5230;&#x5404;&#x79CD;&#x548C;&#x6211;&#x60F3;&#x8C61;&#x4E2D;&#x7684;&#x201C;&#x5317;&#x4EAC;&#x65F6;&#x95F4;&#x201D;&#x5BF9;&#x4E0D;&#x4E0A;&#x53F7;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x7F51;&#x4E0A;&#x7684;&#x6D3B;&#x52A8;&#x65F6;&#x95F4;&#x4E0D;&#x5BF9;&#x554A;&#xFF0C;&#x7ED9;&#x4EBA;&#x53D1;&#x5FAE;&#x4FE1;&#x4E0D;&#x56DE;&#x554A;&#xFF0C;&#x7B49;&#x7B49;&#x7B49;&#x7B49;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x4ECA;&#x5929;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;bug&#x8FD8;&#x5728;&#xFF0C;&#x731B;&#x7136;&#x60F3;&#x8D77;&#x6628;&#x5929;&#x5BA4;&#x53CB;&#x5728;&#x611F;&#x53F9;&#x8BF4;&#x6211;&#x521A;&#x6765;&#x5C31;&#x590F;&#x4EE4;&#x65F6;&#x4E86;&#x3002;&#x5343;&#x7B97;&#x4E07;&#x7B97;&#x6CA1;&#x7B97;&#x5230;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x590F;&#x4EE4;&#x65F6;&#xFF01;&lt;/p&gt;
+&lt;p&gt;&#x8FD9;&#x7BC7;&#x535A;&#x5BA2;&#x5199;&#x5B8C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&lt;code&gt;rssgen.lisp&lt;/code&gt;&#x4ECD;&#x7136;&#x53D7;&#x5230;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;bug&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x597D;&#x5728;RSS&#x7684;guid&#x91CC;&#x9762;&#x662F;&#x6309;&#x7167;timestamp&#x6765;&#x7684;&#xFF0C;&#x8DDF;&#x65F6;&#x533A;&#x65E0;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4FEE;&#x590D;&#x8FD9;&#x4E2A;bug&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670B;&#x53CB;&#x4EEC;&#x5E94;&#x8BE5;&#x4E0D;&#x4F1A;&#x6536;&#x5230;&#x5927;&#x91CF;&#x7684;spam&#x3002;&lt;/p&gt;
+</description>
+      <pubDate>Sat, 08 Oct 2016 06:40:45 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/&#x590F;&#x4EE4;&#x65F6;.md3684894045</guid>
+    </item>
     <item>
       <title>&#x535A;&#x5BA2;&#x7684;&#x8BB8;&#x53EF;&#x8BC1;</title>
       <link>https://github.com/leosongwei/blog/blob/master/LICENSE.md</link>
