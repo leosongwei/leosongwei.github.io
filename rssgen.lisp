@@ -389,7 +389,7 @@
               (format out "~A~%" line))
             (let ((articles (list-articles)))
               (format out "<table><tbody>~%")
-              (format out "<tr><td>文章</td><td>更新日期(TZ:~A)</td></tr>~%"
+              (format out "<tr><td>文章</td><td>更新日期<sup>TZ:~A</sup></td></tr>~%"
                       (string-timezone))
               (mapcar
                (lambda (a)
