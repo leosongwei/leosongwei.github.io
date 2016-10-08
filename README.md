@@ -26,16 +26,16 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期</td></tr>
 <tr><td>
+<a href="./08_rss.md">
+<b>写了一个rss生成器</b>
+</a></td>
+<td><code>2016年10月08日 15:26</code></td>
+</tr>
+<tr><td>
 <a href="./systemd_timeout.md">
 <b>Systemd关机超时设置</b>
 </a></td>
 <td><code>2016年09月29日 22:59</code></td>
-</tr>
-<tr><td>
-<a href="./08_rss.md">
-<b>写了一个rss生成器</b>
-</a></td>
-<td><code>2016年09月29日 12:12</code></td>
 </tr>
 <tr><td>
 <a href="./02_favorite_software.md">
