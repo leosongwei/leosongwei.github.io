@@ -30,7 +30,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="./rssgen.lisp.md">
 <b>rssgen.lisp</b>
 </a></td>
-<td><code>2016年10月08日 17:00</code></td>
+<td><code>2016年10月08日 17:03</code></td>
 </tr>
 <tr><td>
 <a href="./LICENSE.md">

@@ -1,7 +1,7 @@
 rssgen.lisp
 -----------
 
-把`rssgen.lisp`移到了一个单独的repo里面。现在它已经不仅仅是一个生成rss xml的东西了，变得有点像JekyII那样的博客生成器，可以生成首页、标签云等东西。
+把`rssgen.lisp`移到了一个单独的[repo](https://github.com/leosongwei/rssgen.lisp)里面。现在它已经不仅仅是一个生成rss xml的东西了，变得有点像JekyII那样的博客生成器，可以生成首页、标签云等东西。
 
 写`rssgen.lisp`的主要原因就是因为JekyII那样的东西看起来太麻烦了，所以并不想安装它们。而且，Github的markdown支持显得相当不错，就让我有了直接用Github来做博客的想法。
 
