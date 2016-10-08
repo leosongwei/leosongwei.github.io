@@ -24,7 +24,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 --------
 
 <table><tbody>
-<tr><td>文章</td><td>更新日期</td></tr>
+<tr><td>文章</td><td>更新日期(TZ:+10)</td></tr>
 <tr><td>
 <a href="./08_rss.md">
 <b>写了一个rss生成器</b>

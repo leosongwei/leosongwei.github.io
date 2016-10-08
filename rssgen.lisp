@@ -26,6 +26,11 @@
 
 (defparameter *timezone* +10)
 
+(defun string-timezone ()
+  (format nil (if (> *timezone* 0)
+                  "+~A" "~A")
+          *timezone*))
+
 (defmacro concstr (&rest strings)
   `(concatenate 'string ,@strings))
 
@@ -384,7 +389,8 @@
               (format out "~A~%" line))
             (let ((articles (list-articles)))
               (format out "<table><tbody>~%")
-              (format out "<tr><td>文章</td><td>更新日期</td></tr>~%")
+              (format out "<tr><td>文章</td><td>更新日期(TZ:~A)</td></tr>~%"
+                      (string-timezone))
               (mapcar
                (lambda (a)
                  (build-readme-line a out))
