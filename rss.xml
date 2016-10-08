@@ -5,9 +5,25 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 08 Oct 2016 06:03:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Oct 2016 06:07:52 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x535A;&#x5BA2;&#x7684;&#x8BB8;&#x53EF;&#x8BC1;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/LICENSE.md</link>
+      <description>
+&lt;p&gt;&#x535A;&#x5BA2;&#x7684;&#x6587;&#x5B57;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x8BB8;&#x53EF;&#x8BC1;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;&lt;img alt=&quot;&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nd/4.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&#x672C;&#x4F5C;&#x54C1;&#x91C7;&#x7528;&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x7981;&#x6B62;&#x6F14;&#x7ECE; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&lt;/a&gt;&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x3002;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x8BB8;&#x53EF;&#x8BC1;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2016 SongWei&lt;/p&gt;
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
+&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 08 Oct 2016 06:07:44 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/LICENSE.md3684892064</guid>
+    </item>
     <item>
       <title>rssgen.lisp</title>
       <link>https://github.com/leosongwei/blog/blob/master/rssgen.lisp.md</link>
@@ -18,21 +34,6 @@
 </description>
       <pubDate>Sat, 08 Oct 2016 06:03:28 +0000</pubDate>
       <guid>https://github.com/leosongwei/blog/blob/master/rssgen.lisp.md3684891808</guid>
-    </item>
-    <item>
-      <title>&#x535A;&#x5BA2;&#x7684;&#x6587;&#x5B57;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x8BB8;&#x53EF;&#x8BC1;&#xFF1A;</title>
-      <link>https://github.com/leosongwei/blog/blob/master/LICENSE.md</link>
-      <description>
-&lt;p&gt;&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;&lt;img alt=&quot;&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nd/4.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&#x672C;&#x4F5C;&#x54C1;&#x91C7;&#x7528;&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nd/4.0/&quot;&gt;&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x7981;&#x6B62;&#x6F14;&#x7ECE; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&lt;/a&gt;&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x3002;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x8BB8;&#x53EF;&#x8BC1;&#xFF1A;&lt;/p&gt;
-&lt;p&gt;Copyright (c) 2016 SongWei&lt;/p&gt;
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
-&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p&gt;
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
-</description>
-      <pubDate>Sat, 08 Oct 2016 05:53:54 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/LICENSE.md3684891234</guid>
     </item>
     <item>
       <title>&#x5199;&#x4E86;&#x4E00;&#x4E2A;rss&#x751F;&#x6210;&#x5668;</title>
