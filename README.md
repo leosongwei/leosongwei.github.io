@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./02_favorite_software.md">
+<b>喜欢的软件</b>
+</a></td>
+<td><code>2016年10月15日 21:06</code></td>
+</tr>
+<tr><td>
 <a href="./夏令时.md">
 <b>夏令时</b>
 </a></td>
@@ -55,12 +61,6 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <b>Systemd关机超时设置</b>
 </a></td>
 <td><code>2016年09月29日 22:59</code></td>
-</tr>
-<tr><td>
-<a href="./02_favorite_software.md">
-<b>喜欢的软件</b>
-</a></td>
-<td><code>2016年09月29日 12:09</code></td>
 </tr>
 <tr><td>
 <a href="./05_essence_of_lisp.md">

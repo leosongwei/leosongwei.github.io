@@ -3,6 +3,8 @@
 
 tags: linux; application; software;
 
+latest update: graphviz
+
 最后编辑于2016年9月。
 
 网络
@@ -43,6 +45,9 @@ tags: linux; application; software;
 * Krita
 	- 专门用来画画的，看起来**很高级**
 	- 我这种手残绘画技能太低，用不了
+* graphviz
+	- 有自己的DSL，把你的输出编译成它的DSL，就能出图
+	- 很适合用来调试有图数据结构的程序
 
 ###其他
 * Audacity
