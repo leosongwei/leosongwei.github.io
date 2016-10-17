@@ -5,9 +5,23 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 15 Oct 2016 10:06:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Oct 2016 15:58:56 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Xephyr</title>
+      <link>https://github.com/leosongwei/blog/blob/master/Xephyr.md</link>
+      <description>
+&lt;p&gt;tags: Linux; virtual screen; display;&lt;/p&gt;
+&lt;p&gt;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x663E;&#x793A;&#x5668;&#xFF08;&#x8F6F;&#x4EF6;&#x6E32;&#x67D3;&#xFF09;&#x3002;&#x51C6;&#x786E;&#x5730;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;nested X server&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x88C5;&#xFF1A;&lt;code&gt;xorg-server-xephyr&lt;/code&gt;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x4E86;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Xephyr -br -ac -noreset -screen 800x600 :1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x628A;DISPLAY&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8C03;&#x597D;&#xFF0C;&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x5373;&#x53EF;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8BE6;&#x89C1;&#xFF1A;https://wiki.archlinux.org/index.php/Xephyr&lt;/p&gt;
+</description>
+      <pubDate>Mon, 17 Oct 2016 15:56:03 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Xephyr.md3685704963</guid>
+    </item>
     <item>
       <title>&#x559C;&#x6B22;&#x7684;&#x8F6F;&#x4EF6;</title>
       <link>https://github.com/leosongwei/blog/blob/master/02_favorite_software.md</link>
