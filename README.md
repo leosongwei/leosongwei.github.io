@@ -30,7 +30,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="./07_gpg.md">
 <b>GnuPG</b>
 </a></td>
-<td><code>2016年10月23日 21:29</code></td>
+<td><code>2016年10月23日 21:43</code></td>
 </tr>
 <tr><td>
 <a href="./Xephyr.md">
