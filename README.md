@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./07_gpg.md">
+<b>GnuPG</b>
+</a></td>
+<td><code>2016年10月23日 21:29</code></td>
+</tr>
+<tr><td>
 <a href="./Xephyr.md">
 <b>Xephyr</b>
 </a></td>
@@ -85,12 +91,6 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <b>What is CALL/CC?</b>
 </a></td>
 <td><code>2016年09月29日 11:41</code></td>
-</tr>
-<tr><td>
-<a href="./07_gpg.md">
-<b>GnuPG</b>
-</a></td>
-<td><code>2016年09月29日 11:02</code></td>
 </tr>
 <tr><td>
 <a href="./图片测试.md">

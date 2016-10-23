@@ -5,9 +5,36 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Mon, 17 Oct 2016 15:58:56 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2016 10:29:46 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>GnuPG</title>
+      <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
+      <description>
+&lt;p&gt;tags: gpg; encrypt; public key;&lt;/p&gt;
+&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_201609.asc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x65B0;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pub   4096R/C583B54E 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]
+&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
+uid                  Song Wei (Leo, &#x51C9;&#x62CC;&#x8336;&#x53F6;, 2016.09) &amp;lt;leo_songwei@outlook.com&amp;gt;
+uid                  Leo Song (126&#x90AE;&#x7BB1;) &amp;lt;leo_songwei@126.com&amp;gt;
+sub   4096R/771ED4FB 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&lt;strong&gt;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&lt;/strong&gt;&#x3002;TonyChyi&#x8BC4;&#x8BBA;&#x8BF4;&#x8FD9;&#x4E2A;&#x7406;&#x8BBA;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x201C;&lt;em&gt;&#x67D0;&#x4E2A;&#x4EBA;&#x89C1;&#x7684;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x4E86;&#x89E3;&#x8FD9;&#x4E2A;&#x4EBA;&lt;/em&gt;&#x201D;&#x8FD9;&#x53E5;&#x8BDD;&#x7684;&#x7FFB;&#x7248;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x914D;&#x7F6E;Git&#x7B7E;&#x540D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201C;secret key not available&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
+&lt;h2 id=&quot;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&quot;&gt;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&lt;/h2&gt;
+&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoked.asc&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;gpg&quot;&gt;&lt;code&gt;pub   4096R/16614B93 2015-01-29 [&#x5DF2;&#x540A;&#x9500;&#xFF1A;2016-09-26]
+&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 36D0 8649 4FF1 653D 8137  BE94 C293 0408 1661 4B93
+uid                  Song Wei (&#x5B8B;&#x4E3A;) &amp;lt;leo_songwei@outlook.com&amp;gt;
+uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x540A;&#x9500;&#x8BC1;&#x4E66;&#x89C1;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoke.asc&lt;/code&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sun, 23 Oct 2016 10:29:39 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3686203779</guid>
+    </item>
     <item>
       <title>Xephyr</title>
       <link>https://github.com/leosongwei/blog/blob/master/Xephyr.md</link>
@@ -433,33 +460,6 @@ CL-USER&amp;gt; &lt;/code&gt;&lt;/pre&gt;
 </description>
       <pubDate>Thu, 29 Sep 2016 01:41:28 +0000</pubDate>
       <guid>https://github.com/leosongwei/blog/blob/master/00_what_is_call_cc.md3684102088</guid>
-    </item>
-    <item>
-      <title>GnuPG</title>
-      <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
-      <description>
-&lt;p&gt;tags: gpg; encrypt; public key;&lt;/p&gt;
-&lt;p&gt;&#x6211;&#x7684;&#x516C;&#x94A5;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_201609.asc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&#x65B0;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pub   4096R/C583B54E 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]
-&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
-uid                  Song Wei (Leo, &#x51C9;&#x62CC;&#x8336;&#x53F6;, 2016.09) &amp;lt;leo_songwei@outlook.com&amp;gt;
-uid                  Leo Song (126&#x90AE;&#x7BB1;) &amp;lt;leo_songwei@126.com&amp;gt;
-sub   4096R/771ED4FB 2016-09-26 [&#x6709;&#x6548;&#x81F3;&#xFF1A;2017-09-26]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x5BF9;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;commit&#x5F00;&#x542F;&#x4E86;&#x7B7E;&#x540D;&#xFF0C;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#xFF1A;&#x5BF9;&#x4E8E;&#x672A;&#x66FE;&#x8C0B;&#x9762;&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;/&#x5979;&#x7528;&#x4E00;&#x4E2A;&#x94A5;&#x5319;&#x7B7E;&#x540D;&#x7684;&#x53D1;&#x8A00;&#x6B21;&#x6570;&#x8D8A;&#x591A;&#xFF0C;&#x8D8A;&#x80FD;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x516C;&#x94A5;&#x662F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x4EBA;&#x7684;&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x914D;&#x7F6E;Git&#x7B7E;&#x540D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201C;secret key not available&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;git config --global user.signingkey 16614B93&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&#xFF08;&#x628A;&#x91CC;&#x9762;&#x7684;&#x77ED;ID&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#xFF09;&lt;/p&gt;
-&lt;h2 id=&quot;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&quot;&gt;&#x540A;&#x9500;&#x4E86;&#x65E7;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&lt;/h2&gt;
-&lt;p&gt;&#x88AB;&#x540A;&#x9500;&#x7684;&#x5BC6;&#x94A5;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoked.asc&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;gpg&quot;&gt;&lt;code&gt;pub   4096R/16614B93 2015-01-29 [&#x5DF2;&#x540A;&#x9500;&#xFF1A;2016-09-26]
-&#x5BC6;&#x94A5;&#x6307;&#x7EB9; = 36D0 8649 4FF1 653D 8137  BE94 C293 0408 1661 4B93
-uid                  Song Wei (&#x5B8B;&#x4E3A;) &amp;lt;leo_songwei@outlook.com&amp;gt;
-uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x540A;&#x9500;&#x8BC1;&#x4E66;&#x89C1;&#xFF1A;&lt;code&gt;./attachment/leo_songwei_revoke.asc&lt;/code&gt;&lt;/p&gt;
-</description>
-      <pubDate>Thu, 29 Sep 2016 01:02:30 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/07_gpg.md3684099750</guid>
     </item>
     <item>
       <title>&#x56FE;&#x7247;&#x6D4B;&#x8BD5;</title>
