@@ -27,6 +27,10 @@ latest update: graphviz
 * slurm, iftop, iptraf
 	- 终端里面显示网络流量
 	- 第一个不用root，后两个要root
+* redsocks
+	- redirect any TCP connection to a SOCKS or HTTP proxy
+* tsocks
+	- a wrapper uses LD_PRELOAD to make any program use SOCKS proxy transparently
 
 多媒体
 ------

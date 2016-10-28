@@ -27,6 +27,18 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./poweroff_disk.md">
+<b>关闭磁盘设备</b>
+</a></td>
+<td><code>2016年10月29日 01:49</code></td>
+</tr>
+<tr><td>
+<a href="./02_favorite_software.md">
+<b>喜欢的软件</b>
+</a></td>
+<td><code>2016年10月24日 23:56</code></td>
+</tr>
+<tr><td>
 <a href="./07_gpg.md">
 <b>GnuPG</b>
 </a></td>
@@ -37,12 +49,6 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <b>Xephyr</b>
 </a></td>
 <td><code>2016年10月18日 02:56</code></td>
-</tr>
-<tr><td>
-<a href="./02_favorite_software.md">
-<b>喜欢的软件</b>
-</a></td>
-<td><code>2016年10月15日 21:06</code></td>
 </tr>
 <tr><td>
 <a href="./夏令时.md">
