@@ -5,9 +5,24 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Fri, 28 Oct 2016 15:40:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Oct 2016 23:54:39 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x5207;&#x6362;&#x9ED8;&#x8BA4;&#x7A0B;&#x5E8F;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/&#x5207;&#x6362;&#x9ED8;&#x8BA4;&#x7A0B;&#x5E8F;.md</link>
+      <description>
+&lt;p&gt;&#x4EE5;&#x66F4;&#x6362;&#x7EC8;&#x7AEF;&#x4E3A;&#x4F8B;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo update-alternatives --config x-terminal-emulator&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;` &#x6709; 3 &#x4E2A;&#x5019;&#x9009;&#x9879;&#x53EF;&#x7528;&#x4E8E;&#x66FF;&#x6362; x-terminal-emulator (&#x63D0;&#x4F9B; /usr/bin/x-terminal-emulator)&#x3002;&lt;/p&gt;
+&lt;h2 id=&quot;&#x9009;&#x62E9;-&#x8DEF;&#x5F84;-&#x4F18;&#x5148;&#x7EA7;-&#x72B6;&#x6001;&quot;&gt;&#x9009;&#x62E9; &#x8DEF;&#x5F84; &#x4F18;&#x5148;&#x7EA7; &#x72B6;&#x6001;&lt;/h2&gt;
+&lt;p&gt;0 /usr/bin/gnome-terminal.wrapper 40 &#x81EA;&#x52A8;&#x6A21;&#x5F0F; 1 /usr/bin/gnome-terminal.wrapper 40 &#x624B;&#x52A8;&#x6A21;&#x5F0F; 2 /usr/bin/lxterminal 40 &#x624B;&#x52A8;&#x6A21;&#x5F0F; * 3 /usr/bin/mate-terminal.wrapper 30 &#x624B;&#x52A8;&#x6A21;&#x5F0F;&lt;/p&gt;
+&lt;p&gt;&#x8981;&#x7EF4;&#x6301;&#x5F53;&#x524D;&#x503C;[*]&#x8BF7;&#x6309;&#x56DE;&#x8F66;&#x952E;&#xFF0C;&#x6216;&#x8005;&#x952E;&#x5165;&#x9009;&#x62E9;&#x7684;&#x7F16;&#x53F7;&#xFF1A; `&lt;/p&gt;
+</description>
+      <pubDate>Sun, 30 Oct 2016 23:54:20 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/&#x5207;&#x6362;&#x9ED8;&#x8BA4;&#x7A0B;&#x5E8F;.md3686856860</guid>
+    </item>
     <item>
       <title>&#x5173;&#x95ED;&#x78C1;&#x76D8;&#x8BBE;&#x5907;</title>
       <link>https://github.com/leosongwei/blog/blob/master/poweroff_disk.md</link>

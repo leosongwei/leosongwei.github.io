@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./切换默认程序.md">
+<b>切换默认程序</b>
+</a></td>
+<td><code>2016年10月31日 10:54</code></td>
+</tr>
+<tr><td>
 <a href="./poweroff_disk.md">
 <b>关闭磁盘设备</b>
 </a></td>
