@@ -5,9 +5,25 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 12 Nov 2016 03:45:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Nov 2016 00:36:26 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>PulseAudio&#x5173;&#x95ED;flat-volumes</title>
+      <link>https://github.com/leosongwei/blog/blob/master/PulseAudio&#x5173;&#x95ED;flat-volumes.md</link>
+      <description>
+&lt;p&gt;tags: Linux; Debian; openSUSE; &#x97F3;&#x91CF;; Volume; PulseAudio;&lt;/p&gt;
+&lt;p&gt;&#x5E72;&#x8D27;&#x4E3A;&#x8F85;&#xFF0C;&#x5410;&#x69FD;&#x4E3A;&#x4E3B;&#x3002;&lt;/p&gt;
+&lt;p&gt;2014&#x5E74;&#x7684;&#x65F6;&#x5019;&#x7528;openSUSE&#x9047;&#x5230;&#x8FC7;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x97F3;&#x91CF;&#x96BE;&#x4EE5;&#x63A7;&#x5236;&#xFF0C;&#x5728;&#x64AD;&#x653E;&#x5668;&#x4E2D;&#x8C03;&#x9AD8;&#x97F3;&#x91CF;&#x4F1A;&#x5F71;&#x54CD;&#x5168;&#x5C40;&#x97F3;&#x91CF;&#x3002;&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x662F;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x63D0;&#x793A;&#x97F3;&#x59CB;&#x7EC8;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x97F3;&#x91CF;&#x662F;100%&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x7CFB;&#x7EDF;&#x63D0;&#x793A;&#x97F3;&#xFF0C;&#x5168;&#x5C40;&#x97F3;&#x91CF;&#x5C06;&#x4F1A;&#x77AC;&#x5347;&#x81F3;100%&#xFF0C;&#x7ED9;&#x4F60;&#x9707;&#x8033;&#x6B32;&#x804B;&#x7684;&#x4F53;&#x9A8C;&#x3002;&#x7136;&#x800C;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x684C;&#x9762;&#x73AF;&#x5883;&#x90FD;&#x4E0D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x5F53;&#x65F6;&#x53BB;openSUSE&#x7684;&#x8BBA;&#x575B;&#x95EE;&#x4E86;&#xFF0C;&#x4ED6;&#x4EEC;&#x8BA4;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;[1] &#x8FD9;&#x4E2A;&#x96BE;&#x4EE5;&#x5FCD;&#x53D7;&#x7684;&#x97F3;&#x91CF;&#x95EE;&#x9898;&#x548C;openSUSE&#x7CDF;&#x7CD5;&#x7684;&#x5185;&#x6838;&#x7F16;&#x8BD1;&#xFF08;&#x65E0;&#x8BBA;&#x4ED6;&#x4EEC;&#x5BF9;&#x81EA;&#x5DF1;&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x7684;&#x6280;&#x672F;&#x7684;&#x8FF7;&#x4E4B;&#x81EA;&#x4FE1;&#x5230;&#x8FBE;&#x4E86;&#x600E;&#x6837;&#x7684;&#x7A0B;&#x5EA6;&#xFF0C;openSUSE&#x7684;&#x5185;&#x6838;&#x5728;&#x6211;&#x673A;&#x5668;&#x4E0A;&#x59CB;&#x7EC8;&#x6709;&#x5947;&#x602A;&#x7684;kworker&#x8FDB;&#x7A0B;&#xFF0C;&#x5403;&#x6389;100%~200%&#x7684;CPU&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;openSUSE&#x5728;&#x6CD5;&#x5F8B;&#x4E0A;&#x7684;&#x61E6;&#x5F31;&#xFF08;&#x4E0D;&#x6562;&#x6253;&#x5305;&#xFF09;&#xFF0C;&#x662F;&#x6211;&#x540E;&#x6765;&#x8F6C;&#x6295;Debian&#x7684;&#x76F4;&#x63A5;&#x539F;&#x56E0;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x540E;&#x6765;&#xFF0C;&#x5230;&#x4E86;2016&#x5E74;&#xFF0C;&#x6211;&#x5ACC;Debian 8&#x7684;&#x5305;&#x592A;&#x8001;&#x4E86;&#xFF0C;&#x5B89;&#x88C5;&#x4E86;Debian Testing&#xFF0C;&#x4E00;&#x5F00;&#x59CB;&#x4E5F;&#x5C1D;&#x8BD5;&#x4E86;KDE&#xFF0C;&#x53C8;&#x51FA;&#x73B0;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x6211;&#x4FBF;&#x56DB;&#x5904;&#x67E5;&#x8BE2;&#xFF0C;&#x5728;KDE&#x7684;&#x8BBA;&#x575B;&#x67E5;&#x5230;&#x4E86;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;[2]&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x9505;&#x7529;&#x7ED9;PulseAudio&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&#x5728;&#x6587;&#x4EF6;&lt;code&gt;/etc/pulse/daemon.conf&lt;/code&gt;&#x4E2D;&#xFF0C;&#x8BBE;&#x7F6E;&lt;code&gt;flat-volumes = no&lt;/code&gt;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x540E;&#x6765;&#xFF0C;Debian Testing&#x88AB;GTK3&#x6240;&#x5751;&#xFF0C;&#x5BFC;&#x81F4;&#x6211;&#x7684;MATE&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#xFF08;&#x4F9D;&#x8D56;GTK3&#xFF09;&#xFF0C;&#x5F88;&#x5FEB;&#xFF0C;&#x6211;&#x770B;&#x5FAE;&#x535A;&#x65F6;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x65B0;&#x7248;Gnome&#x548C;GTK&#x5305;&#x542B;&#x4E86;&#x8C37;&#x6B4C;&#x7F16;&#x7A0B;&#x4E4B;&#x590F;&#x5E26;&#x6765;&#x7684;&#x65E0;&#x6570;&#x201C;&#x6539;&#x8FDB;&#x201D;&#xFF0C;&#x53C8;&#x542C;&#x8BF4;Gnome&#x7684;&#x5F00;&#x53D1;&#x8005;&#x4EEC;&#x53C8;&#x8DD1;&#x4E86;&#x3002;&#x6211;&#x5C31;&#x653E;&#x5F03;&#x5E0C;&#x671B;&#xFF0C;&#x6EDA;&#x56DE;&#x4E86;Debian 8&#x3002;&#x7136;&#x540E;&#x53D1;&#x73B0;Cinamon&#x4F3C;&#x4E4E;&#x4E5F;&#x6709;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x4E25;&#x91CD;&#xFF08;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x53EF;&#x6015;&#x7684;&#x7CFB;&#x7EDF;&#x63D0;&#x793A;&#x97F3;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x65B9;&#x4FBF;&#xFF0C;&#x4ECA;&#x5929;&#x5FC3;&#x8840;&#x6765;&#x6F6E;&#x628A;&#x914D;&#x7F6E;&#x6539;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x53D1;&#x73B0;&#x6709;&#x7528;&#x3002;&lt;/p&gt;
+&lt;p&gt;[1] https://forum.suse.org.cn/viewtopic.php?f=7&amp;amp;t=2475 [2] https://forum.kde.org/viewtopic.php?f=289&amp;amp;t=131535&lt;/p&gt;
+</description>
+      <pubDate>Sun, 13 Nov 2016 00:36:11 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/PulseAudio&#x5173;&#x95ED;flat-volumes.md3687982571</guid>
+    </item>
     <item>
       <title>Common Lisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;</title>
       <link>https://github.com/leosongwei/blog/blob/master/CommonLisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;.md</link>

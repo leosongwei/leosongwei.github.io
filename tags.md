@@ -1,7 +1,7 @@
 TAGS
 ----
 
-[[APPLICATION](#APPLICATION)] [[BLOG](#BLOG)] [[BUG](#BUG)] [[CDLUG](#CDLUG)] [[CL-JSON](#CL-JSON)] [[COMMON-LISP](#COMMON-LISP)] [[CURSOR](#CURSOR)] [[DECORATOR](#DECORATOR)] [[DISPLAY](#DISPLAY)] [[DYNAMIC-SCOPE](#DYNAMIC-SCOPE)] [[EMACS](#EMACS)] [[ENCRYPT](#ENCRYPT)] [[FILE](#FILE)] [[GNOME-SHELL](#GNOME-SHELL)] [[GNOME3](#GNOME3)] [[GPG](#GPG)] [[IO](#IO)] [[JSON](#JSON)] [[KEYWORD](#KEYWORD)] [[LINUX](#LINUX)] [[LISP](#LISP)] [[MAXIMIZE-WINDOW](#MAXIMIZE-WINDOW)] [[MAXIMUS](#MAXIMUS)] [[PARENTHESES-MATCHING](#PARENTHESES-MATCHING)] [[PROGRAMMING-LANGUAGE](#PROGRAMMING-LANGUAGE)] [[PUBLIC-KEY](#PUBLIC-KEY)] [[RSS](#RSS)] [[SBCL](#SBCL)] [[SCHEME](#SCHEME)] [[SCOPE](#SCOPE)] [[SOFTWARE](#SOFTWARE)] [[STREAM](#STREAM)] [[SURROGATE-PAIRS](#SURROGATE-PAIRS)] [[SYSTEMD](#SYSTEMD)] [[TITLE-BAR](#TITLE-BAR)] [[TYPE](#TYPE)] [[UNICODE](#UNICODE)] [[VERY-SLOW](#VERY-SLOW)] [[VIRTUAL-SCREEN](#VIRTUAL-SCREEN)] [[WINDOW-MANAGER](#WINDOW-MANAGER)] [[最大化](#最大化)] [[标题栏](#标题栏)] 
+[[APPLICATION](#APPLICATION)] [[BLOG](#BLOG)] [[BUG](#BUG)] [[CDLUG](#CDLUG)] [[CL-JSON](#CL-JSON)] [[COMMON-LISP](#COMMON-LISP)] [[CURSOR](#CURSOR)] [[DEBIAN](#DEBIAN)] [[DECORATOR](#DECORATOR)] [[DISPLAY](#DISPLAY)] [[DYNAMIC-SCOPE](#DYNAMIC-SCOPE)] [[EMACS](#EMACS)] [[ENCRYPT](#ENCRYPT)] [[FILE](#FILE)] [[GNOME-SHELL](#GNOME-SHELL)] [[GNOME3](#GNOME3)] [[GPG](#GPG)] [[IO](#IO)] [[JSON](#JSON)] [[KEYWORD](#KEYWORD)] [[LINUX](#LINUX)] [[LISP](#LISP)] [[MAXIMIZE-WINDOW](#MAXIMIZE-WINDOW)] [[MAXIMUS](#MAXIMUS)] [[OPENSUSE](#OPENSUSE)] [[PARENTHESES-MATCHING](#PARENTHESES-MATCHING)] [[PROGRAMMING-LANGUAGE](#PROGRAMMING-LANGUAGE)] [[PUBLIC-KEY](#PUBLIC-KEY)] [[PULSEAUDIO](#PULSEAUDIO)] [[RSS](#RSS)] [[SBCL](#SBCL)] [[SCHEME](#SCHEME)] [[SCOPE](#SCOPE)] [[SOFTWARE](#SOFTWARE)] [[STREAM](#STREAM)] [[SURROGATE-PAIRS](#SURROGATE-PAIRS)] [[SYSTEMD](#SYSTEMD)] [[TITLE-BAR](#TITLE-BAR)] [[TYPE](#TYPE)] [[UNICODE](#UNICODE)] [[VERY-SLOW](#VERY-SLOW)] [[VIRTUAL-SCREEN](#VIRTUAL-SCREEN)] [[VOLUME](#VOLUME)] [[WINDOW-MANAGER](#WINDOW-MANAGER)] [[最大化](#最大化)] [[标题栏](#标题栏)] [[音量](#音量)] 
 
 ###APPLICATION<a name="APPLICATION"/>
 
@@ -32,6 +32,10 @@ TAGS
 ###CURSOR<a name="CURSOR"/>
 
 * [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
+
+###DEBIAN<a name="DEBIAN"/>
+
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
 
 ###DECORATOR<a name="DECORATOR"/>
 
@@ -86,6 +90,7 @@ TAGS
 * [Systemd关机超时设置](./systemd_timeout.md)
 * [Xephyr](./Xephyr.md)
 * [喜欢的软件](./02_favorite_software.md)
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
 
 ###LISP<a name="LISP"/>
 
@@ -103,6 +108,10 @@ TAGS
 
 * [Maximus](./01_maximus.md)
 
+###OPENSUSE<a name="OPENSUSE"/>
+
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
+
 ###PARENTHESES-MATCHING<a name="PARENTHESES-MATCHING"/>
 
 * [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
@@ -114,6 +123,10 @@ TAGS
 ###PUBLIC-KEY<a name="PUBLIC-KEY"/>
 
 * [GnuPG](./07_gpg.md)
+
+###PULSEAUDIO<a name="PULSEAUDIO"/>
+
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
 
 ###RSS<a name="RSS"/>
 
@@ -168,6 +181,10 @@ TAGS
 
 * [Xephyr](./Xephyr.md)
 
+###VOLUME<a name="VOLUME"/>
+
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
+
 ###WINDOW-MANAGER<a name="WINDOW-MANAGER"/>
 
 * [Maximus](./01_maximus.md)
@@ -179,4 +196,8 @@ TAGS
 ###标题栏<a name="标题栏"/>
 
 * [Maximus](./01_maximus.md)
+
+###音量<a name="音量"/>
+
+* [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
 
