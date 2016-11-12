@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./CommonLisp动态作用域.md">
+<b>Common Lisp动态作用域</b>
+</a></td>
+<td><code>2016年11月12日 14:44</code></td>
+</tr>
+<tr><td>
 <a href="./CL-JSON的编码问题.md">
 <b>CL-JSON的编码问题</b>
 </a></td>

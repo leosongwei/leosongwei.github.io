@@ -5,9 +5,40 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Thu, 03 Nov 2016 11:41:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Nov 2016 03:45:22 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Common Lisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/CommonLisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;.md</link>
+      <description>
+&lt;p&gt;tags: common lisp; lisp; scope; dynamic scope;&lt;/p&gt;
+&lt;p&gt;&#x770B;&#x6765;&#xFF0C;Common Lisp&#x7684;&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;&#x4E00;&#x65E6;&#x5F00;&#x4E86;&#x7EBF;&#x7A0B;&#x662F;&#x4E0D;&#x8DDF;&#x7740;&#x4EE3;&#x7801;&#x8D70;&#x7684;&#x3002;&lt;/p&gt;
+&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;(defvar *g1* :x)
+(defvar *out* *standard-output*)
+
+(defun pg1 ()
+  (format *out* &amp;quot;~A~%&amp;quot; *g1*))
+
+(progn
+  (pg1)
+  (let ((*g1* :aaaa))
+    (pg1)
+    (sb-thread:make-thread
+     (lambda ()
+       (format *out* &amp;quot;---~%&amp;quot;)
+       (pg1)
+       (format *out* &amp;quot;---~%&amp;quot;)))))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x8F93;&#x51FA;&#xFF1A;&lt;/p&gt;
+&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;X
+AAAA
+---
+X
+---&lt;/code&gt;&lt;/pre&gt;
+</description>
+      <pubDate>Sat, 12 Nov 2016 03:44:37 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/CommonLisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;.md3687907477</guid>
+    </item>
     <item>
       <title>CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;</title>
       <link>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md</link>
