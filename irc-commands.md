@@ -1,6 +1,8 @@
 一些IRC命令
 -----------
 
+tags: irc;
+
 https://freenode.net/kb/answer/channelmodes
 
 ```irc
