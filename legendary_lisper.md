@@ -9,7 +9,7 @@ Tags: Lisp, IRC, Telegram, Joke
 
 后来有一天，隔壁[喵窝](https://www.nyaa.cat/)发生政治动荡（我并不知道原因），导致一部分抵制的玩家成为了难民，来到了我们的服务器，服主星之光为了接收这些难民，建立了一个Telegram群。这个Telegram群和原来的IRC群之间通过wfjsw编写的Bot“AkarinCentral-T”进行连接。虽然这个Bot功能强大，但是工作不稳定，很容易掉线，时常和Freenode失去连接，需要在Telegram端手动重连。
 
-但是Telegram里面的人不容易知道该Bot的IRC连接断掉了，常常一连几天，IRC都收不到Telegram传来的消息。使我非常不开心，还发过一点小脾气。于是，后来我编写了一个更稳定的[Midymidytgbot](https://github.com/MidyMidy-MC/midymidytgbot)，来取代AkarinCentral-T，这个新Bot用Common Lisp语言编写。Bot需要很多功能，Midymidytgbot是一段新的代码，我也不是太懂IRC和Telegram，也没有““产品经理”来给我规划功能，于是时常需要有些小改动来新增功能，修复bug，修改特性，于是Bot便需要常常重启。我需要一个打热补丁的姿势。
+但是Telegram里面的人不容易知道该Bot的IRC连接断掉了，常常一连几天，IRC都收不到Telegram传来的消息。使我非常不开心，还发过一点小脾气。于是，后来我编写了一个更稳定的[Midymidytgbot](https://github.com/MidyMidy-MC/midymidytgbot)，来取代AkarinCentral-T，这个新Bot用Common Lisp语言编写。Bot需要很多功能，Midymidytgbot是一段新的代码，我也不是太懂IRC和Telegram，也没有““产品经理”来给我规划功能，于是时常需要有些小改动来新增功能，修复bug，修改特性，于是Bot便需要常常重启，显然重启的时候Bot是不工作的，可能漏掉消息。我需要一个打热补丁的姿势。
 
 一天，我和开源哥坐在咖啡馆里写代码，我突然想起了所有介绍Lisp语言的地方都会提到一个故事来说明Lisp的灵活性：传说中的Lisp程序员远程连接到卫星上的Lisp程序上修复了Bug，避免了更大的损失。于是我说：“要不然，我每次就远程连接到服务器上动态地调整代码？”开源哥说：“哈哈哈哈，快醒醒！”
 
