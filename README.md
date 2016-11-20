@@ -30,7 +30,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="./legendary_lisper.md">
 <b>笑话一则：Lisp都市传说</b>
 </a></td>
-<td><code>2016年11月20日 23:44</code></td>
+<td><code>2016年11月21日 00:17</code></td>
 </tr>
 <tr><td>
 <a href="./irc-commands.md">
