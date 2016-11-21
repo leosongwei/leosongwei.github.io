@@ -5,9 +5,19 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sun, 20 Nov 2016 13:17:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Nov 2016 12:09:07 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>set, setq and setf</title>
+      <link>https://github.com/leosongwei/blog/blob/master/set-setf-setq.md</link>
+      <description>
+&lt;p&gt;tags: lisp&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/869529/difference-between-set-setq-and-setf-in-common-lisp&lt;/p&gt;
+</description>
+      <pubDate>Mon, 21 Nov 2016 12:08:53 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/set-setf-setq.md3688715333</guid>
+    </item>
     <item>
       <title>&#x7B11;&#x8BDD;&#x4E00;&#x5219;&#xFF1A;Lisp&#x90FD;&#x5E02;&#x4F20;&#x8BF4;</title>
       <link>https://github.com/leosongwei/blog/blob/master/legendary_lisper.md</link>

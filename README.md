@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./set-setf-setq.md">
+<b>set, setq and setf</b>
+</a></td>
+<td><code>2016年11月21日 23:08</code></td>
+</tr>
+<tr><td>
 <a href="./legendary_lisper.md">
 <b>笑话一则：Lisp都市传说</b>
 </a></td>
