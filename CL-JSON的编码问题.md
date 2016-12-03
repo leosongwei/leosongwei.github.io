@@ -45,3 +45,5 @@ tags: common lisp; json; cl-json; bug; unicode; Surrogate Pairs;
 😃
 #\SMILING_FACE_WITH_OPEN_MOUTH
 ```
+
+[1] http://unicodebook.readthedocs.io/unicode_encodings.html#utf-16-surrogate-pairs

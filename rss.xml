@@ -5,9 +5,50 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Mon, 21 Nov 2016 12:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Dec 2016 08:32:33 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md</link>
+      <description>
+&lt;p&gt;tags: common lisp; json; cl-json; bug; unicode; Surrogate Pairs;&lt;/p&gt;
+&lt;p&gt;&#x62FF;Common Lisp&#x7ED9;IRC&#x9891;&#x9053;&#x548C;Telegram&#x7FA4;&#x5199;&#x4F20;&#x8BDD;Bot&#x3002;&#x60F3;&#x8981;&#x652F;&#x6301;&#x8868;&#x60C5;&#x529F;&#x80FD;&#xFF0C;&#x7ED3;&#x679C;&#x53D1;&#x73B0;&#x63D0;&#x53D6;&#x8868;&#x60C5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x540E;&#xFF0C;&#x89E3;&#x7801;&#x9519;&#x8BEF;&#xFF0C;&#x641E;&#x4E86;&#x597D;&#x4E45;&#x6CA1;&#x641E;&#x5B9A;&#xFF0C;&#x771F;&#x662F;&#x626B;&#x5174;&#x3002;&#x6700;&#x540E;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x5904;&#x5728;CL-JSON&#x8FD9;&#x4E2A;&#x5E93;&#x4E0A;&#xFF0C;&#x90A3;&#x4E2A;&#x5E93;&#x7684;decoder.lisp&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x89E3;&#x6790;&#x201C;&#x201D;&#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;&lt;/p&gt;
+&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;((len rdx)
+ (let ((code
+        (let ((repr (make-string len)))
+          (dotimes (i len)
+            (setf (aref repr i) (read-char stream)))
+          (handler-case (parse-integer repr :radix rdx)
+            (parse-error ()
+              (json-syntax-error stream esc-error-fmt
+                                 (format nil &amp;quot;\\~C&amp;quot; c)
+                                 repr))))))
+   (restart-case
+       (or (and (&amp;lt; code char-code-limit) (code-char code))
+           (error &amp;#39;no-char-for-code :code code))
+...
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;Surrogate Pairs&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x7F16;&#x7801;&#x6210;&lt;code&gt;&amp;quot;\ud83d\ude03&amp;quot;&lt;/code&gt;&#x5F62;&#x5F0F;&#x7684;Emoji&#x8868;&#x60C5;&#x4F1A;&#x88AB;&#x5288;&#x6210;2&#x4E2A;&#x5B57;&#x7B26;&#x5206;&#x522B;&#x8BFB;&#x53D6;&#xFF0C;&#x5BF9;Lisp&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x4E71;&#x7801;&#x4E86;&#x3002;&#x6539;&#x5929;&#x6709;&#x7A7A;&#x7ED9;&#x4ED6;&#x4EEC;&#x4FEE;&#x4E00;&#x4FEE;&#xFF0C;&#x5148;&#x6765;&#x4E2A;Dirty Hack&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8BBE;&lt;code&gt;xxx&lt;/code&gt;&#x5BF9;&#x4E8E;SBCL&#x6765;&#x8BF4;&#x662F;Surrogate Pairs&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x8FD9;&#x65F6;bug&#x5DF2;&#x7ECF;&#x53D1;&#x751F;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9519;&#x5C31;&#x9519;&#xFF09;&#xFF0C;&#x5982;&#x6B64;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x539F;&#x5B57;&#x7B26;&#xFF1A;&lt;/p&gt;
+&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;(progn
+  (setf xxx (with-input-from-string (stream &amp;quot;\&amp;quot;\\uD83D\\uDE03\&amp;quot;&amp;quot;)
+              (cl-json:decode-json stream)))
+
+  (princ (code-char
+          (let ((c1 (char-code (aref xxx 0)))
+                (c2 (char-code (aref xxx 1))))
+            (+ #x10000
+               (ash (logand #x03FF c1) 10)
+               (logand #x03FF c2))))))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x8F93;&#x51FA;&#x662F;&#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#x1F603;
+#\SMILING_FACE_WITH_OPEN_MOUTH&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1] http://unicodebook.readthedocs.io/unicode_encodings.html#utf-16-surrogate-pairs&lt;/p&gt;
+</description>
+      <pubDate>Sat, 03 Dec 2016 08:32:24 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md3689739144</guid>
+    </item>
     <item>
       <title>set, setq and setf</title>
       <link>https://github.com/leosongwei/blog/blob/master/set-setf-setq.md</link>
@@ -98,46 +139,6 @@ X
 </description>
       <pubDate>Sat, 12 Nov 2016 03:44:37 +0000</pubDate>
       <guid>https://github.com/leosongwei/blog/blob/master/CommonLisp&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;.md3687907477</guid>
-    </item>
-    <item>
-      <title>CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;</title>
-      <link>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md</link>
-      <description>
-&lt;p&gt;tags: common lisp; json; cl-json; bug; unicode; Surrogate Pairs;&lt;/p&gt;
-&lt;p&gt;&#x62FF;Common Lisp&#x7ED9;IRC&#x9891;&#x9053;&#x548C;Telegram&#x7FA4;&#x5199;&#x4F20;&#x8BDD;Bot&#x3002;&#x60F3;&#x8981;&#x652F;&#x6301;&#x8868;&#x60C5;&#x529F;&#x80FD;&#xFF0C;&#x7ED3;&#x679C;&#x53D1;&#x73B0;&#x63D0;&#x53D6;&#x8868;&#x60C5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x540E;&#xFF0C;&#x89E3;&#x7801;&#x9519;&#x8BEF;&#xFF0C;&#x641E;&#x4E86;&#x597D;&#x4E45;&#x6CA1;&#x641E;&#x5B9A;&#xFF0C;&#x771F;&#x662F;&#x626B;&#x5174;&#x3002;&#x6700;&#x540E;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x5904;&#x5728;CL-JSON&#x8FD9;&#x4E2A;&#x5E93;&#x4E0A;&#xFF0C;&#x90A3;&#x4E2A;&#x5E93;&#x7684;decoder.lisp&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x89E3;&#x6790;&#x201C;&#x201D;&#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;&lt;/p&gt;
-&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;((len rdx)
- (let ((code
-        (let ((repr (make-string len)))
-          (dotimes (i len)
-            (setf (aref repr i) (read-char stream)))
-          (handler-case (parse-integer repr :radix rdx)
-            (parse-error ()
-              (json-syntax-error stream esc-error-fmt
-                                 (format nil &amp;quot;\\~C&amp;quot; c)
-                                 repr))))))
-   (restart-case
-       (or (and (&amp;lt; code char-code-limit) (code-char code))
-           (error &amp;#39;no-char-for-code :code code))
-...
-...&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;Surrogate Pairs&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x7F16;&#x7801;&#x6210;&lt;code&gt;&amp;quot;\ud83d\ude03&amp;quot;&lt;/code&gt;&#x5F62;&#x5F0F;&#x7684;Emoji&#x8868;&#x60C5;&#x4F1A;&#x88AB;&#x5288;&#x6210;2&#x4E2A;&#x5B57;&#x7B26;&#x5206;&#x522B;&#x8BFB;&#x53D6;&#xFF0C;&#x5BF9;Lisp&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x4E71;&#x7801;&#x4E86;&#x3002;&#x6539;&#x5929;&#x6709;&#x7A7A;&#x7ED9;&#x4ED6;&#x4EEC;&#x4FEE;&#x4E00;&#x4FEE;&#xFF0C;&#x5148;&#x6765;&#x4E2A;Dirty Hack&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x8BBE;&lt;code&gt;xxx&lt;/code&gt;&#x5BF9;&#x4E8E;SBCL&#x6765;&#x8BF4;&#x662F;Surrogate Pairs&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x8FD9;&#x65F6;bug&#x5DF2;&#x7ECF;&#x53D1;&#x751F;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9519;&#x5C31;&#x9519;&#xFF09;&#xFF0C;&#x5982;&#x6B64;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x539F;&#x5B57;&#x7B26;&#xFF1A;&lt;/p&gt;
-&lt;pre class=&quot;lisp&quot;&gt;&lt;code&gt;(progn
-  (setf xxx (with-input-from-string (stream &amp;quot;\&amp;quot;\\uD83D\\uDE03\&amp;quot;&amp;quot;)
-              (cl-json:decode-json stream)))
-
-  (princ (code-char
-          (let ((c1 (char-code (aref xxx 0)))
-                (c2 (char-code (aref xxx 1))))
-            (+ #x10000
-               (ash (logand #x03FF c1) 10)
-               (logand #x03FF c2))))))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&#x8F93;&#x51FA;&#x662F;&#xFF1A;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&#x1F603;
-#\SMILING_FACE_WITH_OPEN_MOUTH&lt;/code&gt;&lt;/pre&gt;
-</description>
-      <pubDate>Thu, 03 Nov 2016 11:41:01 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md3687158461</guid>
     </item>
     <item>
       <title>&#x5207;&#x6362;&#x9ED8;&#x8BA4;&#x7A0B;&#x5E8F;</title>
