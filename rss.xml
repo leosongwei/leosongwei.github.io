@@ -5,9 +5,38 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 03 Dec 2016 08:32:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Dec 2016 01:31:09 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Minecraft&#x547D;&#x4EE4;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md</link>
+      <description>
+&lt;p&gt;tags: minecraft&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/summon EntityHorse ~ ~-2.5 ~ {CustomName:&amp;quot;Right Click, sit down.&amp;quot;,Type:0,Variant:7,Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.movementSpeed,Base:0.000}],Invulnerable:1,NoAI:1,Silent:1,NoGravity:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f]}&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x9690;&#x5F62;&#x7684;&#x9A6C;&#xFF0C;&#x5F53;&#x4F5C;&#x5EA7;&#x4F4D;&lt;/li&gt;
+&lt;li&gt;&#x65E0;AI&#xFF0C;&#x65E0;&#x78B0;&#x649E;&#xFF0C;&#x65E0;&#x58F0;&#x97F3;&lt;/li&gt;
+&lt;li&gt;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x961F;&#x4F0D;&#xFF1A;&amp;quot;NoCollision&amp;quot;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x65E0;&#x78B0;&#x649E;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/scoreboard teams add NoCollision&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/scoreboard teams option NoCollision collisionRule never&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type:0,Variant:7&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x8FD9;&#x4E2A;Variant&#x7684;&#x9A6C;&#x6CA1;&#x6709;&#x8D34;&#x56FE;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/give @p iron_sword 1 0 {display:{Name:&amp;quot;&#x951F;&#x65A4;&#x62F7;&amp;quot;,Lore:[&amp;quot;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&amp;quot;,&amp;quot;&#x70EB;&#x70EB;&#x70EB;&#x70EB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5C6F;&#x5C6F;&#xFFFD;&#xFFFD;&#xFFFD;&amp;quot;]},AttributeModifiers:[{AttributeName:&amp;quot;generic.attackDamage&amp;quot;,Name:&amp;quot;generic.attackDamage&amp;quot;,Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x951F;&#x65A4;&#x62F7;&#x4E4B;&#x5251;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Sun, 04 Dec 2016 01:30:57 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md3689800257</guid>
+    </item>
     <item>
       <title>CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;</title>
       <link>https://github.com/leosongwei/blog/blob/master/CL-JSON&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;.md</link>
