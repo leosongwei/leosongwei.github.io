@@ -15,5 +15,11 @@ tags: Linux; Debian; openSUSE; 音量; Volume; PulseAudio;
 
 后来，Debian Testing被GTK3所坑，导致我的MATE无法使用（依赖GTK3），很快，我看微博时发现这个新版Gnome和GTK包含了谷歌编程之夏带来的无数“改进”，又听说Gnome的开发者们又跑了。我就放弃希望，滚回了Debian 8。然后发现Cinamon似乎也有这种状态，不严重（不会出现可怕的系统提示音），但是不方便，今天心血来潮把配置改了一下，发现有用。
 
+---------
+
+最近试着用ArchLinux，我看到默认的`flat-volumes = yes`被注释掉了，上面写了一行`flat-volumes = no`，我瞬间感到这位打包者是个常识人，是一个真正的Linux用户。
+
+(16年12月6日)
+
 [1] https://forum.suse.org.cn/viewtopic.php?f=7&t=2475
 [2] https://forum.kde.org/viewtopic.php?f=289&t=131535
