@@ -14,3 +14,6 @@ tags: minecraft
 
 * `/give @p iron_sword 1 0 {display:{Name:"锟斤拷",Lore:["������锟斤拷锟斤拷锟斤拷","烫烫烫烫����屯屯���"]},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}`
 	- 锟斤拷之剑
+
+* `/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:"NoCollision",Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}`
+	- 没有粒子效果的隐形猪

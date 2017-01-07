@@ -27,16 +27,22 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./Minecraft命令.md">
+<b>Minecraft命令</b>
+</a></td>
+<td><code>2017年01月07日 14:59</code></td>
+</tr>
+<tr><td>
+<a href="./onda_x64.md">
+<b>在破烂的昂达寨板上安装64位的ArchLinux</b>
+</a></td>
+<td><code>2016年12月25日 01:33</code></td>
+</tr>
+<tr><td>
 <a href="./PulseAudio关闭flat-volumes.md">
 <b>PulseAudio关闭flat-volumes</b>
 </a></td>
 <td><code>2016年12月06日 21:45</code></td>
-</tr>
-<tr><td>
-<a href="./Minecraft命令.md">
-<b>Minecraft命令</b>
-</a></td>
-<td><code>2016年12月04日 12:30</code></td>
 </tr>
 <tr><td>
 <a href="./CL-JSON的编码问题.md">
