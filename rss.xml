@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Tue, 28 Feb 2017 14:06:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Feb 2017 14:25:52 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -16,16 +16,20 @@
 &lt;p&gt;&#x56E0;&#x4E3A;&#x4E0A;&#x8BFE;&#x8981;&#x7528;&#x5230;&#x5947;&#x602A;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x53C8;&#x4E0D;&#x60F3;&#x4E00;&#x80A1;&#x8111;&#x5B89;&#x88C5;&#x5230;&#x4E3B;&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x4FBF;&#x840C;&#x751F;&#x4E86;&#x5C1D;&#x8BD5;&#x5BB9;&#x5668;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x4E4B;&#x524D;&#x5C1D;&#x8BD5;&#x8FC7;Docker&#xFF0C;&#x4F46;&#x662F;docker&#x6BD4;&#x8F83;&#x5947;&#x602A;&#xFF0C;&#x5404;&#x79CD;&#x6559;&#x7A0B;&#x90FD;&#x559C;&#x6B22;&#x8BA9;&#x4EBA;&#x4E0B;&#x8F7D;&#x955C;&#x50CF;&#xFF0C;&#x5C1D;&#x8BD5;&#x8FC7;&#x81EA;&#x884C;&#x6784;&#x5EFA;&#x5374;&#x6CA1;&#x6709;&#x6210;&#x529F;&#xFF0C;&#x9042;&#x653E;&#x5F03;&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x8FD9;&#x6B21;&#x53D1;&#x73B0;lxc&#x6BD4;docker&#x66F4;&#x52A0;&#x76F4;&#x6292;&#x80F8;&#x81C6;&#xFF0C;&#x6BD4;&#x5982;&#x8981;&#x5B89;&#x88C5;Debian&#xFF0C;&#x5C31;&#x62FF;debootstrap&#x4E0B;&#x8F7D;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x73B0;&#x573A;&#x634F;&#x4E00;&#x4E2A;debian&#x51FA;&#x6765;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x50CF;docker&#x90A3;&#x6837;&#x4ECE;&#x5947;&#x602A;&#x7684;&#x6765;&#x6E90;&#x4E0B;&#x8F7D;&#x955C;&#x50CF;&#xFF08;&#x867D;&#x7136;&#x6709;&#x70B9;&#x53D1;&#x884C;&#x7248;&#x5B98;&#x65B9;&#x662F;&#x6709;&#x955C;&#x50CF;&#x7684;&#xFF09;&#xFF0C;&#x975E;&#x5E38;&#x6613;&#x4E8E;&#x7406;&#x89E3;&#x3002;&lt;/p&gt;
 &lt;h2 id=&quot;&#x7B14;&#x8BB0;&#x90E8;&#x5206;&quot;&gt;&#x7B14;&#x8BB0;&#x90E8;&#x5206;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&#x5B89;&#x88C5;Ubuntu
+&lt;h3 id=&quot;&#x5B89;&#x88C5;ubuntu&quot;&gt;&#x5B89;&#x88C5;Ubuntu&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;ArchLinux&#x8FD9;&#x4E2A;lxc&#xFF0C;&#x76F4;&#x63A5;&#x7528;template&#x5B89;&#x88C5;&#xFF0C;&#x4F1A;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x53E4;&#x8001;&#x7684;12.04&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x52A0;&#x53C2;&#x6570;&lt;/li&gt;
 &lt;li&gt;&#x52A0;&#x90A3;&#x4E24;&#x6A2A;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x80FD;&#x7ED9;&#x5230;template&#x4E86;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# lxc-create -n ubuntu -t /usr/share/lxc/templates/lxc-ubuntu -- -r xenial -a amd64&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Ubuntu Server&#x4F1A;&#x6267;&#x7740;&#x5730;&#x7B49;&#x5F85;DHCP&#xFF0C;&#x6240;&#x4EE5;&#x5F00;&#x673A;&#x4F1A;&#x975E;&#x5E38;&#x7F13;&#x6162;&#xFF0C;&#x65E0;&#x8111;&#x8C03;&#x6574;timeout&#x4EE5;&#x4FEE;&#x6B63;&#xFF1A;&lt;/li&gt;
 &lt;li&gt;&#x6539;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;&lt;code&gt;/etc/systemd/system/network-online.targets.wants/networking.service&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&#x88C5;Debian&#x5219;&#x4F1A;&#x76F4;&#x63A5;&#x5B89;&#x88C5;Jessie&lt;/li&gt;
+&lt;li&gt;Ubuntu&#x88C5;&#x597D;&#x540E;&#xFF0C;&#x603B;&#x4F1A;&#x6709;&#x4EC0;&#x4E48;&#x670D;&#x52A1;&#x6765;&#x641E;&#x4E71;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#xFF0C;&#x51B2;&#x6D17;&#x6389;DNS&#x914D;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8BBE;&#x7F6E;resolvconf.conf&#x3002;Ubuntu&#x641E;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x6765;&#x5B58;&#x50A8;&#x914D;&#x7F6E;&#xFF0C;&#x7136;&#x800C;&#x548C;man&#x51FA;&#x6765;&#x7684;&#x5947;&#x602A;&#x683C;&#x5F0F;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5C31;&#x6309;&#x666E;&#x901A;&#x7684;resolv.conf&#x5199;&#x5C31;&#x662F;&#x4E86;&#x3002;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&#x771F;&#x662F;&#x4E0D;&#x60F3;&#x53BB;&#x5F53;&#x4E00;&#x4E2A;Ubuntu&#x4E13;&#x5BB6;&#x2026;&#x2026;&lt;/p&gt;
+&lt;h3 id=&quot;&#x5176;&#x4ED6;&quot;&gt;&#x5176;&#x4ED6;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&#x88C5;Debian&#x5219;&#x4F1A;&#x76F4;&#x63A5;&#x5B89;&#x88C5;Jessie&#xFF0C;&#x5F88;&#x548C;&#x8C10;&#xFF0C;&#x6CA1;&#x6709;&#x7279;&#x522B;&#x7684;&#x6545;&#x969C;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&#x5BF9;&#x4E8E;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF0C;&#x6211;&#x7279;&#x522B;&#x61D2;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x628A;&#x9ED8;&#x8BA4;&#x7684;lxc&#x5BB9;&#x5668;&#x76EE;&#x5F55;&#x94FE;&#x63A5;&#x5230;home&#x76D8;&#x7684;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E0A;&#x4E86;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&quot;&gt;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&lt;/h3&gt;
 &lt;p&gt;&#x914D;&#x7F6E;lxc&#x5BB9;&#x5668;&#x4F7F;&#x7528;iptables&#x642D;&#x7684;nat&lt;/p&gt;
@@ -49,9 +53,12 @@ lxc.network.flags = up
 lxc.network.name = eth0
 lxc.network.ipv4 = 192.168.100.10/24
 lxc.network.ipv4.gateway = 192.168.100.1&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;&#x540E;&#x8BB0;&quot;&gt;&#x540E;&#x8BB0;&lt;/h2&gt;
+&lt;p&gt;&#x7ECF;&#x8FC7;&#x5728;tjlug&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#xFF0C;docker&#x7684;&#x8BBE;&#x8BA1;&#x76EE;&#x6807;&#x662F;&#x57F9;&#x517B;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x4ED6;&#x4EEC;docker hub&#x7F51;&#x7AD9;&#x4E0A;&#x73B0;&#x6210;&#x955C;&#x50CF;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x7136;&#x540E;&#x4EE5;&#x8FD9;&#x79CD;&#x73B0;&#x6210;&#x955C;&#x50CF;&#x4E3A;&#x57FA;&#x7840;&#x6784;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x3001;&#x5C0F;&#x5BB9;&#x91CF;&#x7684;&#x5E94;&#x7528;&#x955C;&#x50CF;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6237;&#x81EA;&#x7136;&#x5C31;&#x4F1A;&#x60F3;&#x8981;&#x7528;docker hub&#x7F51;&#x7AD9;&#x6765;&#x90E8;&#x7F72;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;&#x955C;&#x50CF;&#xFF0C;&#x7136;&#x540E;docker.com&#x7684;&#x751F;&#x610F;&#x5C31;&#x6765;&#x4E86;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x800C;&#x6211;&#x7684;&#x9700;&#x6C42;&#x662F;&#x8F7B;&#x91CF;&#x5316;&#x7684;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x865A;&#x62DF;&#x673A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x81EA;&#x5DF1;&#x5B89;&#x88C5;&#xFF0C;&#x8FD9;&#x548C;docker.com&#x7684;&#x4E1A;&#x52A1;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x770B;docker&#x7684;&#x6559;&#x7A0B;&#x5C31;&#x611F;&#x89C9;&#x65E0;&#x6BD4;&#x8D39;&#x89E3;&#xFF0C;&#x800C;&#x5728;lxc-create&#x7528;debootstrap&#x634F;debian&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x611F;&#x89C9;&#x65E0;&#x6BD4;&#x5F62;&#x8C61;&#x3002;&lt;/p&gt;
 </description>
-      <pubDate>Tue, 28 Feb 2017 14:06:24 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/lxc.md3697275984</guid>
+      <pubDate>Tue, 28 Feb 2017 14:25:43 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/lxc.md3697277143</guid>
     </item>
     <item>
       <title>Minecraft&#x547D;&#x4EE4;</title>
