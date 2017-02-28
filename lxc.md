@@ -1,7 +1,7 @@
 LXC
 ===
 
-tags: lxc, ubuntu, login prompt, slow, long waiting;
+tags: lxc, ubuntu, login prompt, slow, long waiting, iptables, nat, network;
 
 因为上课要用到奇怪的软件，又不想一股脑安装到主系统上，便萌生了尝试容器的想法。之前尝试过Docker，但是docker比较奇怪，各种教程都喜欢让人下载镜像，尝试过自行构建却没有成功，遂放弃。
 
@@ -19,3 +19,28 @@ tags: lxc, ubuntu, login prompt, slow, long waiting;
 
 * 装Debian则会直接安装Jessie
 
+###网络配置
+
+配置lxc容器使用iptables搭的nat
+
+* 配置网桥
+
+```bash
+#!/bin/sh
+ip link add name br0 type bridge
+ip link set br0 up
+ip addr add 192.168.100.1/24 dev br0
+```
+* 搭NAT
+	* `iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE`
+
+* 设置lxc容器的网络（container_dir/config）
+
+```
+lxc.network.type = veth
+lxc.network.link = br0
+lxc.network.flags = up
+lxc.network.name = eth0
+lxc.network.ipv4 = 192.168.100.10/24
+lxc.network.ipv4.gateway = 192.168.100.1
+```
