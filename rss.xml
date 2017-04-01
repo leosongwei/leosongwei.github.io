@@ -5,9 +5,69 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sun, 19 Mar 2017 02:31:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Apr 2017 02:19:40 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x5361;&#x9A6C;&#x514B;&#x5E73;&#x65B9;&#x6839;&#x5012;&#x6570;&#x7B97;&#x6CD5;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/sqrt.md</link>
+      <description>
+&lt;p&gt;https://zh.wikipedia.org/wiki/%E5%B9%B3%E6%96%B9%E6%A0%B9%E5%80%92%E6%95%B0%E9%80%9F%E7%AE%97%E6%B3%95&lt;/p&gt;
+&lt;p&gt;Common Lisp:&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot;&gt;&lt;pre class=&quot;sourceCode lisp&quot;&gt;&lt;code class=&quot;sourceCode commonlisp&quot;&gt;(&lt;span class=&quot;kw&quot;&gt;use-package&lt;/span&gt; :sb-alien)
+
+(&lt;span class=&quot;kw&quot;&gt;defun&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt; csqrt &lt;/span&gt;(x)
+  (&lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt; x &lt;span class=&quot;dv&quot;&gt;0&lt;/span&gt;)
+      (&lt;span class=&quot;kw&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;CSQRT: X&amp;lt;0!&amp;quot;&lt;/span&gt;))
+  (&lt;span class=&quot;kw&quot;&gt;let*&lt;/span&gt; ((threefalfs &lt;span class=&quot;fl&quot;&gt;1.5&lt;/span&gt;)
+         (x2 (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;fl&quot;&gt;0.5&lt;/span&gt; x))
+         (y (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;fl&quot;&gt;1.0&lt;/span&gt; x))
+         (i (make-alien &lt;span class=&quot;kw&quot;&gt;float&lt;/span&gt;)))
+    (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; (deref i) y)
+    (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; (deref (cast i (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; int)))
+          (&lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;ch&quot;&gt;#x&lt;/span&gt;5f3759df (ash (deref (cast i (* int))) -&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;)))
+    (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; y (deref i))
+    (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; y (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y (&lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; threefalfs (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; x2 y y))))
+    (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; y (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y (&lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; threefalfs (&lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; x2 y y))))
+    (free-alien i)
+    (&lt;span class=&quot;op&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt; y)))
+
+(csqrt &lt;span class=&quot;dv&quot;&gt;8100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Python:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from ctypes import *
+
+def nsqrt(x): # do not change the heading of the function
+    # carmack square root
+    if(x&amp;lt;0):
+        raise ValueError(&amp;quot;math domain error&amp;quot;)
+    threefalfs = 1.5
+    x2 = 0.5 * x
+    y = 1.0 * x
+    i = cast(pointer(c_float(y)), POINTER(c_int32)).contents.value
+    i  = 0x5f3759df - ( i &amp;gt;&amp;gt; 1 )
+    y = cast(pointer(c_int32(i)), POINTER(c_float)).contents.value
+    y = y * (threefalfs - (x2 * y * y))
+    y = y * (threefalfs - (x2 * y * y))
+    return 1 / y&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x6211;&#x662F;&#x6709;&#x591A;&#x65E0;&#x804A;&#x2026;&#x2026;&lt;/p&gt;
+</description>
+      <pubDate>Sat, 01 Apr 2017 02:19:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/sqrt.md3699998353</guid>
+    </item>
+    <item>
+      <title>Git &#x7B14;&#x8BB0;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/git.md</link>
+      <description>
+&lt;ul&gt;
+&lt;li&gt;&#x88F8;&#x4ED3;&#x5E93;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git init --bare&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Thu, 23 Mar 2017 07:46:34 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/git.md3699240394</guid>
+    </item>
     <item>
       <title>LXC</title>
       <link>https://github.com/leosongwei/blog/blob/master/lxc.md</link>

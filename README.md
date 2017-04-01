@@ -27,6 +27,18 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./sqrt.md">
+<b>卡马克平方根倒数算法</b>
+</a></td>
+<td><code>2017年04月01日 13:19</code></td>
+</tr>
+<tr><td>
+<a href="./git.md">
+<b>Git 笔记</b>
+</a></td>
+<td><code>2017年03月23日 18:46</code></td>
+</tr>
+<tr><td>
 <a href="./lxc.md">
 <b>LXC</b>
 </a></td>
