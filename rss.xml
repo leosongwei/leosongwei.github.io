@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 01 Apr 2017 02:19:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Apr 2017 02:25:30 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -34,25 +34,25 @@
 
 (csqrt &lt;span class=&quot;dv&quot;&gt;8100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Python:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;from ctypes import *
+&lt;div class=&quot;sourceCode&quot;&gt;&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;im&quot;&gt;from&lt;/span&gt; ctypes &lt;span class=&quot;im&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt;
 
-def nsqrt(x): # do not change the heading of the function
-    # carmack square root
-    if(x&amp;lt;0):
-        raise ValueError(&amp;quot;math domain error&amp;quot;)
-    threefalfs = 1.5
-    x2 = 0.5 * x
-    y = 1.0 * x
-    i = cast(pointer(c_float(y)), POINTER(c_int32)).contents.value
-    i  = 0x5f3759df - ( i &amp;gt;&amp;gt; 1 )
-    y = cast(pointer(c_int32(i)), POINTER(c_float)).contents.value
-    y = y * (threefalfs - (x2 * y * y))
-    y = y * (threefalfs - (x2 * y * y))
-    return 1 / y&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; nsqrt(x): &lt;span class=&quot;co&quot;&gt;# do not change the heading of the function&lt;/span&gt;
+    &lt;span class=&quot;co&quot;&gt;# carmack square root&lt;/span&gt;
+    &lt;span class=&quot;cf&quot;&gt;if&lt;/span&gt;(x&lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;dv&quot;&gt;0&lt;/span&gt;):
+        &lt;span class=&quot;cf&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;pp&quot;&gt;ValueError&lt;/span&gt;(&lt;span class=&quot;st&quot;&gt;&amp;quot;math domain error&amp;quot;&lt;/span&gt;)
+    threefalfs &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;fl&quot;&gt;1.5&lt;/span&gt;
+    x2 &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;fl&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; x
+    y &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;fl&quot;&gt;1.0&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; x
+    i &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; cast(pointer(c_float(y)), POINTER(c_int32)).contents.value
+    i  &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bn&quot;&gt;0x5f3759df&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; ( i &lt;span class=&quot;op&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt; )
+    y &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; cast(pointer(c_int32(i)), POINTER(c_float)).contents.value
+    y &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; y &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; (threefalfs &lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; (x2 &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y))
+    y &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; y &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; (threefalfs &lt;span class=&quot;op&quot;&gt;-&lt;/span&gt; (x2 &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y &lt;span class=&quot;op&quot;&gt;*&lt;/span&gt; y))
+    &lt;span class=&quot;cf&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;/&lt;/span&gt; y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&#x6211;&#x662F;&#x6709;&#x591A;&#x65E0;&#x804A;&#x2026;&#x2026;&lt;/p&gt;
 </description>
-      <pubDate>Sat, 01 Apr 2017 02:19:13 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/sqrt.md3699998353</guid>
+      <pubDate>Sat, 01 Apr 2017 02:25:16 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/sqrt.md3699998716</guid>
     </item>
     <item>
       <title>Git &#x7B14;&#x8BB0;</title>

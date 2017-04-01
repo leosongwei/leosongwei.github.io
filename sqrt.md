@@ -29,7 +29,7 @@ Common Lisp:
 
 Python:
 
-```
+```Python
 from ctypes import *
 
 def nsqrt(x): # do not change the heading of the function
