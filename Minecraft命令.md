@@ -17,3 +17,7 @@ tags: minecraft
 
 * `/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:"NoCollision",Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}`
 	- 没有粒子效果的隐形猪
+
+* `/execute @e[r=10,type=Snowball] ~ ~ ~ effect @e[r=2,type=!Player] 20 5 5 true`
+	- 让飞行中的雪球带上效果
+	- 和循环式命令方块联用

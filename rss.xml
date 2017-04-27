@@ -5,9 +5,47 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 01 Apr 2017 02:25:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Apr 2017 09:28:39 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Minecraft&#x547D;&#x4EE4;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md</link>
+      <description>
+&lt;p&gt;tags: minecraft&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/summon EntityHorse ~ ~-2.5 ~ {CustomName:&amp;quot;Right Click, sit down.&amp;quot;,Type:0,Variant:7,Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.movementSpeed,Base:0.000}],Invulnerable:1,NoAI:1,Silent:1,NoGravity:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f]}&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x9690;&#x5F62;&#x7684;&#x9A6C;&#xFF0C;&#x5F53;&#x4F5C;&#x5EA7;&#x4F4D;&lt;/li&gt;
+&lt;li&gt;&#x65E0;AI&#xFF0C;&#x65E0;&#x78B0;&#x649E;&#xFF0C;&#x65E0;&#x58F0;&#x97F3;&lt;/li&gt;
+&lt;li&gt;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x961F;&#x4F0D;&#xFF1A;&amp;quot;NoCollision&amp;quot;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x65E0;&#x78B0;&#x649E;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/scoreboard teams add NoCollision&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/scoreboard teams option NoCollision collisionRule never&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type:0,Variant:7&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x8FD9;&#x4E2A;Variant&#x7684;&#x9A6C;&#x6CA1;&#x6709;&#x8D34;&#x56FE;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/give @p iron_sword 1 0 {display:{Name:&amp;quot;&#x951F;&#x65A4;&#x62F7;&amp;quot;,Lore:[&amp;quot;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&amp;quot;,&amp;quot;&#x70EB;&#x70EB;&#x70EB;&#x70EB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5C6F;&#x5C6F;&#xFFFD;&#xFFFD;&#xFFFD;&amp;quot;]},AttributeModifiers:[{AttributeName:&amp;quot;generic.attackDamage&amp;quot;,Name:&amp;quot;generic.attackDamage&amp;quot;,Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x951F;&#x65A4;&#x62F7;&#x4E4B;&#x5251;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x6CA1;&#x6709;&#x7C92;&#x5B50;&#x6548;&#x679C;&#x7684;&#x9690;&#x5F62;&#x732A;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/execute @e[r=10,type=Snowball] ~ ~ ~ effect @e[r=2,type=!Player] 20 5 5 true&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x8BA9;&#x98DE;&#x884C;&#x4E2D;&#x7684;&#x96EA;&#x7403;&#x5E26;&#x4E0A;&#x6548;&#x679C;&lt;/li&gt;
+&lt;li&gt;&#x548C;&#x5FAA;&#x73AF;&#x5F0F;&#x547D;&#x4EE4;&#x65B9;&#x5757;&#x8054;&#x7528;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Thu, 27 Apr 2017 09:28:30 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md3702274110</guid>
+    </item>
     <item>
       <title>&#x5361;&#x9A6C;&#x514B;&#x5E73;&#x65B9;&#x6839;&#x5012;&#x6570;&#x7B97;&#x6CD5;</title>
       <link>https://github.com/leosongwei/blog/blob/master/sqrt.md</link>
@@ -140,39 +178,6 @@ lxc.network.ipv4.gateway = 192.168.233.1&lt;/code&gt;&lt;/pre&gt;
 </description>
       <pubDate>Sun, 19 Mar 2017 02:31:00 +0000</pubDate>
       <guid>https://github.com/leosongwei/blog/blob/master/lxc.md3698875860</guid>
-    </item>
-    <item>
-      <title>Minecraft&#x547D;&#x4EE4;</title>
-      <link>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md</link>
-      <description>
-&lt;p&gt;tags: minecraft&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/summon EntityHorse ~ ~-2.5 ~ {CustomName:&amp;quot;Right Click, sit down.&amp;quot;,Type:0,Variant:7,Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.movementSpeed,Base:0.000}],Invulnerable:1,NoAI:1,Silent:1,NoGravity:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f]}&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&#x9690;&#x5F62;&#x7684;&#x9A6C;&#xFF0C;&#x5F53;&#x4F5C;&#x5EA7;&#x4F4D;&lt;/li&gt;
-&lt;li&gt;&#x65E0;AI&#xFF0C;&#x65E0;&#x78B0;&#x649E;&#xFF0C;&#x65E0;&#x58F0;&#x97F3;&lt;/li&gt;
-&lt;li&gt;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x961F;&#x4F0D;&#xFF1A;&amp;quot;NoCollision&amp;quot;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x65E0;&#x78B0;&#x649E;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/scoreboard teams add NoCollision&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/scoreboard teams option NoCollision collisionRule never&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Type:0,Variant:7&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&#x8FD9;&#x4E2A;Variant&#x7684;&#x9A6C;&#x6CA1;&#x6709;&#x8D34;&#x56FE;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/give @p iron_sword 1 0 {display:{Name:&amp;quot;&#x951F;&#x65A4;&#x62F7;&amp;quot;,Lore:[&amp;quot;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&amp;quot;,&amp;quot;&#x70EB;&#x70EB;&#x70EB;&#x70EB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5C6F;&#x5C6F;&#xFFFD;&#xFFFD;&#xFFFD;&amp;quot;]},AttributeModifiers:[{AttributeName:&amp;quot;generic.attackDamage&amp;quot;,Name:&amp;quot;generic.attackDamage&amp;quot;,Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&#x951F;&#x65A4;&#x62F7;&#x4E4B;&#x5251;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&#x6CA1;&#x6709;&#x7C92;&#x5B50;&#x6548;&#x679C;&#x7684;&#x9690;&#x5F62;&#x732A;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <pubDate>Sat, 07 Jan 2017 03:59:26 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/Minecraft&#x547D;&#x4EE4;.md3692746766</guid>
     </item>
     <item>
       <title>&#x5728;&#x7834;&#x70C2;&#x7684;&#x6602;&#x8FBE;&#x5BE8;&#x677F;&#x4E0A;&#x5B89;&#x88C5;64&#x4F4D;&#x7684;ArchLinux</title>

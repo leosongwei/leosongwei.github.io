@@ -27,6 +27,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./Minecraft命令.md">
+<b>Minecraft命令</b>
+</a></td>
+<td><code>2017年04月27日 19:28</code></td>
+</tr>
+<tr><td>
 <a href="./sqrt.md">
 <b>卡马克平方根倒数算法</b>
 </a></td>
@@ -43,12 +49,6 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <b>LXC</b>
 </a></td>
 <td><code>2017年03月19日 13:31</code></td>
-</tr>
-<tr><td>
-<a href="./Minecraft命令.md">
-<b>Minecraft命令</b>
-</a></td>
-<td><code>2017年01月07日 14:59</code></td>
 </tr>
 <tr><td>
 <a href="./onda_x64.md">
