@@ -36,6 +36,7 @@ latest update: graphviz
 ------
 
 ###图像
+
 * GIMP
 	- 顶半个PhotoShop，够用了，体积还小
 * Inkscape
@@ -54,6 +55,7 @@ latest update: graphviz
 	- 很适合用来调试有图数据结构的程序
 
 ###其他
+
 * Audacity
 	- 顶半个CoolEdit，日常处理声音够用了
 * EasyTAG

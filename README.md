@@ -30,7 +30,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="./02_favorite_software.md">
 <b>喜欢的软件</b>
 </a></td>
-<td><code>2017年06月12日 20:27</code></td>
+<td><code>2017年06月12日 20:29</code></td>
 </tr>
 <tr><td>
 <a href="./Minecraft命令.md">
