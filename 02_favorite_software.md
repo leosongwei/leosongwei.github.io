@@ -113,3 +113,5 @@ latest update: graphviz
 	- 类似于f.lux，调整色温，保护眼睛
 * Calibre
 	- 电子书管理软件，我用来转换电子书格式
+* 包：poppler-data
+	- 解决没有正确嵌入字体的PDF文件看不到中文的问题
