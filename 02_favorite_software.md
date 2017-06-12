@@ -35,7 +35,7 @@ latest update: graphviz
 多媒体
 ------
 
-###图像
+### 图像
 
 * GIMP
 	- 顶半个PhotoShop，够用了，体积还小
@@ -54,7 +54,7 @@ latest update: graphviz
 	- 有自己的DSL，把你的输出编译成它的DSL，就能出图
 	- 很适合用来调试有图数据结构的程序
 
-###其他
+### 其他
 
 * Audacity
 	- 顶半个CoolEdit，日常处理声音够用了
