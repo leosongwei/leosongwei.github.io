@@ -12,6 +12,8 @@ tags: fan, linux, acpi, lua;
 ```lua
 #!/usr/bin/env lua5.1
 
+s = require("socket")
+
 temperature = 100
 level = 7
 
@@ -39,8 +41,6 @@ while true do
 	end
 	write_level(level)
 	io.stdout:write("T=", temperature, ", level=", level, "\n")
-	os.execute("sleep 2")
+	s.sleep(2)
 end
 ```
-
-那个`os.execute("sleep 2")`看起来非常可恶，但并没找到什么别的干净的办法。

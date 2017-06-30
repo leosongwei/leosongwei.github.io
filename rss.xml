@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Fri, 30 Jun 2017 06:20:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jun 2017 11:25:20 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -17,6 +17,8 @@
 &lt;p&gt;&#x4E8E;&#x662F;&#x5199;&#x4E86;&#x4E00;&#x4E2A;lua&#x7A0B;&#x5E8F;&#x6765;&#x5E72;&#x8FD9;&#x4E8B;&#xFF0C;&#x8BA9;&#x98CE;&#x6247;&#x4E0D;&#x8981;&#x5B8C;&#x5168;&#x5173;&#x95ED;&#x3002;&#xFF08;&#x6211;&#x4E0D;&#x662F;lua&#x4E13;&#x5BB6;&#xFF0C;&#x4E0D;&#x51C6;&#x55B7;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#xFF09;&lt;/p&gt;
 &lt;p&gt;&#x9002;&#x7528;&#x4E8E;ThinkPad X230&#x3002;&lt;/p&gt;
 &lt;div class=&quot;sourceCode&quot;&gt;&lt;pre class=&quot;sourceCode lua&quot;&gt;&lt;code class=&quot;sourceCode lua&quot;&gt;&lt;span class=&quot;ot&quot;&gt;#&lt;/span&gt;!&lt;span class=&quot;ot&quot;&gt;/&lt;/span&gt;usr&lt;span class=&quot;ot&quot;&gt;/&lt;/span&gt;bin&lt;span class=&quot;ot&quot;&gt;/&lt;/span&gt;env lua5&lt;span class=&quot;ot&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;
+
+s &lt;span class=&quot;ot&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;quot;socket&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;)&lt;/span&gt;
 
 temperature &lt;span class=&quot;ot&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;100&lt;/span&gt;
 level &lt;span class=&quot;ot&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;7&lt;/span&gt;
@@ -45,12 +47,11 @@ write_level&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;d
     &lt;span class=&quot;kw&quot;&gt;end&lt;/span&gt;
     write_level&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;level&lt;span class=&quot;ot&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;fu&quot;&gt;io.stdout&lt;/span&gt;:&lt;span class=&quot;fu&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;quot;T=&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;,&lt;/span&gt; temperature&lt;span class=&quot;ot&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;, level=&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;,&lt;/span&gt; level&lt;span class=&quot;ot&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;fu&quot;&gt;os.execute&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;quot;sleep 2&amp;quot;&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;)&lt;/span&gt;
+    s&lt;span class=&quot;ot&quot;&gt;.&lt;/span&gt;sleep&lt;span class=&quot;ot&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;ot&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;kw&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&#x90A3;&#x4E2A;&lt;code&gt;os.execute(&amp;quot;sleep 2&amp;quot;)&lt;/code&gt;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x53EF;&#x6076;&#xFF0C;&#x4F46;&#x5E76;&#x6CA1;&#x627E;&#x5230;&#x4EC0;&#x4E48;&#x522B;&#x7684;&#x5E72;&#x51C0;&#x7684;&#x529E;&#x6CD5;&#x3002;&lt;/p&gt;
 </description>
-      <pubDate>Fri, 30 Jun 2017 05:34:51 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/fan.md3707789691</guid>
+      <pubDate>Fri, 30 Jun 2017 11:25:06 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/fan.md3707810706</guid>
     </item>
     <item>
       <title>Minecraft&#x547D;&#x4EE4;</title>
