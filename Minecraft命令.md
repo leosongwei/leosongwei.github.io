@@ -21,3 +21,6 @@ tags: minecraft
 * `/execute @e[r=10,type=Snowball] ~ ~ ~ effect @e[r=2,type=!Player] 20 5 5 true`
 	- 让飞行中的雪球带上效果
 	- 和循环式命令方块联用
+
+* `/summon Skeleton ~0 ~1 ~0 {HandItems:[{id:bow,Count:1b},{id:shield,Count:1b}],HandDropChances:[1.0f,1.0f]}`
+	- 设定掉率
