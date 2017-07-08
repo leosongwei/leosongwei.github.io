@@ -5,9 +5,105 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Fri, 30 Jun 2017 11:25:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jul 2017 05:29:21 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>Arma3 Scripting Note</title>
+      <link>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md</link>
+      <description>
+&lt;p&gt;Notes of Arma3 scripting.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;log: &lt;code&gt;systemChat &amp;quot;Hello world!&amp;quot;;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Compile:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_string = &amp;quot;a = a + 1&amp;quot;;
+_code = compile _string;
+call _code;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;execVM:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_handle = player execVM &amp;quot;test.sqf&amp;quot;;
+waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;op&quot;&gt;Op&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
+&amp;amp;&amp;amp;==and, ||==or
+&amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=, !=, ==&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;array-string&quot;&gt;Array &amp;amp; String&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;copy array: &lt;code&gt;_a = + _array&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_a = [1] + [2]
+_count = count _a; // Output: 2
+_s = &amp;quot;a&amp;quot; + &amp;quot; b&amp;quot; // &amp;quot;a b&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid: &lt;code&gt;[1,2,] // Error: Unexpected &amp;quot;,&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_myMultiArray = [[&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;],[&amp;quot;Array2Elem1&amp;quot;,&amp;quot;Array2Elem2&amp;quot;]];
+_selectFirst = _myMultiArray select 0; // Output: [&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;] (Array)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;append: concatenate array without creating new
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_arrayThree = _arrayOne append _arrayTwo; // Output: [&amp;quot;One&amp;quot;,&amp;quot;Two&amp;quot;];&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_a = [[1,1,1],[1,1,1]];
+_b = +_a;
+(_b select 0) set [0, 4]; // Now _b is an array [[4,1,1],[1,1,1]], while _a is still [[1,1,1],[1,1,1]]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;_array = [];
+_element = (_array select 0) // out of bounds&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;control-flow&quot;&gt;Control flow&lt;/h2&gt;
+&lt;p&gt;Return Values: Control structures always return the last expression evaluated within the structure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IF:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// What about &amp;quot;else if&amp;quot;
+if (CONDITION) then {
+    STATEMENT1;
+} else { // optional
+    STATEMENT2;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;IF returns:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// IF has value
+_living = if (alive player) then {true} else {false};&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;switch (VARIABLE) do {
+    case VALUE1: {
+        STATEMENT;
+    };
+    case VALUE2: {
+        STATEMENT;
+        ...
+    };
+    default { // optional
+        STATEMENT;
+        ...
+    };
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;while&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;while {CONDITION} do {
+    STATEMENT;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// Is the {} in [] real statements?
+for [{_i=0}, {_i&amp;lt;10}, {_i=_i+1}] do {
+    player globalChat format[&amp;quot;%1&amp;quot;,_i];
+};
+
+for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
+    player globalChat format[&amp;quot;%1&amp;quot;,_i];
+};
+
+{ _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
+</description>
+      <pubDate>Sat, 08 Jul 2017 05:29:00 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md3708480540</guid>
+    </item>
     <item>
       <title>&#x98CE;&#x6247;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;</title>
       <link>https://github.com/leosongwei/blog/blob/master/fan.md</link>
