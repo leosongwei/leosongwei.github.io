@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 08 Jul 2017 05:30:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jul 2017 05:33:04 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -26,6 +26,9 @@ call _code;&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;_handle = player execVM &amp;quot;test.sqf&amp;quot;;
 waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Read file: &lt;code&gt;_contents = loadFile &amp;quot;myFunction.sqf&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;op&quot;&gt;Op&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
 &amp;amp;&amp;amp;==and, ||==or
@@ -102,8 +105,8 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 
 { _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
 </description>
-      <pubDate>Sat, 08 Jul 2017 05:30:11 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md3708480611</guid>
+      <pubDate>Sat, 08 Jul 2017 05:32:56 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md3708480776</guid>
     </item>
     <item>
       <title>&#x98CE;&#x6247;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;</title>

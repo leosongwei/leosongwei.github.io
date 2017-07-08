@@ -22,6 +22,8 @@ _handle = player execVM "test.sqf";
 waitUntil {scriptDone _handle};
 ```
 
+* Read file: `_contents = loadFile "myFunction.sqf";`
+
 Op
 --
 
