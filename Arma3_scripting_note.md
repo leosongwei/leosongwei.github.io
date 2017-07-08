@@ -1,6 +1,8 @@
 Arma3 Scripting Note
 ========================
 
+tags: script; Arma3; Game;
+
 Notes of Arma3 scripting.
 
 * log: `systemChat "Hello world!";`
