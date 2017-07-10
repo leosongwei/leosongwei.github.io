@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 08 Jul 2017 05:33:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jul 2017 10:52:54 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
@@ -104,9 +104,17 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 };
 
 { _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;install-workshop-mod-on-dedicated-server&quot;&gt;Install Workshop Mod on Dedicated Server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;107410&lt;/code&gt;: Arma3 appid (use the client one, not the server one)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;853743366&lt;/code&gt;: Mod id ( https://steamcommunity.com/sharedfiles/filedetails/?id=853743366 )&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-      <pubDate>Sat, 08 Jul 2017 05:32:56 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md3708480776</guid>
+      <pubDate>Mon, 10 Jul 2017 10:52:46 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/Arma3_scripting_note.md3708672766</guid>
     </item>
     <item>
       <title>&#x98CE;&#x6247;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;</title>

@@ -126,3 +126,9 @@ for "_i" from 0 to 9 step 2 do {
 { _x setDamage 1; } forEach _array;
 ```
 
+Install Workshop Mod on Dedicated Server
+----------------------------------------
+
+* `./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366`
+	- `107410`: Arma3 appid (use the client one, not the server one)
+	- `853743366`: Mod id ( https://steamcommunity.com/sharedfiles/filedetails/?id=853743366 )
