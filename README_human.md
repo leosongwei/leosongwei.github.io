@@ -16,10 +16,10 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 * [标签云](./tags.md)
 
 ## GnuPG
-我的公钥在这里（最近换了新的）：[./attachment/leo_songwei_201609.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/leo_songwei_201609.asc)
+我的公钥在这里（17年7月）：[./attachment/SongWeiPubKey1707.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/SongWeiPubKey1707.asc)
 
 指纹是：
-`5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E`
+`8240 150F 5BAA 06C2 7A22  8C6F ADC3 3E28 F8CE 272C`
 
 文章列表
 --------
