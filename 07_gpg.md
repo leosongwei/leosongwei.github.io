@@ -14,16 +14,31 @@ TonyChyi评论说这个理论相当于是“*某个人见的越多，越了解�
 我的公钥
 --------
 
-我的公钥在这里：`./attachment/leo_songwei_201609.asc`
+2017年7月更新了钥匙对。
 
-新密钥的信息：
+我的公钥在这里：`./attachment/SongWeiPubKey1707.asc`
+
+17年新钥匙的信息：
+
 ```
-pub   4096R/C583B54E 2016-09-26 [有效至：2017-09-26]
-密钥指纹 = 5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
-uid                  Song Wei (Leo, 凉拌茶叶, 2016.09) <leo_songwei@outlook.com>
-uid                  Leo Song (126邮箱) <leo_songwei@126.com>
-sub   4096R/771ED4FB 2016-09-26 [有效至：2017-09-26]
+pub   rsa4096 2017-07-19 [SC] [expires: 2018-09-12]
+      8240 150F 5BAA 06C2 7A22  8C6F ADC3 3E28 F8CE 272C
+uid           [ultimate] Song Wei (Leo, 凉拌茶叶, 201707) (私人 Private) <leo_songwei@outlook.com>
+uid           [ultimate] SongWei (UNSW) <wei.song2@student.unsw.edu.au>
+sub   rsa4096 2017-07-19 [E] [expires: 2018-09-12]
 ```
+
+16年钥匙的信息：
+
+```
+pub   rsa4096 2016-09-26 [SC] [expires: 2017-09-26]
+      5C69 D3D0 3EB8 FB14 75FC  86E5 8003 8760 C583 B54E
+uid           [ultimate] Song Wei (Leo, 凉拌茶叶, 2016.09) <leo_songwei@outlook.com>
+uid           [ultimate] Leo Song (126邮箱) <leo_songwei@126.com>
+uid           [ultimate] SongWei (UNSW) <wei.song2@student.unsw.edu.au>
+sub   rsa4096 2016-09-26 [E] [expires: 2017-09-26]
+```
+
 奇怪的Git签名问题
 -----------------
 
