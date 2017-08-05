@@ -5,9 +5,28 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 19 Jul 2017 15:35:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Aug 2017 05:10:26 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x4E0D;&#x5207;&#x5B9E;&#x9645;&#x7684;&#x8111;&#x6D1E;&#xFF1F;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/&#x8111;&#x6D1E;.md</link>
+      <description>
+&lt;p&gt;tag: &#x8111;&#x6D1E;; &#x788E;&#x788E;&#x5FF5;;&lt;/p&gt;
+&lt;h3 id=&quot;&#x7530;&#x87BA;&#x5DE5;&#x5382;&quot;&gt;&#x7530;&#x87BA;&#x5DE5;&#x5382;&lt;/h3&gt;
+&lt;p&gt;&#x8FD1;&#x672A;&#x6765;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x7530;&#x87BA;&#x5DE5;&#x5382;&#xFF0C;&#x5206;&#x4E3A;&#x517B;&#x6B96;&#x6C60;&#x548C;&#x52A0;&#x5DE5;&#x5382;&#x4E24;&#x90E8;&#x5206;&#x3002;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x517B;&#x6B96;&#x6C60;&#x5E95;&#x6709;&#x6D1E;&#xFF0C;&#x7CFB;&#x7EDF;&#x6309;&#x7167;&#x7530;&#x87BA;&#x7684;&#x751F;&#x4EA7;&#x5468;&#x671F;&#xFF0C;&#x81EA;&#x52A8;&#x5438;&#x53D6;&#x6C60;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7269;&#x8D28;&#x8FDB;&#x5165;&#x7BA1;&#x9053;&#xFF0C;&#x5E76;&#x52A0;&#x6C34;&#x51B2;&#x6D17;&#xFF08;&#x6C34;&#x53EF;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;&#xFF09;&lt;/li&gt;
+&lt;li&gt;&#x7BA1;&#x9053;&#x628A;&#x7530;&#x87BA;&#x548C;&#x6DE4;&#x6CE5;&#x4EE5;&#x53CA;&#x4E0D;&#x660E;&#x7269;&#x8D28;&#x9001;&#x5165;&#x4E00;&#x4E2A;&#x591A;&#x7EA7;&#x8FC7;&#x6EE4;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F9D;&#x6B21;&#x7B5B;&#x9009;&#x51FA;&#x5DE8;&#x5927;&#x7684;&#x6742;&#x7269;&#xFF0C;&#x7530;&#x87BA;&#xFF0C;&#x6CE5;&#x6C99;&lt;/li&gt;
+&lt;li&gt;&#x6DE4;&#x6CE5;&#x548C;&#x6C34;&#x5FAA;&#x73AF;&#x5229;&#x7528;&#xFF0C;&#x9001;&#x56DE;&#x517B;&#x6B96;&#x6C60;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x5468;&#x671F;&#x7684;&#x517B;&#x6B96;&#xFF0C;&#x7530;&#x87BA;&#x9001;&#x8FDB;&#x4E0B;&#x4E00;&#x5904;&#x7406;&#x73AF;&#x8282;&lt;/li&gt;
+&lt;li&gt;&#x628A;&#x7530;&#x87BA;&#x9001;&#x5165;&#x4E00;&#x4E2A;&#x6E05;&#x6C34;&#x6C60;&#xFF0C;&#x8FDB;&#x884C;&#x4E3A;&#x671F;2&#x5929;&#x7684;&#x5410;&#x6C99;&#xFF0C;&#x7136;&#x540E;&#x9001;&#x8FDB;&#x4E0B;&#x4E00;&#x6D41;&#x7A0B;&lt;/li&gt;
+&lt;li&gt;&#x628A;&#x6C34;&#x6CA5;&#x5E72;&#xFF0C;&#x628A;&#x7530;&#x87BA;&#x9001;&#x8FDB;&#x8F90;&#x5C04;&#x5BA4;&#x8FDB;&#x884C;&#x8F90;&#x7167;&#xFF0C;&#x6D88;&#x706D;&#x6240;&#x6709;&#x5BC4;&#x751F;&#x866B;&lt;/li&gt;
+&lt;li&gt;&#x6DCB;&#x4E0A;&#x5F00;&#x6C34;&#xFF0C;&#x6CA5;&#x5E72;&#xFF0C;&#x7092;&#x4E4B;&#xFF0C;&#x5236;&#x6210;&#x9999;&#x8FA3;&#x7530;&#x87BA;&#x7F50;&#x5934;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Sat, 05 Aug 2017 05:10:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/&#x8111;&#x6D1E;.md3710898613</guid>
+    </item>
     <item>
       <title>GnuPG</title>
       <link>https://github.com/leosongwei/blog/blob/master/07_gpg.md</link>
