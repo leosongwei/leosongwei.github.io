@@ -27,16 +27,16 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./requirement_of_programming_language.md">
+<b>需要这样一种程序语言</b>
+</a></td>
+<td><code>2017年09月28日 16:12</code></td>
+</tr>
+<tr><td>
 <a href="./how_to_play_arma3.md">
 <b>如何玩《武装突袭3》？</b>
 </a></td>
 <td><code>2017年09月10日 03:53</code></td>
-</tr>
-<tr><td>
-<a href="./requirement_of_programming_language.md">
-<b>需要这样一种程序语言</b>
-</a></td>
-<td><code>2017年08月25日 12:10</code></td>
 </tr>
 <tr><td>
 <a href="./脑洞.md">
