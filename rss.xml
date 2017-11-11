@@ -5,9 +5,24 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Thu, 28 Sep 2017 06:12:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Nov 2017 06:59:22 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x5728;Markdown&#x91CC;&#x9762;&#x65E0;&#x8111;&#x9AD8;&#x4EAE;LaTeX&#x8BED;&#x6CD5;</title>
+      <link>https://github.com/leosongwei/blog/blob/master/&#x65E0;&#x8111;&#x9AD8;&#x4EAE;LaTeX&#x8BED;&#x6CD5;.md</link>
+      <description>
+&lt;p&gt;tags: latex, vim, markdown&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;syn match  texCmd               &amp;quot;\\\w*&amp;quot; nextgroup=texBrace,texBeginEndModifier
+syn region texBrace     matchgroup=latexcmd start=&amp;quot;{&amp;quot;       end=&amp;quot;}&amp;quot; contains=texBrace,texCmd
+&amp;quot;syn match  texBeginEnd     \&amp;quot;\\begin\&amp;gt;\|\\end\&amp;gt;&amp;quot; contained nextgroup=texBeginEndName
+syn region texBeginEnd          matchgroup=latexcmd     start=&amp;quot;\\begin&amp;quot;         end=&amp;quot;\\end&amp;quot; contains=texBrace,texCmd
+syn region texBeginEndName  matchgroup=latexcmd start=&amp;quot;{&amp;quot;       end=&amp;quot;}&amp;quot; contained contains=texBrace nextgroup=texBeginEndModifier
+syn region texBeginEndModifier  matchgroup=latexcmd start=&amp;quot;\[&amp;quot;      end=&amp;quot;]&amp;quot; contained nextgroup=texBrace&lt;/code&gt;&lt;/pre&gt;
+</description>
+      <pubDate>Sat, 11 Nov 2017 06:58:50 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/&#x65E0;&#x8111;&#x9AD8;&#x4EAE;LaTeX&#x8BED;&#x6CD5;.md3719368730</guid>
+    </item>
     <item>
       <title>&#x9700;&#x8981;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;</title>
       <link>https://github.com/leosongwei/blog/blob/master/requirement_of_programming_language.md</link>
