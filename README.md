@@ -33,9 +33,9 @@ email: leo_songwei@outlook.com
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
 <a href="./os-release.md">
-<b># os-release</b>
+<b>os-release</b>
 </a></td>
-<td><code>2017年11月17日 21:35</code></td>
+<td><code>2018年02月17日 05:10</code></td>
 </tr>
 <tr><td>
 <a href="./无脑高亮LaTeX语法.md">

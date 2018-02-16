@@ -5,11 +5,11 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Fri, 16 Feb 2018 18:08:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Feb 2018 18:10:27 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/blog/blob/master/rss.xml</docs>
     <item>
-      <title># os-release</title>
+      <title>os-release</title>
       <link>https://github.com/leosongwei/blog/blob/master/os-release.md</link>
       <description>
 &lt;p&gt;&#x5199;&#x4E86;&#x4E00;&#x6BB5;&#x975E;&#x5E38;Naive&#x7684;Common Lisp&#x4EE3;&#x7801;&#x6765;&#x8BFB;&#x53D6;&lt;code&gt;/etc/os-release&lt;/code&gt;&#x6587;&#x4EF6;&#xFF1A;&lt;/p&gt;
@@ -86,8 +86,8 @@
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb1-71&quot; data-line-number=&quot;71&quot;&gt;&lt;span class=&quot;co&quot;&gt;;; (getf (read-os-release) :name) =&amp;gt; &amp;quot;Arch Linux&amp;quot;&lt;/span&gt;&lt;/a&gt;
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb1-72&quot; data-line-number=&quot;72&quot;&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-      <pubDate>Fri, 17 Nov 2017 10:35:16 +0000</pubDate>
-      <guid>https://github.com/leosongwei/blog/blob/master/os-release.md3719900116</guid>
+      <pubDate>Fri, 16 Feb 2018 18:10:19 +0000</pubDate>
+      <guid>https://github.com/leosongwei/blog/blob/master/os-release.md3727789819</guid>
     </item>
     <item>
       <title>&#x5728;Markdown&#x91CC;&#x9762;&#x65E0;&#x8111;&#x9AD8;&#x4EAE;LaTeX&#x8BED;&#x6CD5;</title>
