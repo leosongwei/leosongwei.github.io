@@ -17,11 +17,9 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 
 ## 联系方式 Contact
 
-Mastodon: [@leo_song@mastodon.social](https://mastodon.social/@leo_song)
-email: leo_songwei@outlook.com
-
-## GnuPG
-我的公钥在这里（17年7月）：[./attachment/SongWeiPubKey1707.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/SongWeiPubKey1707.asc)
+* Mastodon: [@leo_song@mastodon.social](https://mastodon.social/@leo_song)
+* email: leo_songwei@outlook.com
+* GnuPG：我的公钥在这里（17年7月）[./attachment/SongWeiPubKey1707.asc](https://raw.githubusercontent.com/leosongwei/blog/master/attachment/SongWeiPubKey1707.asc)
 
 指纹是：
 `8240 150F 5BAA 06C2 7A22  8C6F ADC3 3E28 F8CE 272C`
