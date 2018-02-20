@@ -12,9 +12,6 @@
 
 RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改动过的文章，都会被RSS阅读器认为是新的，所以会再出现一遍。
 
-<a href="https://github.com/leosongwei/blog/raw/master/rss.xml"><img src="./attachment/rss.jpg" alt="[RSS]" width="72"/>**RSS订阅**</a>
-
-* [标签云](./tags.md)
 
 ## 联系方式 Contact
 
@@ -25,4 +22,8 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 
 文章列表
 --------
+
+<a href="https://github.com/leosongwei/blog/raw/master/rss.xml"><img src="./attachment/rss.jpg" alt="[RSS]" width="72"/>**RSS订阅**</a>
+
+* [标签云](./tags.md)
 
