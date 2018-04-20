@@ -7,6 +7,8 @@ tags: NetworkManager
 
 放在`/etc/NetworkManager/dispatcher.d`中，用户和组为root，设为可执行。
 
+action的种类参考这里： https://developer.gnome.org/NetworkManager/stable/NetworkManager.html
+
 ```bash
 #!/usr/bin/bash
 
