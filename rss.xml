@@ -5,9 +5,37 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 24 Mar 2018 04:11:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 01:51:04 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>NetworkManager Dispatcher</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/networkmanager-dispatcher.md</link>
+      <description>
+&lt;p&gt;tags: NetworkManager&lt;/p&gt;
+&lt;p&gt;&#x603B;&#x662F;&#x628A;Wifi&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x8DEF;&#x7531;&#x7684;Dispatcher&#x811A;&#x672C;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x653E;&#x5728;&lt;code&gt;/etc/NetworkManager/dispatcher.d&lt;/code&gt;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x4E3A;root&#xFF0C;&#x8BBE;&#x4E3A;&#x53EF;&#x6267;&#x884C;&#x3002;&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb1&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-1&quot; data-line-number=&quot;1&quot;&gt;&lt;span class=&quot;co&quot;&gt;#!/usr/bin/bash&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-2&quot; data-line-number=&quot;2&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-3&quot; data-line-number=&quot;3&quot;&gt;&lt;span class=&quot;co&quot;&gt;# ethernet interface $1&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-4&quot; data-line-number=&quot;4&quot;&gt;&lt;span class=&quot;co&quot;&gt;# action $2&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-5&quot; data-line-number=&quot;5&quot;&gt;&lt;span class=&quot;va&quot;&gt;interface=$1&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-6&quot; data-line-number=&quot;6&quot;&gt;&lt;span class=&quot;va&quot;&gt;action=$2&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-7&quot; data-line-number=&quot;7&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-8&quot; data-line-number=&quot;8&quot;&gt;&lt;span class=&quot;kw&quot;&gt;if [[&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$interface&lt;/span&gt; &lt;span class=&quot;ot&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;wlan0&amp;quot;&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;va&quot;&gt;$action&lt;/span&gt; &lt;span class=&quot;ot&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;up&amp;quot;&lt;/span&gt;&lt;span class=&quot;kw&quot;&gt; ]]&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-9&quot; data-line-number=&quot;9&quot;&gt;&lt;span class=&quot;kw&quot;&gt;then&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-10&quot; data-line-number=&quot;10&quot;&gt;    &lt;span class=&quot;va&quot;&gt;gateway=&lt;/span&gt;&lt;span class=&quot;kw&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;ip&lt;/span&gt; route &lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt;grep&lt;/span&gt; default&lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;fu&quot;&gt;grep&lt;/span&gt; wlan0 &lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;sed&lt;/span&gt; -r &lt;span class=&quot;st&quot;&gt;&amp;#39;s/.*via ([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\1/g&amp;#39;&lt;/span&gt;&lt;span class=&quot;kw&quot;&gt;`&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-11&quot; data-line-number=&quot;11&quot;&gt;    &lt;span class=&quot;va&quot;&gt;$?&lt;/span&gt; = &lt;span class=&quot;ex&quot;&gt;0&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-12&quot; data-line-number=&quot;12&quot;&gt;    &lt;span class=&quot;kw&quot;&gt;until [[&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$?&lt;/span&gt; &lt;span class=&quot;ot&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span class=&quot;kw&quot;&gt; ]]&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-13&quot; data-line-number=&quot;13&quot;&gt;    &lt;span class=&quot;kw&quot;&gt;do&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-14&quot; data-line-number=&quot;14&quot;&gt;        &lt;span class=&quot;ex&quot;&gt;ip&lt;/span&gt; route delete default&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-15&quot; data-line-number=&quot;15&quot;&gt;    &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-16&quot; data-line-number=&quot;16&quot;&gt;    &lt;span class=&quot;fu&quot;&gt;sudo&lt;/span&gt; ip route add default via &lt;span class=&quot;va&quot;&gt;$gateway&lt;/span&gt; dev wlan0&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-17&quot; data-line-number=&quot;17&quot;&gt;&lt;span class=&quot;kw&quot;&gt;fi&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+      <pubDate>Fri, 20 Apr 2018 01:50:02 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/networkmanager-dispatcher.md3733177802</guid>
+    </item>
     <item>
       <title>&#x5751;</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/&#x5751;.md</link>
