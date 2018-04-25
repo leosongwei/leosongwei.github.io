@@ -5,9 +5,25 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 25 Apr 2018 06:38:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Apr 2018 15:29:48 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>The Theorem of the Great Barrier</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/great_barrier.md</link>
+      <description>
+&lt;p&gt;The Rule of the Great Barrier:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Any website, which contain user-generated content, will be blocked eventually.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Corollary:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Any personal website will be blocked eventually.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      <pubDate>Wed, 25 Apr 2018 15:29:31 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/great_barrier.md3733658971</guid>
+    </item>
     <item>
       <title>LSP: cquery&#x548C;Emacs</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/cquery.md</link>

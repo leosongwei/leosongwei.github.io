@@ -30,6 +30,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/great_barrier.md">
+<b>The Theorem of the Great Barrier</b>
+</a></td>
+<td><code>2018年04月26日 01:29</code></td>
+</tr>
+<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/cquery.md">
 <b>LSP: cquery和Emacs</b>
 </a></td>
