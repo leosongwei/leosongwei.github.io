@@ -1,7 +1,7 @@
 LSP: cquery和Emacs
 ------------------
 
-tags: LSP, cquery, Emacs, editor
+tags: LSP; cquery; Emacs; editor;
 
 最近，想要写一点C语言程序。听开源哥说[LSP（Language Server Protocol）](https://langserver.org/)是个挺好的东西，便搞来用了。原理好像是由统一的语言服务器来解析源码，按照LSP协议和编辑器上的LSP插件通信，来实现如代码补全等功能。每个语言只需要一个LSP服务器，每个编辑器也只需要一个LSP客户端插件（其实一般有多个实现）。这样一来就不需要为每个编辑器分别实现每个语言的语法分析插件，从而得以砸了IDE的锅。
 
