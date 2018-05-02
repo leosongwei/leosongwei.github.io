@@ -126,6 +126,12 @@ for "_i" from 0 to 9 step 2 do {
 { _x setDamage 1; } forEach _array;
 ```
 
+Disable AI:
+
+```
+{_ disableAI "ALL";} forEach units group t1;
+```
+
 Install Workshop Mod on Dedicated Server
 ----------------------------------------
 

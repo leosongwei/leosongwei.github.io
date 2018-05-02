@@ -13,8 +13,8 @@ TAGS
 
 ### ARMA3<a name="ARMA3"/>
 
-* [Arma3 Scripting Note](./Arma3_scripting_note.md)
 * [如何玩《武装突袭3》？](./how_to_play_arma3.md)
+* [Arma3 Scripting Note](./Arma3_scripting_note.md)
 
 ### BLOG<a name="BLOG"/>
 
@@ -85,8 +85,8 @@ TAGS
 
 ### GAME<a name="GAME"/>
 
-* [Arma3 Scripting Note](./Arma3_scripting_note.md)
 * [如何玩《武装突袭3》？](./how_to_play_arma3.md)
+* [Arma3 Scripting Note](./Arma3_scripting_note.md)
 
 ### GNOME-SHELL<a name="GNOME-SHELL"/>
 
