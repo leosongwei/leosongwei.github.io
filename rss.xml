@@ -5,9 +5,21 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 02 May 2018 04:58:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 12:58:24 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>modprobe blacklist bluetooth</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md</link>
+      <description>
+&lt;p&gt;tag: modprobe; blacklist; bluetooth&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/modprobe.d/nobluetooth.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;blacklist btusb&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Blacklisting the module &lt;code&gt;bluetooth&lt;/code&gt; will not be effective, because &lt;code&gt;btusb&lt;/code&gt; will load the &lt;code&gt;bluetooth&lt;/code&gt; module.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 08 May 2018 12:58:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md3734773093</guid>
+    </item>
     <item>
       <title>Arma3 Scripting Note</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md</link>
