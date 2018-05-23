@@ -33,6 +33,36 @@ Op
 >, <, >=, <=, !=, ==
 ```
 
+Variables
+---------
+
+**Private** variables starts with underscore: `_myvar = 0;`
+
+In functions, private variables should be marked as private:
+
+* `private "_myprivatevar";_myprivatevar = 0;`
+* `private _myvar = 0;`
+
+Or: `private ["_p1", "_p2"]`
+
+**Global** variables are not started with underscore. `Myvar = 0;`
+
+**Public** Variables: the global variables broadcasts over the computers:
+
+`myPubvar = 123; publicVariable "myPubvar";`
+
+Function
+--------
+
+```
+my_func = {
+  params ["_a", "_b"];
+  ...
+};
+
+[1, 2] call my_func;
+```
+
 Array & String
 --------------
 * copy array: `_a = + _array`
@@ -129,7 +159,7 @@ for "_i" from 0 to 9 step 2 do {
 Disable AI:
 
 ```
-{_ disableAI "ALL";} forEach units group t1;
+{_x disableAI "ALL";} forEach units group t1;
 ```
 
 Install Workshop Mod on Dedicated Server

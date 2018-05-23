@@ -5,21 +5,9 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Tue, 08 May 2018 12:58:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 May 2018 16:08:19 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
-    <item>
-      <title>modprobe blacklist bluetooth</title>
-      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md</link>
-      <description>
-&lt;p&gt;tag: modprobe; blacklist; bluetooth&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;/etc/modprobe.d/nobluetooth.conf&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;blacklist btusb&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Blacklisting the module &lt;code&gt;bluetooth&lt;/code&gt; will not be effective, because &lt;code&gt;btusb&lt;/code&gt; will load the &lt;code&gt;bluetooth&lt;/code&gt; module.&lt;/p&gt;
-</description>
-      <pubDate>Tue, 08 May 2018 12:58:13 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md3734773093</guid>
-    </item>
     <item>
       <title>Arma3 Scripting Note</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md</link>
@@ -45,6 +33,24 @@ waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
 &amp;amp;&amp;amp;==and, ||==or
 &amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=, !=, ==&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Private&lt;/strong&gt; variables starts with underscore: &lt;code&gt;_myvar = 0;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In functions, private variables should be marked as private:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;private &amp;quot;_myprivatevar&amp;quot;;_myprivatevar = 0;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private _myvar = 0;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or: &lt;code&gt;private [&amp;quot;_p1&amp;quot;, &amp;quot;_p2&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global&lt;/strong&gt; variables are not started with underscore. &lt;code&gt;Myvar = 0;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Public&lt;/strong&gt; Variables: the global variables broadcasts over the computers:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &amp;quot;myPubvar&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;my_func = {
+  params [&amp;quot;_a&amp;quot;, &amp;quot;_b&amp;quot;];
+  ...
+};
+
+[1, 2] call my_func;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;array-string&quot;&gt;Array &amp;amp; String&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;copy array: &lt;code&gt;_a = + _array&lt;/code&gt;&lt;/li&gt;
@@ -117,7 +123,7 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 
 { _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Disable AI:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{_ disableAI &amp;quot;ALL&amp;quot;;} forEach units group t1;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;{_x disableAI &amp;quot;ALL&amp;quot;;} forEach units group t1;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;install-workshop-mod-on-dedicated-server&quot;&gt;Install Workshop Mod on Dedicated Server&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366&lt;/code&gt;
@@ -127,8 +133,20 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <pubDate>Wed, 02 May 2018 04:58:13 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3734225893</guid>
+      <pubDate>Wed, 23 May 2018 16:08:11 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3736080491</guid>
+    </item>
+    <item>
+      <title>modprobe blacklist bluetooth</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md</link>
+      <description>
+&lt;p&gt;tag: modprobe; blacklist; bluetooth&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/modprobe.d/nobluetooth.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;blacklist btusb&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Blacklisting the module &lt;code&gt;bluetooth&lt;/code&gt; will not be effective, because &lt;code&gt;btusb&lt;/code&gt; will load the &lt;code&gt;bluetooth&lt;/code&gt; module.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 08 May 2018 12:58:13 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/blacklist_bluetooth.md3734773093</guid>
     </item>
     <item>
       <title>The Theorem of the Great Barrier</title>
