@@ -51,6 +51,8 @@ Or: `private ["_p1", "_p2"]`
 
 `myPubvar = 123; publicVariable "myPubvar";`
 
+While trying to initialize a variable, if the form didn't returns a value, the variable will not be established. Referencing this variable will cause variable not bound error.
+
 Function
 --------
 

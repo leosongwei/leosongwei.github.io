@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 23 May 2018 16:08:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 08:11:06 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
     <item>
@@ -44,6 +44,7 @@ waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Global&lt;/strong&gt; variables are not started with underscore. &lt;code&gt;Myvar = 0;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Public&lt;/strong&gt; Variables: the global variables broadcasts over the computers:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &amp;quot;myPubvar&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;While trying to initialize a variable, if the form didn&#x2019;t returns a value, the variable will not be established. Referencing this variable will cause variable not bound error.&lt;/p&gt;
 &lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;my_func = {
   params [&amp;quot;_a&amp;quot;, &amp;quot;_b&amp;quot;];
@@ -133,8 +134,8 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <pubDate>Wed, 23 May 2018 16:08:11 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3736080491</guid>
+      <pubDate>Thu, 24 May 2018 08:10:58 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3736138258</guid>
     </item>
     <item>
       <title>modprobe blacklist bluetooth</title>
