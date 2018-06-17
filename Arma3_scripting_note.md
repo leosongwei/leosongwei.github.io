@@ -164,6 +164,10 @@ Disable AI:
 {_x disableAI "ALL";} forEach units group t1;
 ```
 
+Create Unit:
+
+```group _unit createUnit ["O_Soldier_VR_F", position _unit, [], 0, "NONE"]; ```
+
 Install Workshop Mod on Dedicated Server
 ----------------------------------------
 
