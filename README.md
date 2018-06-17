@@ -33,7 +33,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/mastodon_client.md">
 <b>A Simple Mastodon Client</b>
 </a></td>
-<td><code>2018年06月17日 13:50</code></td>
+<td><code>2018年06月17日 13:53</code></td>
 </tr>
 <tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md">

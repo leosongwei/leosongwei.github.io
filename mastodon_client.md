@@ -29,3 +29,8 @@ curl -X POST -d '{"status":"test"}'\
   --header "Authorization: Bearer [The access token]"\
   -sS https://mastodon.social/api/v1/statuses
 ```
+
+Refer:
+
+* https://github.com/tootsuite/documentation/blob/master/Using-the-API/API.md
+* https://github.com/tootsuite/documentation/blob/master/Using-the-API/Testing-with-cURL.md
