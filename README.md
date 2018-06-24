@@ -30,6 +30,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/sbcl_serve-event.md">
+<b>SBCL (serve-event)</b>
+</a></td>
+<td><code>2018年06月24日 16:57</code></td>
+</tr>
+<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/mastodon_client.md">
 <b>A Simple Mastodon Client</b>
 </a></td>

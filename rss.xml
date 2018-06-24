@@ -5,9 +5,19 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sun, 17 Jun 2018 03:53:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 06:57:51 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>SBCL (serve-event)</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/sbcl_serve-event.md</link>
+      <description>
+&lt;p&gt;tags: Common Lisp; Socket; Select&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb1&quot;&gt;&lt;pre class=&quot;sourceCode lisp&quot;&gt;&lt;code class=&quot;sourceCode commonlisp&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-1&quot; data-line-number=&quot;1&quot;&gt;(sb-sys:serve-event)&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+      <pubDate>Sun, 24 Jun 2018 06:57:36 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/sbcl_serve-event.md3738812256</guid>
+    </item>
     <item>
       <title>A Simple Mastodon Client</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/mastodon_client.md</link>
