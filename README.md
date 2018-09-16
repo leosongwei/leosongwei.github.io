@@ -30,6 +30,12 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/Telegram_video.md">
+<b>ffmpeg压制微信和Telegram能看的视频</b>
+</a></td>
+<td><code>2018年09月16日 21:10</code></td>
+</tr>
+<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/sbcl_serve-event.md">
 <b>SBCL (serve-event)</b>
 </a></td>
