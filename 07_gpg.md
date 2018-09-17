@@ -16,7 +16,16 @@ TonyChyi评论说这个理论相当于是“*某个人见的越多，越了解�
 
 2017年7月更新了钥匙对。
 
-我的公钥在这里：`./attachment/SongWeiPubKey1707.asc`
+我的公钥在这里：`./attachment/1809.asc`
+
+18年钥匙的信息：
+
+```
+pub   ed25519 2018-09-16 [SC] [expires: 2020-01-09]
+      4A77 DC2A 0157 DD7A 1326  FA2C 2420 F800 D431 23FF
+uid           [ultimate] Song Wei (Leo, 凉拌茶叶, 201809) <leo_songwei@outlook.com>
+sub   cv25519 2018-09-16 [E] [expires: 2020-01-09]
+```
 
 17年新钥匙的信息：
 
