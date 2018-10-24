@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 24 Oct 2018 10:51:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Oct 2018 11:24:53 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
     <item>
@@ -21,22 +21,17 @@
   defer
   apply force
   ...&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;subst&quot;&gt;subst&lt;/h2&gt;
-&lt;pre class=&quot;isabelle&quot;&gt;&lt;code&gt;lemma list_push: &amp;quot;[a]@[b] = a # [b]&amp;quot;
-  by simp
-
-lemma &amp;quot;[x]@[y]@[z] = x # (y # [z])&amp;quot;
-  (* [x] @ [y] @ [z] = [x, y, z] *)
-  apply (subst list_push)
-  (* [x] @ [y, z] = [x, y, z] *)
-  by simp&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;rule_tac&quot;&gt;rule_tac&lt;/h2&gt;
 &lt;h2 id=&quot;of-where-then&quot;&gt;OF WHERE THEN&lt;/h2&gt;
+&lt;p&gt;&#x2018;5.15.1 Modifying a Theorem using of, where and THEN&#x2019; (tutorial.pdf)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;[OF ...]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[where]&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;[where ...]&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;&#x2018;5.15.1 Modifying a Theorem using of, where and THEN&#x2019; (tutorial.pdf)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;thm list_push[where a=&amp;quot;1::nat&amp;quot;]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[1::nat] @ [?b::nat] = [1::nat, ?b]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;induction&quot;&gt;induction&lt;/h2&gt;
@@ -46,9 +41,26 @@ lemma &amp;quot;[x]@[y]@[z] = x # (y # [z])&amp;quot;
 &lt;h2 id=&quot;definition&quot;&gt;definition&lt;/h2&gt;
 &lt;pre class=&quot;isabelle&quot;&gt;&lt;code&gt;definition duplist :: &amp;quot;&amp;#39;a list &#x21D2; &amp;#39;a list&amp;quot;
   where &amp;quot;duplist xs &#x2261; xs @ xs&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;substitution&quot;&gt;substitution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;apply subst&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;isabelle&quot;&gt;&lt;code&gt;lemma list_push: &amp;quot;[a]@[b] = a # [b]&amp;quot;
+  by simp
+
+lemma &amp;quot;[x]@[y]@[z] = x # (y # [z])&amp;quot;
+  (* [x] @ [y] @ [z] = [x, y, z] *)
+  apply (subst list_push)
+  (* [x] @ [y, z] = [x, y, z] *)
+  by simp&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;rule (ssbust &#x2026;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;isabelle&quot;&gt;&lt;code&gt;thm ssbust (* ?t = ?s &#x27F9; ?P ?s &#x27F9; ?P ?t *)
+thm ssubst[OF list_push] (* (?P::?&amp;#39;a1 List.list &#x21D2; bool) [?a1::?&amp;#39;a1, ?b1::?&amp;#39;a1] &#x27F9; ?P ([?a1] @ [?b1]) *)&lt;/code&gt;&lt;/pre&gt;
 </description>
-      <pubDate>Wed, 24 Oct 2018 10:51:52 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Isabelle.md3749363512</guid>
+      <pubDate>Wed, 24 Oct 2018 11:24:48 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Isabelle.md3749365488</guid>
     </item>
     <item>
       <title>ffmpeg</title>

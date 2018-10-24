@@ -33,7 +33,7 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/Isabelle.md">
 <b>Isabelle Tips</b>
 </a></td>
-<td><code>2018年10月24日 21:51</code></td>
+<td><code>2018年10月24日 22:24</code></td>
 </tr>
 <tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md">
