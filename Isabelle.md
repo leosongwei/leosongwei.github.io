@@ -12,3 +12,16 @@ tags: theorem-prover; Isabelle
   apply force
   ...
 ```
+
+* subst
+
+``` Isabelle
+lemma list_push: "[a]@[b] = a # [b]"
+  by simp
+
+lemma "[x]@[y]@[z] = x # (y # [z])"
+  (* [x] @ [y] @ [z] = [x, y, z] *)
+  apply (subst list_push)
+  (* [x] @ [y, z] = [x, y, z] *)
+  by simp
+```
