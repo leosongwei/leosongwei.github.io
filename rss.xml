@@ -5,9 +5,38 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Wed, 24 Oct 2018 11:24:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Nov 2018 00:52:24 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x5751;</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/&#x5751;.md</link>
+      <description>
+&lt;p&gt;TAG: Lisp, 3D, Hurd&lt;/p&gt;
+&lt;h2 id=&quot;opengl-for-mezzano&quot;&gt;OpenGL for Mezzano&lt;/h2&gt;
+&lt;p&gt;&#x7ED9;Mezzano&#x7ED1;&#x4E0A;virtio-gpu&#x652F;&#x6301;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x672A;&#x586B;&lt;/p&gt;
+&lt;h2 id=&quot;make-kde-great-as-gnome2&quot;&gt;Make KDE great as GNOME2&lt;/h2&gt;
+&lt;p&gt;&#x90FD;8102&#x5E74;&#x4E86;&#xFF0C;&#x5BF9;&#x6BD4;GNOME2&#xFF0C;KDE&#x7684;widgets&#x8D28;&#x91CF;&#x4ECD;&#x7136;&#x5F88;&#x5DEE;&#xFF0C;&#x9700;&#x8981;&#x7ED9;KDE&#x5199;&#x51E0;&#x4E2A;&#x53EF;&#x7528;&#x6027;&#x8FBE;&#x5230;GNOME2&#x540C;&#x7C7B;&#x6C34;&#x5E73;&#x7684;widget&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x672A;&#x586B;&lt;/p&gt;
+&lt;h2 id=&quot;&#x8F6F;&#x4EF6;&#x6E32;&#x67D3;&#x5668;&quot;&gt;&#x8F6F;&#x4EF6;&#x6E32;&#x67D3;&#x5668;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/leosongwei/naive-software-renderer&quot;&gt;naive-software-renderer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&#x4ECB;&#x7ECD;&#xFF1A;&#x62FF;Common Lisp&#x5199;&#x7684;&#x8F6F;&#x4EF6;3D&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x5149;&#x6805;&#x5316;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x548C;OpenGL&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x4E5F;&#x662F;&#x52A0;&#x8F7D;&#x56FE;&#x5143;&#xFF0C;&#x7136;&#x540E;draw call&#xFF0C;draw call&#x91CC;&#x9762;&#x8C03;&#x7528;shader&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x4E0B;&#x4E00;&#x6B65;&#x5265;&#x79BB;SDL&#x5E93;&#xFF0C;&#x6539;&#x7528;&#x66F4;&#x62BD;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x5199;&#x4EFB;&#x610F;&#x5F62;&#x5F0F;&#x7684;&#x4E8C;&#x7EF4;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/leosongwei/blog/masterttps://raw.githubusercontent.com/leosongwei/naive-software-renderer/master/bunny_china.jpg&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&quot;&gt;&lt;del&gt;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&lt;/del&gt;&lt;/h2&gt;
+&lt;p&gt;&#x628A;Arma 3&#x7684;ACE3 mod&#x7684;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&#x7684;&#x516C;&#x5F0F;&#x63D0;&#x51FA;&#x6765;&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x7248;&#x7684;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&#x4EE5;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x5F03;&#x5751;&lt;/p&gt;
+&lt;h2 id=&quot;vim-sbcl&quot;&gt;&lt;del&gt;VIM-SBCL&lt;/del&gt;&lt;/h2&gt;
+&lt;p&gt;&#x628A;VIM&#x91CC;&#x9762;&#x90A3;&#x4E2A;code walker&#x89E3;&#x91CA;&#x5668;&#x62FF;&#x6389;&#xFF0C;&#x63D2;&#x4E00;&#x4E2A;SBCL&#x4E0A;&#x53BB;&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x5F03;&#x5751;&lt;/p&gt;
+&lt;h2 id=&quot;sbcl-on-gnuhurd&quot;&gt;&lt;del&gt;SBCL on GNU/Hurd&lt;/del&gt;&lt;/h2&gt;
+&lt;p&gt;&#x628A;SBCL&#x79FB;&#x690D;&#x5230;GNU/Hurd&#x4E0A;&lt;/p&gt;
+&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x5F03;&#x5751;&lt;/p&gt;
+</description>
+      <pubDate>Thu, 01 Nov 2018 00:52:19 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/&#x5751;.md3750018739</guid>
+    </item>
     <item>
       <title>Isabelle Tips</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Isabelle.md</link>
@@ -341,29 +370,6 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 </description>
       <pubDate>Wed, 25 Apr 2018 06:38:15 +0000</pubDate>
       <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/cquery.md3733627095</guid>
-    </item>
-    <item>
-      <title>&#x5751;</title>
-      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/&#x5751;.md</link>
-      <description>
-&lt;p&gt;TAG: Lisp, 3D, Hurd&lt;/p&gt;
-&lt;h2 id=&quot;&#x8F6F;&#x4EF6;&#x6E32;&#x67D3;&#x5668;&quot;&gt;&#x8F6F;&#x4EF6;&#x6E32;&#x67D3;&#x5668;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/leosongwei/naive-software-renderer&quot;&gt;naive-software-renderer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&#x4ECB;&#x7ECD;&#xFF1A;&#x62FF;Common Lisp&#x5199;&#x7684;&#x8F6F;&#x4EF6;3D&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x5149;&#x6805;&#x5316;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x548C;OpenGL&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x4E5F;&#x662F;&#x52A0;&#x8F7D;&#x56FE;&#x5143;&#xFF0C;&#x7136;&#x540E;draw call&#xFF0C;draw call&#x91CC;&#x9762;&#x8C03;&#x7528;shader&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x505A;&#x5F97;&#x5DEE;&#x4E0D;&#x591A;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x57FA;&#x7840;&#x4E0A;&#x518D;&#x5199;&#x70B9;&#x7740;&#x8272;&#x5668;&#x3002;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/leosongwei/blog/masterttps://raw.githubusercontent.com/leosongwei/naive-software-renderer/master/bunny_china.jpg&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&quot;&gt;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&lt;/h2&gt;
-&lt;p&gt;&#x628A;Arma 3&#x7684;ACE3 mod&#x7684;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&#x7684;&#x516C;&#x5F0F;&#x63D0;&#x51FA;&#x6765;&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x7248;&#x7684;&#x5F39;&#x9053;&#x8BA1;&#x7B97;&#x5668;&#x4EE5;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x672A;&#x586B;&lt;/p&gt;
-&lt;h2 id=&quot;vim-sbcl&quot;&gt;VIM-SBCL&lt;/h2&gt;
-&lt;p&gt;&#x628A;VIM&#x91CC;&#x9762;&#x90A3;&#x4E2A;code walker&#x89E3;&#x91CA;&#x5668;&#x62FF;&#x6389;&#xFF0C;&#x63D2;&#x4E00;&#x4E2A;SBCL&#x4E0A;&#x53BB;&#x3002;&lt;/p&gt;
-&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x672A;&#x586B;&lt;/p&gt;
-&lt;h2 id=&quot;sbcl-on-gnuhurd&quot;&gt;SBCL on GNU/Hurd&lt;/h2&gt;
-&lt;p&gt;&#x628A;SBCL&#x79FB;&#x690D;&#x5230;GNU/Hurd&#x4E0A;&lt;/p&gt;
-&lt;p&gt;&#x8FDB;&#x5EA6;&#xFF1A;&#x672A;&#x586B;&lt;/p&gt;
-</description>
-      <pubDate>Sat, 21 Apr 2018 13:07:52 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/&#x5751;.md3733304872</guid>
     </item>
     <item>
       <title>NetworkManager Dispatcher</title>
