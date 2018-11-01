@@ -3,8 +3,4 @@ Green
 
 tag: green
 
-<style
-  type="text/css">
-p {color:blue;}
-</style>
-<p>okay</p>
+- ![#5cbf62](https://placehold.it/15/c5f015/000000?text=+) `#5cbf62`

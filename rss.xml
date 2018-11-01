@@ -5,7 +5,7 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Thu, 01 Nov 2018 14:15:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Nov 2018 14:18:25 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
     <item>
@@ -13,16 +13,12 @@
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/green.md</link>
       <description>
 &lt;p&gt;tag: green&lt;/p&gt;
-&lt;style
-  type=&quot;text/css&quot;&gt;
-p {color:blue;}
-&lt;/style&gt;
-&lt;p&gt;
-okay
-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://raw.githubusercontent.com/leosongwei/blog/masterttps://placehold.it/15/c5f015/000000?text=+&quot; alt=&quot;#5cbf62&quot; /&gt; &lt;code&gt;#5cbf62&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-      <pubDate>Thu, 01 Nov 2018 14:15:08 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/green.md3750066908</guid>
+      <pubDate>Thu, 01 Nov 2018 14:18:21 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/green.md3750067101</guid>
     </item>
     <item>
       <title>&#x5751;</title>
