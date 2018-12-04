@@ -5,9 +5,31 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Thu, 01 Nov 2018 14:18:25 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Dec 2018 03:09:08 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>steamcmd</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/steamcmd.md</link>
+      <description>
+&lt;ul&gt;
+&lt;li&gt;forcing platform
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Steam&amp;gt;@sSteamCmdForcePlatformType = &quot;windows&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;install application:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;app_update 223750 validate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;force install directory:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;force_install_dir /home/user/game&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Tue, 04 Dec 2018 03:08:56 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/steamcmd.md3752878136</guid>
+    </item>
     <item>
       <title>Green</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/green.md</link>
@@ -69,7 +91,7 @@
 &lt;li&gt;&lt;code&gt;[OF ...]&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[where ...]&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;thm list_push[where a=&amp;quot;1::nat&amp;quot;]&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;thm list_push[where a=&quot;1::nat&quot;]&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;[1::nat] @ [?b::nat] = [1::nat, ?b]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -108,7 +130,7 @@ thm ssubst[OF list_push] (* (?P::?&amp;#39;a1 List.list &#x21D2; bool) [?a1::?&a
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md</link>
       <description>
 &lt;p&gt;ffmpeg&#x538B;&#x5236;&#x5FAE;&#x4FE1;&#x548C;Telegram&#x80FD;&#x770B;&#x7684;&#x89C6;&#x9891;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ffmpeg -i 'b.gif' -c:v libx264 -crf 30 -pix_fmt yuv420p -vf &amp;quot;scale=trunc(iw/2)*2:trunc(ih/2)*2&amp;quot; output.mp4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ffmpeg -i 'b.gif' -c:v libx264 -crf 30 -pix_fmt yuv420p -vf &quot;scale=trunc(iw/2)*2:trunc(ih/2)*2&quot; output.mp4&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&#x4E24;&#x904D;&#x538B;&#x5236;&#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 1 -an -f mp4 /dev/null
 $ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 2 -f mp4 -c:a aac -b:a 128k output.mp4&lt;/code&gt;&lt;/pre&gt;
@@ -206,7 +228,7 @@ uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;
 &lt;p&gt;tags: script; Arma3; Game;&lt;/p&gt;
 &lt;p&gt;Notes of Arma3 scripting.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;log: &lt;code&gt;systemChat &amp;quot;Hello world!&amp;quot;;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;log: &lt;code&gt;systemChat &quot;Hello world!&quot;;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Compile:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;_string = &amp;quot;a = a + 1&amp;quot;;
@@ -218,7 +240,7 @@ call _code;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;_handle = player execVM &amp;quot;test.sqf&amp;quot;;
 waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Read file: &lt;code&gt;_contents = loadFile &amp;quot;myFunction.sqf&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Read file: &lt;code&gt;_contents = loadFile &quot;myFunction.sqf&quot;;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;op&quot;&gt;Op&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
@@ -228,13 +250,13 @@ waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Private&lt;/strong&gt; variables starts with underscore: &lt;code&gt;_myvar = 0;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In functions, private variables should be marked as private:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;private &amp;quot;_myprivatevar&amp;quot;;_myprivatevar = 0;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private &quot;_myprivatevar&quot;;_myprivatevar = 0;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;private _myvar = 0;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Or: &lt;code&gt;private [&amp;quot;_p1&amp;quot;, &amp;quot;_p2&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Or: &lt;code&gt;private [&quot;_p1&quot;, &quot;_p2&quot;]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Global&lt;/strong&gt; variables are not started with underscore. &lt;code&gt;Myvar = 0;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Public&lt;/strong&gt; Variables: the global variables broadcasts over the computers:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &amp;quot;myPubvar&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &quot;myPubvar&quot;;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;While trying to initialize a variable, if the form didn&#x2019;t returns a value, the variable will not be established. Referencing this variable will cause variable not bound error.&lt;/p&gt;
 &lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;my_func = {
@@ -251,14 +273,14 @@ waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
 _count = count _a; // Output: 2
 _s = &amp;quot;a&amp;quot; + &amp;quot; b&amp;quot; // &amp;quot;a b&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;[1,2,] // Error: Unexpected &amp;quot;,&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Invalid: &lt;code&gt;[1,2,] // Error: Unexpected &quot;,&quot;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;_myMultiArray = [[&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;],[&amp;quot;Array2Elem1&amp;quot;,&amp;quot;Array2Elem2&amp;quot;]];
 _selectFirst = _myMultiArray select 0; // Output: [&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;] (Array)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;append: concatenate array without creating new
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_arrayThree = _arrayOne append _arrayTwo; // Output: [&amp;quot;One&amp;quot;,&amp;quot;Two&amp;quot;];&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_arrayThree = _arrayOne append _arrayTwo; // Output: [&quot;One&quot;,&quot;Two&quot;];&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;_a = [[1,1,1],[1,1,1]];
@@ -317,7 +339,7 @@ for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
 &lt;p&gt;Disable AI:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{_x disableAI &amp;quot;ALL&amp;quot;;} forEach units group t1;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Create Unit:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;group _unit createUnit [&amp;quot;O_Soldier_VR_F&amp;quot;, position _unit, [], 0, &amp;quot;NONE&amp;quot;];&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;group _unit createUnit [&quot;O_Soldier_VR_F&quot;, position _unit, [], 0, &quot;NONE&quot;];&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&quot;install-workshop-mod-on-dedicated-server&quot;&gt;Install Workshop Mod on Dedicated Server&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366&lt;/code&gt;
@@ -786,7 +808,7 @@ syn region texBeginEndModifier  matchgroup=latexcmd start=&amp;quot;\[&amp;quot;
       <description>
 &lt;p&gt;tags: minecraft&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/summon EntityHorse ~ ~-2.5 ~ {CustomName:&amp;quot;Right Click, sit down.&amp;quot;,Type:0,Variant:7,Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.movementSpeed,Base:0.000}],Invulnerable:1,NoAI:1,Silent:1,NoGravity:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f]}&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;/summon EntityHorse ~ ~-2.5 ~ {CustomName:&quot;Right Click, sit down.&quot;,Type:0,Variant:7,Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.movementSpeed,Base:0.000}],Invulnerable:1,NoAI:1,Silent:1,NoGravity:1,Team:&quot;NoCollision&quot;,Rotation:[90f,0f]}&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&#x9690;&#x5F62;&#x7684;&#x9A6C;&#xFF0C;&#x5F53;&#x4F5C;&#x5EA7;&#x4F4D;&lt;/li&gt;
 &lt;li&gt;&#x65E0;AI&#xFF0C;&#x65E0;&#x78B0;&#x649E;&#xFF0C;&#x65E0;&#x58F0;&#x97F3;&lt;/li&gt;
@@ -800,11 +822,11 @@ syn region texBeginEndModifier  matchgroup=latexcmd start=&amp;quot;\[&amp;quot;
 &lt;li&gt;&#x8FD9;&#x4E2A;Variant&#x7684;&#x9A6C;&#x6CA1;&#x6709;&#x8D34;&#x56FE;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/give @p iron_sword 1 0 {display:{Name:&amp;quot;&#x951F;&#x65A4;&#x62F7;&amp;quot;,Lore:[&amp;quot;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&amp;quot;,&amp;quot;&#x70EB;&#x70EB;&#x70EB;&#x70EB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5C6F;&#x5C6F;&#xFFFD;&#xFFFD;&#xFFFD;&amp;quot;]},AttributeModifiers:[{AttributeName:&amp;quot;generic.attackDamage&amp;quot;,Name:&amp;quot;generic.attackDamage&amp;quot;,Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;/give @p iron_sword 1 0 {display:{Name:&quot;&#x951F;&#x65A4;&#x62F7;&quot;,Lore:[&quot;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&#x951F;&#x65A4;&#x62F7;&quot;,&quot;&#x70EB;&#x70EB;&#x70EB;&#x70EB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5C6F;&#x5C6F;&#xFFFD;&#xFFFD;&#xFFFD;&quot;]},AttributeModifiers:[{AttributeName:&quot;generic.attackDamage&quot;,Name:&quot;generic.attackDamage&quot;,Amount:100,Operation:0,UUIDMost:71006,UUIDLeast:367061}],HideFlags:4,Unbreakable:1,ench:[{id:20,lvl:10},{id:21,lvl:10},{id:34,lvl:1}]}&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&#x951F;&#x65A4;&#x62F7;&#x4E4B;&#x5251;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:&amp;quot;NoCollision&amp;quot;,Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;/summon Pig ~ ~-1 ~ {Invulnerable:1,NoAI:1,Silent:1,Team:&quot;NoCollision&quot;,Rotation:[90f,0f],ActiveEffects:[{Id:14,Amplifier:1,Duration:99999999,ShowParticles:0b}]}&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&#x6CA1;&#x6709;&#x7C92;&#x5B50;&#x6548;&#x679C;&#x7684;&#x9690;&#x5F62;&#x732A;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -1207,7 +1229,7 @@ insmod fat&lt;/code&gt;&lt;/pre&gt;
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb1-13&quot; title=&quot;13&quot;&gt;           (&lt;span class=&quot;kw&quot;&gt;error&lt;/span&gt; &amp;#39;no-char-for-code :code code))&lt;/a&gt;
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb1-14&quot; title=&quot;14&quot;&gt;...&lt;/a&gt;
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb1-15&quot; title=&quot;15&quot;&gt;...&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;Surrogate Pairs&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x7F16;&#x7801;&#x6210;&lt;code&gt;&amp;quot;\ud83d\ude03&amp;quot;&lt;/code&gt;&#x5F62;&#x5F0F;&#x7684;Emoji&#x8868;&#x60C5;&#x4F1A;&#x88AB;&#x5288;&#x6210;2&#x4E2A;&#x5B57;&#x7B26;&#x5206;&#x522B;&#x8BFB;&#x53D6;&#xFF0C;&#x5BF9;Lisp&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x4E71;&#x7801;&#x4E86;&#x3002;&#x6539;&#x5929;&#x6709;&#x7A7A;&#x7ED9;&#x4ED6;&#x4EEC;&#x4FEE;&#x4E00;&#x4FEE;&#xFF0C;&#x5148;&#x6765;&#x4E2A;Dirty Hack&#x3002;&lt;/p&gt;
+&lt;p&gt;&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;Surrogate Pairs&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x7F16;&#x7801;&#x6210;&lt;code&gt;&quot;\ud83d\ude03&quot;&lt;/code&gt;&#x5F62;&#x5F0F;&#x7684;Emoji&#x8868;&#x60C5;&#x4F1A;&#x88AB;&#x5288;&#x6210;2&#x4E2A;&#x5B57;&#x7B26;&#x5206;&#x522B;&#x8BFB;&#x53D6;&#xFF0C;&#x5BF9;Lisp&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x4E71;&#x7801;&#x4E86;&#x3002;&#x6539;&#x5929;&#x6709;&#x7A7A;&#x7ED9;&#x4ED6;&#x4EEC;&#x4FEE;&#x4E00;&#x4FEE;&#xFF0C;&#x5148;&#x6765;&#x4E2A;Dirty Hack&#x3002;&lt;/p&gt;
 &lt;p&gt;&#x8BBE;&lt;code&gt;xxx&lt;/code&gt;&#x5BF9;&#x4E8E;SBCL&#x6765;&#x8BF4;&#x662F;Surrogate Pairs&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x8FD9;&#x65F6;bug&#x5DF2;&#x7ECF;&#x53D1;&#x751F;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9519;&#x5C31;&#x9519;&#xFF09;&#xFF0C;&#x5982;&#x6B64;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x539F;&#x5B57;&#x7B26;&#xFF1A;&lt;/p&gt;
 &lt;div class=&quot;sourceCode&quot; id=&quot;cb2&quot;&gt;&lt;pre class=&quot;sourceCode lisp&quot;&gt;&lt;code class=&quot;sourceCode commonlisp&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb2-1&quot; title=&quot;1&quot;&gt;(&lt;span class=&quot;kw&quot;&gt;progn&lt;/span&gt;&lt;/a&gt;
 &lt;a class=&quot;sourceLine&quot; id=&quot;cb2-2&quot; title=&quot;2&quot;&gt;  (&lt;span class=&quot;kw&quot;&gt;setf&lt;/span&gt; xxx (&lt;span class=&quot;kw&quot;&gt;with-input-from-string&lt;/span&gt; (&lt;span class=&quot;kw&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;\&amp;quot;\\&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;uD83D&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;uDE03&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;\&amp;quot;&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;quot;&lt;/span&gt;)&lt;/a&gt;
