@@ -5,9 +5,24 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Tue, 04 Dec 2018 03:09:08 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 16:04:41 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>ffmpeg</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md</link>
+      <description>
+&lt;p&gt;ffmpeg&#x538B;&#x5236;&#x5FAE;&#x4FE1;&#x548C;Telegram&#x80FD;&#x770B;&#x7684;&#x89C6;&#x9891;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ffmpeg -i 'b.gif' -c:v libx264 -crf 30 -pix_fmt yuv420p -vf &quot;scale=trunc(iw/2)*2:trunc(ih/2)*2&quot; output.mp4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&#x4E24;&#x904D;&#x538B;&#x5236;&#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 1 -an -f mp4 /dev/null
+$ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 2 -f mp4 -c:a aac -b:a 128k output.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#x4ECE;&#x56FE;&#x7247;&#x5236;&#x4F5C;gif&#x52A8;&#x753B;&#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ffmpeg -f image2 -r 4 -i '%d.jpg' -vf scale=640x360 a.gif&lt;/code&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sat, 15 Dec 2018 16:04:36 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md3753875076</guid>
+    </item>
     <item>
       <title>steamcmd</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/steamcmd.md</link>
@@ -124,19 +139,6 @@ thm ssubst[OF list_push] (* (?P::?&amp;#39;a1 List.list &#x21D2; bool) [?a1::?&a
 </description>
       <pubDate>Wed, 24 Oct 2018 11:24:48 +0000</pubDate>
       <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Isabelle.md3749365488</guid>
-    </item>
-    <item>
-      <title>ffmpeg</title>
-      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md</link>
-      <description>
-&lt;p&gt;ffmpeg&#x538B;&#x5236;&#x5FAE;&#x4FE1;&#x548C;Telegram&#x80FD;&#x770B;&#x7684;&#x89C6;&#x9891;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ffmpeg -i 'b.gif' -c:v libx264 -crf 30 -pix_fmt yuv420p -vf &quot;scale=trunc(iw/2)*2:trunc(ih/2)*2&quot; output.mp4&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&#x4E24;&#x904D;&#x538B;&#x5236;&#xFF1A;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 1 -an -f mp4 /dev/null
-$ ffmpeg -y -i &#x3010;&#x30AC;&#x30EB;&#x30D1;&#x30F3;&#x3011;&#x968A;&#x9577;&#x5341;&#x8272;-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 200k -preset veryslow -crf 30 -pix_fmt yuv420p -vf scale=720:400 -pass 2 -f mp4 -c:a aac -b:a 128k output.mp4&lt;/code&gt;&lt;/pre&gt;
-</description>
-      <pubDate>Fri, 12 Oct 2018 11:33:51 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md3748329231</guid>
     </item>
     <item>
       <title>GnuPG</title>
