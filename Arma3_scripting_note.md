@@ -1,9 +1,12 @@
-Arma3 Scripting Note
+Arma3 Note
 ========================
 
 tags: script; Arma3; Game;
 
-Notes of Arma3 scripting.
+Notes of Arma3.
+
+* Ammunition initial speed:
+  - "airFriction" https://community.bistudio.com/wiki/CfgAmmo_Config_Reference
 
 * log: `systemChat "Hello world!";`
 

@@ -14,7 +14,7 @@ TAGS
 ### ARMA3<a name="ARMA3"/>
 
 * [如何玩《武装突袭3》？](./how_to_play_arma3.md)
-* [Arma3 Scripting Note](./Arma3_scripting_note.md)
+* [Arma3 Note](./Arma3_scripting_note.md)
 
 ### BLACKLIST<a name="BLACKLIST"/>
 
@@ -99,7 +99,7 @@ TAGS
 ### GAME<a name="GAME"/>
 
 * [如何玩《武装突袭3》？](./how_to_play_arma3.md)
-* [Arma3 Scripting Note](./Arma3_scripting_note.md)
+* [Arma3 Note](./Arma3_scripting_note.md)
 
 ### GNOME-SHELL<a name="GNOME-SHELL"/>
 
@@ -240,7 +240,7 @@ TAGS
 
 ### SCRIPT<a name="SCRIPT"/>
 
-* [Arma3 Scripting Note](./Arma3_scripting_note.md)
+* [Arma3 Note](./Arma3_scripting_note.md)
 
 ### SELECT<a name="SELECT"/>
 

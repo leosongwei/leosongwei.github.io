@@ -5,9 +5,144 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sat, 15 Dec 2018 16:04:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jan 2019 14:15:29 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>Arma3 Note</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md</link>
+      <description>
+&lt;p&gt;tags: script; Arma3; Game;&lt;/p&gt;
+&lt;p&gt;Notes of Arma3.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ammunition initial speed:
+&lt;ul&gt;
+&lt;li&gt;&#x201C;airFriction&#x201D; https://community.bistudio.com/wiki/CfgAmmo_Config_Reference&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;log: &lt;code&gt;systemChat &quot;Hello world!&quot;;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Compile:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_string = &amp;quot;a = a + 1&amp;quot;;
+_code = compile _string;
+call _code;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;execVM:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_handle = player execVM &amp;quot;test.sqf&amp;quot;;
+waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Read file: &lt;code&gt;_contents = loadFile &quot;myFunction.sqf&quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;op&quot;&gt;Op&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
+&amp;amp;&amp;amp;==and, ||==or
+&amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=, !=, ==&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Private&lt;/strong&gt; variables starts with underscore: &lt;code&gt;_myvar = 0;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In functions, private variables should be marked as private:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;private &quot;_myprivatevar&quot;;_myprivatevar = 0;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private _myvar = 0;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or: &lt;code&gt;private [&quot;_p1&quot;, &quot;_p2&quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global&lt;/strong&gt; variables are not started with underscore. &lt;code&gt;Myvar = 0;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Public&lt;/strong&gt; Variables: the global variables broadcasts over the computers:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &quot;myPubvar&quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;While trying to initialize a variable, if the form didn&#x2019;t returns a value, the variable will not be established. Referencing this variable will cause variable not bound error.&lt;/p&gt;
+&lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;my_func = {
+  params [&amp;quot;_a&amp;quot;, &amp;quot;_b&amp;quot;];
+  ...
+};
+
+[1, 2] call my_func;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;array-string&quot;&gt;Array &amp;amp; String&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;copy array: &lt;code&gt;_a = + _array&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_a = [1] + [2]
+_count = count _a; // Output: 2
+_s = &amp;quot;a&amp;quot; + &amp;quot; b&amp;quot; // &amp;quot;a b&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid: &lt;code&gt;[1,2,] // Error: Unexpected &quot;,&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_myMultiArray = [[&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;],[&amp;quot;Array2Elem1&amp;quot;,&amp;quot;Array2Elem2&amp;quot;]];
+_selectFirst = _myMultiArray select 0; // Output: [&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;] (Array)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;append: concatenate array without creating new
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_arrayThree = _arrayOne append _arrayTwo; // Output: [&quot;One&quot;,&quot;Two&quot;];&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;_a = [[1,1,1],[1,1,1]];
+_b = +_a;
+(_b select 0) set [0, 4]; // Now _b is an array [[4,1,1],[1,1,1]], while _a is still [[1,1,1],[1,1,1]]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;_array = [];
+_element = (_array select 0) // out of bounds&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;control-flow&quot;&gt;Control flow&lt;/h2&gt;
+&lt;p&gt;Return Values: Control structures always return the last expression evaluated within the structure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IF:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// What about &amp;quot;else if&amp;quot;
+if (CONDITION) then {
+    STATEMENT1;
+} else { // optional
+    STATEMENT2;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;IF returns:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// IF has value
+_living = if (alive player) then {true} else {false};&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;switch (VARIABLE) do {
+    case VALUE1: {
+        STATEMENT;
+    };
+    case VALUE2: {
+        STATEMENT;
+        ...
+    };
+    default { // optional
+        STATEMENT;
+        ...
+    };
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;while&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;while {CONDITION} do {
+    STATEMENT;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;// Is the {} in [] real statements?
+for [{_i=0}, {_i&amp;lt;10}, {_i=_i+1}] do {
+    player globalChat format[&amp;quot;%1&amp;quot;,_i];
+};
+
+for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
+    player globalChat format[&amp;quot;%1&amp;quot;,_i];
+};
+
+{ _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Disable AI:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{_x disableAI &amp;quot;ALL&amp;quot;;} forEach units group t1;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create Unit:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;group _unit createUnit [&quot;O_Soldier_VR_F&quot;, position _unit, [], 0, &quot;NONE&quot;];&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;install-workshop-mod-on-dedicated-server&quot;&gt;Install Workshop Mod on Dedicated Server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;107410&lt;/code&gt;: Arma3 appid (use the client one, not the server one)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;853743366&lt;/code&gt;: Mod id ( https://steamcommunity.com/sharedfiles/filedetails/?id=853743366 )&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Tue, 18 Dec 2018 03:24:10 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3754088650</guid>
+    </item>
     <item>
       <title>ffmpeg</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/ffmpeg.md</link>
@@ -222,137 +357,6 @@ uid                  leo_song (Song Wei) &amp;lt;leo_songwei@126.com&amp;gt;&lt;
 </description>
       <pubDate>Sun, 17 Jun 2018 03:53:26 +0000</pubDate>
       <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/mastodon_client.md3738196406</guid>
-    </item>
-    <item>
-      <title>Arma3 Scripting Note</title>
-      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md</link>
-      <description>
-&lt;p&gt;tags: script; Arma3; Game;&lt;/p&gt;
-&lt;p&gt;Notes of Arma3 scripting.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;log: &lt;code&gt;systemChat &quot;Hello world!&quot;;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Compile:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;_string = &amp;quot;a = a + 1&amp;quot;;
-_code = compile _string;
-call _code;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;execVM:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;_handle = player execVM &amp;quot;test.sqf&amp;quot;;
-waitUntil {scriptDone _handle};&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Read file: &lt;code&gt;_contents = loadFile &quot;myFunction.sqf&quot;;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;op&quot;&gt;Op&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;+, -, *, /, %==mod, ^(power)
-&amp;amp;&amp;amp;==and, ||==or
-&amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=, !=, ==&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Private&lt;/strong&gt; variables starts with underscore: &lt;code&gt;_myvar = 0;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;In functions, private variables should be marked as private:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;private &quot;_myprivatevar&quot;;_myprivatevar = 0;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;private _myvar = 0;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Or: &lt;code&gt;private [&quot;_p1&quot;, &quot;_p2&quot;]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Global&lt;/strong&gt; variables are not started with underscore. &lt;code&gt;Myvar = 0;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Public&lt;/strong&gt; Variables: the global variables broadcasts over the computers:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;myPubvar = 123; publicVariable &quot;myPubvar&quot;;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;While trying to initialize a variable, if the form didn&#x2019;t returns a value, the variable will not be established. Referencing this variable will cause variable not bound error.&lt;/p&gt;
-&lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;my_func = {
-  params [&amp;quot;_a&amp;quot;, &amp;quot;_b&amp;quot;];
-  ...
-};
-
-[1, 2] call my_func;&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;array-string&quot;&gt;Array &amp;amp; String&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;copy array: &lt;code&gt;_a = + _array&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;_a = [1] + [2]
-_count = count _a; // Output: 2
-_s = &amp;quot;a&amp;quot; + &amp;quot; b&amp;quot; // &amp;quot;a b&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;[1,2,] // Error: Unexpected &quot;,&quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;_myMultiArray = [[&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;],[&amp;quot;Array2Elem1&amp;quot;,&amp;quot;Array2Elem2&amp;quot;]];
-_selectFirst = _myMultiArray select 0; // Output: [&amp;quot;Array1Elem1&amp;quot;,&amp;quot;Array1Elem2&amp;quot;] (Array)&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;append: concatenate array without creating new
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_arrayThree = _arrayOne append _arrayTwo; // Output: [&quot;One&quot;,&quot;Two&quot;];&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;_a = [[1,1,1],[1,1,1]];
-_b = +_a;
-(_b select 0) set [0, 4]; // Now _b is an array [[4,1,1],[1,1,1]], while _a is still [[1,1,1],[1,1,1]]&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;_array = [];
-_element = (_array select 0) // out of bounds&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;control-flow&quot;&gt;Control flow&lt;/h2&gt;
-&lt;p&gt;Return Values: Control structures always return the last expression evaluated within the structure.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IF:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;// What about &amp;quot;else if&amp;quot;
-if (CONDITION) then {
-    STATEMENT1;
-} else { // optional
-    STATEMENT2;
-};&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;IF returns:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;// IF has value
-_living = if (alive player) then {true} else {false};&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;switch (VARIABLE) do {
-    case VALUE1: {
-        STATEMENT;
-    };
-    case VALUE2: {
-        STATEMENT;
-        ...
-    };
-    default { // optional
-        STATEMENT;
-        ...
-    };
-};&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;while&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;while {CONDITION} do {
-    STATEMENT;
-};&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;for&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;// Is the {} in [] real statements?
-for [{_i=0}, {_i&amp;lt;10}, {_i=_i+1}] do {
-    player globalChat format[&amp;quot;%1&amp;quot;,_i];
-};
-
-for &amp;quot;_i&amp;quot; from 0 to 9 step 2 do {
-    player globalChat format[&amp;quot;%1&amp;quot;,_i];
-};
-
-{ _x setDamage 1; } forEach _array;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Disable AI:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{_x disableAI &amp;quot;ALL&amp;quot;;} forEach units group t1;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Create Unit:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;group _unit createUnit [&quot;O_Soldier_VR_F&quot;, position _unit, [], 0, &quot;NONE&quot;];&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;install-workshop-mod-on-dedicated-server&quot;&gt;Install Workshop Mod on Dedicated Server&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./steamcmd.sh +login username passwd +workshop_download_item 107410 853743366&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;107410&lt;/code&gt;: Arma3 appid (use the client one, not the server one)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;853743366&lt;/code&gt;: Mod id ( https://steamcommunity.com/sharedfiles/filedetails/?id=853743366 )&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <pubDate>Mon, 11 Jun 2018 04:53:00 +0000</pubDate>
-      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md3737681580</guid>
     </item>
     <item>
       <title>modprobe blacklist bluetooth</title>

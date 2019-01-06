@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl" type="text/xsl"?>
+
+<squad nick="SSD">
+	<name>sensyadou</name>
+	<email></email>
+	<web></web>
+	<picture>Anglerfish.paa</picture>
+	<title>sensyadou!</title>
+	<member id="76561198280053917" nick="kosmos">
+		<name>kosmos</name>
+		<email>kosmosmisasagi@outlook.com</email>
+		<icq>N/A</icq>
+		<remark>just for fun</remark>
+	</member>
+	<member id="76561198078797639" nick="leo">
+		<name>leo</name>
+		<email>topsecret@example.com</email>
+		<icq>N/A</icq>
+		<remark>just for fun</remark>
+	</member>
+</squad>
