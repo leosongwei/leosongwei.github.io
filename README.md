@@ -30,6 +30,18 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md">
+<b>手机招标</b>
+</a></td>
+<td><code>2019年03月12日 00:28</code></td>
+</tr>
+<tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/time.md">
+<b>时间利用率理论</b>
+</a></td>
+<td><code>2019年03月05日 00:54</code></td>
+</tr>
+<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md">
 <b>Arma3 Note</b>
 </a></td>

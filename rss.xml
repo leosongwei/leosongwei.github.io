@@ -5,9 +5,69 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Sun, 06 Jan 2019 14:49:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 13:28:46 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>&#x624B;&#x673A;&#x62DB;&#x6807;</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md</link>
+      <description>
+&lt;p&gt;&#x9700;&#x6C42;&#xFF1A; * &#x5355;&#x624B;&#x6301;&#x63E1;&#xFF0C;&#x4E0D;&#x4F1A;&#x5927;&#x5230;&#x4ECE;&#x88E4;&#x515C;&#x91CC;&#x6389;&#x51FA;&#x6765; * &#x9632;&#x6454;&#xFF1A;1.5m&#x6B63;&#x9762;&#x671D;&#x4E0B;&#xFF0C;&#x5C4F;&#x5E55;&#x4E0D;&#x5F97;&#x635F;&#x574F; * 3.5mm&#x8033;&#x673A;&#x5B54;&lt;/p&gt;
+</description>
+      <pubDate>Mon, 11 Mar 2019 13:28:31 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md3761296111</guid>
+    </item>
+    <item>
+      <title>&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#x7406;&#x8BBA;</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/time.md</link>
+      <description>
+&lt;p&gt;&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x8861;&#x91CF;&#x75B2;&#x52B3;&#x6C34;&#x5E73;&#x7684;&#x53C2;&#x6570;&#xFF1A;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x65E0;&#x6CD5;&#x540C;&#x65F6;&#x505A;&#x5176;&#x4ED6;&#x4E8B;&#x60C5;&#x7684;&#x65F6;&#x95F4;&#x8BB0;&#x4E3A;1&#xFF0C;&#x7761;&#x7720;&#xFF0C;&#x5DE5;&#x4F5C;&#xFF0C;&#x51C6;&#x5907;&#x98DF;&#x7269;&#xFF0C;&#x5BB6;&#x52A1;&#xFF0C;&#x8D76;&#x8DEF;&#xFF0C;&#x90FD;&#x7B97;&#x5728;&#x5185;&lt;/li&gt;
+&lt;li&gt;&#x53EF;&#x4EE5;&#x60A0;&#x95F2;&#x5730;&#x5E72;&#x5176;&#x4ED6;&#x4E8B;&#x60C5;&#x7684;&#x65F6;&#x95F4;&#x8BB0;&#x4E3A;0&lt;/li&gt;
+&lt;li&gt;&#x9ED8;&#x8BA4;&#x8981;&#x52A0;&#x4E0A;8&#x5C0F;&#x65F6;&#x7684;&#x7761;&#x7720;&#x65F6;&#x95F4;&#xFF08;&#x8BB0;&#x4E3A;1&#xFF09;&lt;/li&gt;
+&lt;li&gt;&#x8D85;&#x8FC7;24&#x70B9;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x4E8B;&#x9879;&#x8981;&#x8BB0;&#x4E3A;1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;&#x4F8B;&#x4E00;&#x4E0A;&#x5B66;&quot;&gt;&#x4F8B;&#xFF08;&#x4E00;&#xFF09;&#xFF1A;&#x4E0A;&#x5B66;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;8&#x70B9;&#x8D77;&#x5E8A;&#xFF1A;8&lt;/li&gt;
+&lt;li&gt;&#x6D17;&#x6F31;+&#x51C6;&#x5907;&#x65E9;&#x996D;&#xFF1A;0.5&lt;/li&gt;
+&lt;li&gt;&#x5403;&#x996D;&#xFF1A;0&lt;/li&gt;
+&lt;li&gt;(9:00)&lt;/li&gt;
+&lt;li&gt;&#x5199;&#x4F5C;&#x4E1A;&#x81F3;12&#x70B9;&#xFF1A;3&lt;/li&gt;
+&lt;li&gt;&#x51C6;&#x5907;&#x5348;&#x996D;&#xFF1A;0.5&lt;/li&gt;
+&lt;li&gt;&#x5403;&#x996D;&#xFF1A;0&lt;/li&gt;
+&lt;li&gt;(13:00)&lt;/li&gt;
+&lt;li&gt;&#x505A;&#x4F5C;&#x4E1A;&#x81F3;17:30&#xFF1A;4.5&lt;/li&gt;
+&lt;li&gt;&#x51C6;&#x5907;&#x665A;&#x996D;&#xFF1A;0.5&lt;/li&gt;
+&lt;li&gt;&#x5403;&#x996D;&#x5E76;&#x4F11;&#x606F;&#xFF1A;0&lt;/li&gt;
+&lt;li&gt;(19:00)&lt;/li&gt;
+&lt;li&gt;&#x5199;&#x4F5C;&#x4E1A;&#x81F3;&#x51CC;&#x6668;1&#x70B9;&#xFF1A;6&lt;/li&gt;
+&lt;li&gt;&#x6D17;&#x6F31;&#x5E76;&#x51C6;&#x5907;&#x7761;&#x89C9;&#xFF1A;1&lt;/li&gt;
+&lt;li&gt;(26:00)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#xFF1A;(8 + 0.5 + 3 + 0.5 + 4.5 + 0.5 + 6 + 1) / 24 = 100%&lt;/p&gt;
+&lt;h2 id=&quot;&#x4F8B;&#x4E8C;&#x4E0A;&#x73ED;&quot;&gt;&#x4F8B;&#xFF08;&#x4E8C;&#xFF09;&#xFF1A;&#x4E0A;&#x73ED;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;8&#x70B9;&#x8D77;&#x5E8A;: 8&lt;/li&gt;
+&lt;li&gt;&#x6D17;&#x6F31;&#x5E76;&#x79FB;&#x52A8;&#x81F3;&#x516C;&#x53F8;&#xFF1A;1&lt;/li&gt;
+&lt;li&gt;&#x793E;&#x755C;&#x5230;12&#x70B9;&#xFF1A;3&lt;/li&gt;
+&lt;li&gt;&#x5403;&#x996D;&#xFF1A;0&lt;/li&gt;
+&lt;li&gt;(13:00)&lt;/li&gt;
+&lt;li&gt;&#x793E;&#x755C;&#x5230;18&#x70B9;&#xFF1A;5&lt;/li&gt;
+&lt;li&gt;&#x4ECE;&#x516C;&#x53F8;&#x79FB;&#x52A8;&#x81F3;&#x996D;&#x9986;&#xFF0C;&#x5403;&#x996D;&#xFF0C;&#x4ECE;&#x996D;&#x9986;&#x56DE;&#x6765;&#xFF1A;1.5&#xFF08;&#x8FD9;&#x91CC;&#xFF0C;&#x5403;&#x996D;&#x5E26;&#x4E0A;&#x4E86;&#x8D76;&#x8DEF;&#x5C5E;&#x6027;&#xFF09;&lt;/li&gt;
+&lt;li&gt;(19:30)&lt;/li&gt;
+&lt;li&gt;&#x6298;&#x817E;&#x4E1A;&#x4F59;&#x9879;&#x76EE;&#x5230;22&#x70B9;&#xFF1A;2.5&lt;/li&gt;
+&lt;li&gt;&#x6D17;&#x6F31;&#xFF1A;0.5&lt;/li&gt;
+&lt;li&gt;&#x54B8;&#x9C7C;&#x5230;12&#x70B9;&#xFF1A;0&lt;/li&gt;
+&lt;li&gt;(24:00)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#xFF1A; (8 + 1 + 3 + 5 + 2.5 + 0.5) / 24 = 83.3%&lt;/p&gt;
+&lt;p&gt;&#x7EFC;&#x4E0A;&#xFF0C;&#x5F53;&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#x8D85;&#x8FC7;80%&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x4F1A;&#x611F;&#x5230;&#x75B2;&#x52B3;&#xFF0C;&#x5E76;&#x5F71;&#x54CD;&#x957F;&#x671F;&#x6548;&#x7387;&#x3002;&#x5F53;&#x65F6;&#x95F4;&#x5229;&#x7528;&#x7387;&#x8D85;&#x8FC7;90%&#xFF0C;&#x4E8B;&#x60C5;&#x5C31;&#x5F00;&#x59CB;&#x53D8;&#x5F97;&#x8352;&#x8C2C;&#x3002;&#x8D85;&#x8FC7;100%&#xFF0C;&#x6B7B;&#x795E;&#x5C31;&#x63A5;&#x8FD1;&#x95E8;&#x53E3;&#x4E86;&#x3002;&lt;/p&gt;
+</description>
+      <pubDate>Mon, 04 Mar 2019 13:54:09 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/time.md3760692849</guid>
+    </item>
     <item>
       <title>Arma3 Note</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/Arma3_scripting_note.md</link>
@@ -15,7 +75,7 @@
 &lt;p&gt;tags: script; Arma3; Game;&lt;/p&gt;
 &lt;p&gt;Notes of Arma3.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Ammunition initial speed:
+&lt;li&gt;&lt;p&gt;Ammunition initial speed:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&#x201C;airFriction&#x201D; https://community.bistudio.com/wiki/CfgAmmo_Config_Reference&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
