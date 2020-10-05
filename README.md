@@ -36,12 +36,6 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <td><code>2020年02月15日 05:15</code></td>
 </tr>
 <tr><td>
-<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/vaio-sx12.md">
-<b>VAIO SX12测评</b>
-</a></td>
-<td><code>2019年12月01日 12:22</code></td>
-</tr>
-<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md">
 <b>手机招标</b>
 </a></td>
