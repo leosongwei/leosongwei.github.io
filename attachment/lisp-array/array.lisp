@@ -80,6 +80,7 @@
 ;;;; Copy Array
 
 (defun copy-array-1d (source target)
+  (declare (type (simple-array (unsigned-byte 32) (*)) source target))
   (dotimes (i 1000)
     (dotimes (j 1000)
       (let ((offset (+ j (* i 1000))))
@@ -94,6 +95,26 @@
 (progn (full-gc)
        (print 'test-copy-array-1d)
        (test-copy-array-1d))
+
+(defun copy-array-byte (source target)
+  (declare (type (simple-array (unsigned-byte 8) (*)) source target))
+  (dotimes (i (* 4 1000 1000))
+    (setf (aref target i) (aref source i))))
+;; (disassemble #'copy-array-byte)
+
+(defun test-copy-array-byte ()
+  (let ((arrays (loop repeat 1000 collect (make-array (* 4 1000 1000) :element-type '(unsigned-byte 8))))
+        (source (let ((a (make-array (* 4 1000 1000) :element-type '(unsigned-byte 8))))
+                  (dotimes (i (length a))
+                    (setf (aref a i) (random 256)))
+                  a)))
+    (time
+     (dolist (array arrays)
+       (copy-array-byte source array)))))
+
+(progn (full-gc)
+       (print 'test-copy-array-byte)
+       (test-copy-array-byte))
 
 ;;;; Displaced Array
 
@@ -116,7 +137,8 @@
          (fill-arrays-1d-no-declaration a-displaced))))))
 
 (progn (full-gc)
-       (print `(test-fill-displaced-array-1d ,(test-fill-displaced-array-1d))))
+       (print 'test-fill-displaced-array-1d)
+       (time (test-fill-displaced-array-1d)))
 
 ;;;; -------------------------- CFFI --------------------------------------
 
@@ -134,13 +156,13 @@
 
 ;;;; Fill Array
 
-(load (cffi-grovel:process-grovel-file "attachment/array-grovel.lisp" "/tmp/_array-grovel.o"))
+(load (cffi-grovel:process-grovel-file "array-grovel.lisp" "/tmp/_array-grovel.o"))
 
 (cffi:defcfun ("memset" memset) :pointer
   (s :pointer) (c :int) (n size_t))
 
 (defun fill-array-c (ptr)
-  (memset ptr #xF (* 4 1000 1000)))
+  (memset ptr #xA (* 4 1000 1000)))
 
 (defun test-fill-array-c ()
   (let ((arrays (test-make-array-c)))
@@ -151,6 +173,7 @@
       (cffi:foreign-free a))))
 
 (progn (full-gc)
+       (print 'test-fill-array-c)
        (test-fill-array-c))
 
 ;;;; copy array
@@ -173,4 +196,5 @@
       (cffi:foreign-free array))))
 
 (progn (full-gc)
+       (print 'test-copy-array-c)
        (test-copy-array-c))

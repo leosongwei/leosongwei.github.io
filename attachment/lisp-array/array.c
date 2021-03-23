@@ -6,7 +6,7 @@
 
 int main()
 {
-	int* arrays[1000];
+	uint32_t* arrays[1000];
 	for(int i=0; i<1000; i++){
 		arrays[i] = malloc(sizeof(uint32_t)*1000*1000);
 	}
@@ -14,15 +14,11 @@ int main()
 	clock_t start = clock();
 
 	for(int i=0; i<1000; i++){
-		int* array = arrays[i];
-		memset(array, 0xF, 4*1000*1000);
-		/*
-		for(int j=0; j<1000; j++){
-			for(int k=0; k<1000; k++){
-				array[j*1000 + k] = 0xF;
-			}
+		uint8_t* array = (uint8_t*)arrays[i];
+		//memset(array, 0xF, 4*1000*1000);
+		for(int j=0; j<4*1000*1000; j++){
+			array[j]=0xA;
 		}
-		*/
 	}
 
 	clock_t end = clock();
