@@ -5,9 +5,38 @@
     <title>&#x51C9;&#x62CC;&#x8336;&#x53F6;&#x7684;&#x535A;&#x5BA2;</title>
     <link>https://github.com/leosongwei/blog/blob/master/README.md</link>
     <description>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x535A;&#x5BA2;&#x2026;&#x2026;</description>
-    <lastBuildDate>Mon, 05 Oct 2020 04:27:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Mar 2021 10:10:33 +0000</lastBuildDate>
     <language>zh-cn</language>
     <docs>https://github.com/leosongwei/leosongwei.github.io/blob/master/rss.xml</docs>
+    <item>
+      <title>SSH: get server fingerprint</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/ssh-fingerprint.md</link>
+      <description>
+&lt;p&gt;TAG: Linux; SSH;&lt;/p&gt;
+&lt;p&gt;If the key is ed25519: &lt;code&gt;ssh-keygen -l -E sha256 -f /etc/ssh/ssh_host_ed25519_key.pub&lt;/code&gt;&lt;/p&gt;
+</description>
+      <pubDate>Tue, 23 Mar 2021 10:10:08 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/ssh-fingerprint.md3825479408</guid>
+    </item>
+    <item>
+      <title>SBCL Array Operations Performance</title>
+      <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/lisp-array.md</link>
+      <description>
+&lt;p&gt;tags: common lisp; array; benchmark; performance;&lt;/p&gt;
+&lt;p&gt;Need to do some GUI programming with Common Lisp recently, thus I come up with this article to record the performance of array operations in SBCL.&lt;/p&gt;
+&lt;h2 id=&quot;make-array&quot;&gt;Make Array&lt;/h2&gt;
+&lt;h2 id=&quot;fill-array&quot;&gt;Fill Array&lt;/h2&gt;
+&lt;h2 id=&quot;displaced-array&quot;&gt;Displaced Array&lt;/h2&gt;
+&lt;h2 id=&quot;further-read&quot;&gt;Further Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/&quot;&gt;SBCL: the ultimate assembly code breadboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/lisp/comments/fkfgjn/sbcl_with_simd_how_to_optimize_sseavx2_to_pointer/&quot;&gt;SBCL with SIMD: How to optimize SSE/AVX2 to pointer coercion?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pvk.ca/Blog/Lisp/hacking_SSE_intrinsics-part_1.html&quot;&gt;Hacking SSE Intrinsics in SBCL (part 1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Tue, 06 Oct 2020 14:06:33 +0000</pubDate>
+      <guid>https://github.com/leosongwei/leosongwei.github.io/blob/master/lisp-array.md3810978393</guid>
+    </item>
     <item>
       <title>&#x624B;&#x673A;&#x62DB;&#x6807;</title>
       <link>https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md</link>

@@ -30,6 +30,18 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/ssh-fingerprint.md">
+<b>SSH: get server fingerprint</b>
+</a></td>
+<td><code>2021年03月23日 21:10</code></td>
+</tr>
+<tr><td>
+<a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/lisp-array.md">
+<b>SBCL Array Operations Performance</b>
+</a></td>
+<td><code>2020年10月07日 01:06</code></td>
+</tr>
+<tr><td>
 <a href="https://github.com/leosongwei/leosongwei.github.io/blob/master/phone_requirement.md">
 <b>手机招标</b>
 </a></td>
