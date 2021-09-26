@@ -1,6 +1,8 @@
 Git sign
 --------
 
+TAG: git; gpg;
+
 给git repo配置签名：
 
 ```bash
