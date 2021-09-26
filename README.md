@@ -30,16 +30,16 @@ RSS订阅会出现“重复”，这是一个特性而非bug。凡是刚刚改�
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./git_sign.md">
+<b>Git sign</b>
+</a></td>
+<td><code>2021年09月26日 22:31</code></td>
+</tr>
+<tr><td>
 <a href="./rssgen.lisp.md">
 <b>rssgen.lisp</b>
 </a></td>
 <td><code>2021年09月26日 22:27</code></td>
-</tr>
-<tr><td>
-<a href="./git_sign.md">
-<b>Git sign</b>
-</a></td>
-<td><code>2021年09月26日 22:21</code></td>
 </tr>
 <tr><td>
 <a href="./00_what_is_call_cc.md">
