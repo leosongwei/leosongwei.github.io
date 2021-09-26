@@ -1,7 +1,7 @@
 TAGS
 ----
 
-[[ACPI](#ACPI)] [[APPLICATION](#APPLICATION)] [[ARMA3](#ARMA3)] [[ARRAY](#ARRAY)] [[BENCHMARK](#BENCHMARK)] [[BLACKLIST](#BLACKLIST)] [[BLOG](#BLOG)] [[BLUETOOTH](#BLUETOOTH)] [[BUG](#BUG)] [[CDLUG](#CDLUG)] [[CL-JSON](#CL-JSON)] [[COMMON-LISP](#COMMON-LISP)] [[CQUERY](#CQUERY)] [[CURL](#CURL)] [[CURSOR](#CURSOR)] [[DEBIAN](#DEBIAN)] [[DECORATOR](#DECORATOR)] [[DISPLAY](#DISPLAY)] [[DYNAMIC-SCOPE](#DYNAMIC-SCOPE)] [[EDITOR](#EDITOR)] [[EMACS](#EMACS)] [[ENCRYPT](#ENCRYPT)] [[FAN](#FAN)] [[FILE](#FILE)] [[GAME](#GAME)] [[GNOME-SHELL](#GNOME-SHELL)] [[GNOME3](#GNOME3)] [[GPG](#GPG)] [[IO](#IO)] [[IPTABLES](#IPTABLES)] [[IRC](#IRC)] [[ISABELLE](#ISABELLE)] [[JSON](#JSON)] [[KEYWORD](#KEYWORD)] [[LINUX](#LINUX)] [[LISP](#LISP)] [[LOGIN-PROMPT](#LOGIN-PROMPT)] [[LONG-WAITING](#LONG-WAITING)] [[LSP](#LSP)] [[LUA](#LUA)] [[LXC](#LXC)] [[MASTODON](#MASTODON)] [[MAXIMIZE-WINDOW](#MAXIMIZE-WINDOW)] [[MAXIMUS](#MAXIMUS)] [[MODPROBE](#MODPROBE)] [[NAT](#NAT)] [[NETWORK](#NETWORK)] [[OPENSUSE](#OPENSUSE)] [[PARENTHESES-MATCHING](#PARENTHESES-MATCHING)] [[PERFORMANCE](#PERFORMANCE)] [[PL](#PL)] [[PROGRAMMING-LANGUAGE](#PROGRAMMING-LANGUAGE)] [[PUBLIC-KEY](#PUBLIC-KEY)] [[PULSEAUDIO](#PULSEAUDIO)] [[RSS](#RSS)] [[SBCL](#SBCL)] [[SCHEME](#SCHEME)] [[SCOPE](#SCOPE)] [[SCRIPT](#SCRIPT)] [[SELECT](#SELECT)] [[SLOW](#SLOW)] [[SOCKET](#SOCKET)] [[SOFTWARE](#SOFTWARE)] [[SSH](#SSH)] [[STREAM](#STREAM)] [[SURROGATE-PAIRS](#SURROGATE-PAIRS)] [[SYSTEMD](#SYSTEMD)] [[THEOREM-PROVER](#THEOREM-PROVER)] [[TITLE-BAR](#TITLE-BAR)] [[TYPE](#TYPE)] [[UBUNTU](#UBUNTU)] [[UNICODE](#UNICODE)] [[VERY-SLOW](#VERY-SLOW)] [[VIRTUAL-SCREEN](#VIRTUAL-SCREEN)] [[VOLUME](#VOLUME)] [[WINDOW-MANAGER](#WINDOW-MANAGER)] [[最大化](#最大化)] [[标题栏](#标题栏)] [[碎碎念](#碎碎念)] [[脑洞](#脑洞)] [[音量](#音量)] 
+[[ACPI](#ACPI)] [[APPLICATION](#APPLICATION)] [[ARMA3](#ARMA3)] [[BLACKLIST](#BLACKLIST)] [[BLOG](#BLOG)] [[BLUETOOTH](#BLUETOOTH)] [[BUG](#BUG)] [[CDLUG](#CDLUG)] [[CL-JSON](#CL-JSON)] [[COMMON-LISP](#COMMON-LISP)] [[CQUERY](#CQUERY)] [[CURL](#CURL)] [[CURSOR](#CURSOR)] [[DEBIAN](#DEBIAN)] [[DECORATOR](#DECORATOR)] [[DISPLAY](#DISPLAY)] [[DYNAMIC-SCOPE](#DYNAMIC-SCOPE)] [[EDITOR](#EDITOR)] [[EMACS](#EMACS)] [[ENCRYPT](#ENCRYPT)] [[FAN](#FAN)] [[FILE](#FILE)] [[GAME](#GAME)] [[GNOME-SHELL](#GNOME-SHELL)] [[GNOME3](#GNOME3)] [[GPG](#GPG)] [[IO](#IO)] [[IPTABLES](#IPTABLES)] [[IRC](#IRC)] [[ISABELLE](#ISABELLE)] [[JSON](#JSON)] [[KEYWORD](#KEYWORD)] [[LINUX](#LINUX)] [[LISP](#LISP)] [[LOGIN-PROMPT](#LOGIN-PROMPT)] [[LONG-WAITING](#LONG-WAITING)] [[LSP](#LSP)] [[LUA](#LUA)] [[LXC](#LXC)] [[MASTODON](#MASTODON)] [[MAXIMIZE-WINDOW](#MAXIMIZE-WINDOW)] [[MAXIMUS](#MAXIMUS)] [[MODPROBE](#MODPROBE)] [[NAT](#NAT)] [[NETWORK](#NETWORK)] [[OPENSUSE](#OPENSUSE)] [[PARENTHESES-MATCHING](#PARENTHESES-MATCHING)] [[PL](#PL)] [[PROGRAMMING-LANGUAGE](#PROGRAMMING-LANGUAGE)] [[PUBLIC-KEY](#PUBLIC-KEY)] [[PULSEAUDIO](#PULSEAUDIO)] [[RSS](#RSS)] [[SBCL](#SBCL)] [[SCHEME](#SCHEME)] [[SCOPE](#SCOPE)] [[SCRIPT](#SCRIPT)] [[SELECT](#SELECT)] [[SLOW](#SLOW)] [[SOCKET](#SOCKET)] [[SOFTWARE](#SOFTWARE)] [[SSH](#SSH)] [[STREAM](#STREAM)] [[SURROGATE-PAIRS](#SURROGATE-PAIRS)] [[SYSTEMD](#SYSTEMD)] [[THEOREM-PROVER](#THEOREM-PROVER)] [[TITLE-BAR](#TITLE-BAR)] [[TYPE](#TYPE)] [[UBUNTU](#UBUNTU)] [[UNICODE](#UNICODE)] [[VERY-SLOW](#VERY-SLOW)] [[VIRTUAL-SCREEN](#VIRTUAL-SCREEN)] [[VOLUME](#VOLUME)] [[WINDOW-MANAGER](#WINDOW-MANAGER)] [[最大化](#最大化)] [[标题栏](#标题栏)] [[碎碎念](#碎碎念)] [[脑洞](#脑洞)] [[音量](#音量)] 
 
 ### ACPI<a name="ACPI"/>
 
@@ -15,14 +15,6 @@ TAGS
 
 * [如何玩《武装突袭3》？](./how_to_play_arma3.md)
 * [Arma3 Note](./Arma3_scripting_note.md)
-
-### ARRAY<a name="ARRAY"/>
-
-* [SBCL Array Operations Performance](./lisp-array.md)
-
-### BENCHMARK<a name="BENCHMARK"/>
-
-* [SBCL Array Operations Performance](./lisp-array.md)
 
 ### BLACKLIST<a name="BLACKLIST"/>
 
@@ -50,11 +42,10 @@ TAGS
 
 ### COMMON-LISP<a name="COMMON-LISP"/>
 
-* [Common Lisp Keywords](./04_common_lisp_keywords.md)
+* [SBCL (serve-event)](./sbcl_serve-event.md)
 * [Common Lisp动态作用域](./CommonLisp动态作用域.md)
 * [CL-JSON的编码问题](./CL-JSON的编码问题.md)
-* [SBCL (serve-event)](./sbcl_serve-event.md)
-* [SBCL Array Operations Performance](./lisp-array.md)
+* [Common Lisp Keywords](./04_common_lisp_keywords.md)
 
 ### CQUERY<a name="CQUERY"/>
 
@@ -90,8 +81,8 @@ TAGS
 
 ### EMACS<a name="EMACS"/>
 
-* [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
 * [LSP: cquery和Emacs](./cquery.md)
+* [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
 
 ### ENCRYPT<a name="ENCRYPT"/>
 
@@ -149,20 +140,20 @@ TAGS
 ### LINUX<a name="LINUX"/>
 
 * [Systemd关机超时设置](./systemd_timeout.md)
+* [SSH: get server fingerprint](./ssh-fingerprint.md)
+* [风扇控制程序](./fan.md)
 * [Xephyr](./Xephyr.md)
 * [PulseAudio关闭flat-volumes](./PulseAudio关闭flat-volumes.md)
 * [喜欢的软件](./02_favorite_software.md)
-* [风扇控制程序](./fan.md)
-* [SSH: get server fingerprint](./ssh-fingerprint.md)
 
 ### LISP<a name="LISP"/>
 
-* [SBCL读文件](./06_sbcl_reading_file.md)
-* [What is CALL/CC?](./00_what_is_call_cc.md)
-* [Common Lisp Keywords](./04_common_lisp_keywords.md)
-* [Lisp的本质](./05_essence_of_lisp.md)
-* [Common Lisp动态作用域](./CommonLisp动态作用域.md)
 * [需要这样一种程序语言](./requirement_of_programming_language.md)
+* [Common Lisp动态作用域](./CommonLisp动态作用域.md)
+* [SBCL读文件](./06_sbcl_reading_file.md)
+* [Lisp的本质](./05_essence_of_lisp.md)
+* [Common Lisp Keywords](./04_common_lisp_keywords.md)
+* [What is CALL/CC?](./00_what_is_call_cc.md)
 
 ### LOGIN-PROMPT<a name="LOGIN-PROMPT"/>
 
@@ -215,10 +206,6 @@ TAGS
 ### PARENTHESES-MATCHING<a name="PARENTHESES-MATCHING"/>
 
 * [Emacs匹配光标上的括号](./03_emacs_matching_parens_ON_cursor.md)
-
-### PERFORMANCE<a name="PERFORMANCE"/>
-
-* [SBCL Array Operations Performance](./lisp-array.md)
 
 ### PL<a name="PL"/>
 
@@ -310,8 +297,8 @@ TAGS
 
 ### VERY-SLOW<a name="VERY-SLOW"/>
 
-* [SBCL读文件](./06_sbcl_reading_file.md)
 * [Systemd关机超时设置](./systemd_timeout.md)
+* [SBCL读文件](./06_sbcl_reading_file.md)
 
 ### VIRTUAL-SCREEN<a name="VIRTUAL-SCREEN"/>
 
