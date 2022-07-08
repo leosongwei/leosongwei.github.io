@@ -22,6 +22,12 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./python_autospec.md">
+<b>Python Unittest Autospec</b>
+</a></td>
+<td><code>2022年07月08日 13:49</code></td>
+</tr>
+<tr><td>
 <a href="./PyObject_to_PyMethodDef.md">
 <b>PyObject to PyMethodDef</b>
 </a></td>
