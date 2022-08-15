@@ -3,7 +3,7 @@ Play with pointers in Rust
 
 tags: rust; buffer; pointer; array;
 
-```
+```rust
 use std::mem;
 
 #[derive(Debug)]
