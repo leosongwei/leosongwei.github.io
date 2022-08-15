@@ -43,15 +43,17 @@ fn main() {
 
 Output:
 
-> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-> 0: Apple { weight: 233, size: 666 }
-> 1: Apple { weight: 233, size: 666 }
-> 2: Apple { weight: 233, size: 666 }
-> 3: Apple { weight: 233, size: 666 }
-> 4: Apple { weight: 233, size: 666 }
-> 5: Apple { weight: 233, size: 666 }
-> 6: Apple { weight: 233, size: 666 }
-> 7: Apple { weight: 233, size: 666 }
-> 8: Apple { weight: 233, size: 666 }
-> 9: Apple { weight: 233, size: 666 }
-> 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0
+```
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0: Apple { weight: 233, size: 666 }
+1: Apple { weight: 233, size: 666 }
+2: Apple { weight: 233, size: 666 }
+3: Apple { weight: 233, size: 666 }
+4: Apple { weight: 233, size: 666 }
+5: Apple { weight: 233, size: 666 }
+6: Apple { weight: 233, size: 666 }
+7: Apple { weight: 233, size: 666 }
+8: Apple { weight: 233, size: 666 }
+9: Apple { weight: 233, size: 666 }
+233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0 233 0 0 0 154 2 0 0
+```
