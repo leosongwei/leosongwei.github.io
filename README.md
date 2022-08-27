@@ -22,10 +22,16 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./firefox_tls_version_limitation.md">
+<b>Adjust Firefox TLS version limitation</b>
+</a></td>
+<td><code>2022年08月27日 13:27</code></td>
+</tr>
+<tr><td>
 <a href="./rust_play_with_pointer.md">
 <b>Play with pointers in Rust</b>
 </a></td>
-<td><code>2022年08月15日 22:27</code></td>
+<td><code>2022年08月15日 22:29</code></td>
 </tr>
 <tr><td>
 <a href="./python_autospec.md">
