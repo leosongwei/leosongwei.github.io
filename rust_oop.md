@@ -15,24 +15,21 @@ struct Pear {
 }
 
 trait Fruit {
-    // must define accessors
-    fn color(&self) -> String; 
+    fn color(&self) -> &str;
 
-    // then we can have shared behaviors
     fn print_color(&self) {
         println!("{}", self.color())
     }
 }
 
-// implement accessors
 impl Fruit for Apple {
-    fn color(&self) -> String {
-        return self.color.clone();
+    fn color(&self) -> &str {
+        return self.color.as_str();
     }
 }
 impl Fruit for Pear {
-    fn color(&self) -> String {
-        return self.color.clone();
+    fn color(&self) -> &str {
+        return self.color.as_str();
     }
 }
 
