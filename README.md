@@ -22,6 +22,18 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./rust_oop.md">
+<b>Rust OOP</b>
+</a></td>
+<td><code>2022年11月09日 12:39</code></td>
+</tr>
+<tr><td>
+<a href="./ssh_key.md">
+<b>ssh-keygen -l -E sha256 -f /etc/ssh/ssh_host_ed25519_key.pub</b>
+</a></td>
+<td><code>2022年10月22日 16:54</code></td>
+</tr>
+<tr><td>
 <a href="./firefox_tls_version_limitation.md">
 <b>Adjust Firefox TLS version limitation</b>
 </a></td>
