@@ -22,10 +22,16 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./02_favorite_software.md">
+<b>喜欢的软件</b>
+</a></td>
+<td><code>2022年11月24日 14:21</code></td>
+</tr>
+<tr><td>
 <a href="./rust_oop.md">
 <b>Rust OOP</b>
 </a></td>
-<td><code>2022年11月09日 12:39</code></td>
+<td><code>2022年11月14日 21:27</code></td>
 </tr>
 <tr><td>
 <a href="./ssh_key.md">
@@ -102,12 +108,6 @@
 <tr><td>
 <a href="./01_maximus.md">
 <b>Maximus</b>
-</a></td>
-<td><code>2021年09月26日 22:16</code></td>
-</tr>
-<tr><td>
-<a href="./02_favorite_software.md">
-<b>喜欢的软件</b>
 </a></td>
 <td><code>2021年09月26日 22:16</code></td>
 </tr>

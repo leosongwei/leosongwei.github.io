@@ -24,9 +24,10 @@ latest update: graphviz
 	- 命令行BT下载，带界面，可以处理多个任务，适合在树梅派上跑
 * Transmisson
 	- 图形界面BT下载
-* slurm, iftop, iptraf
+* slurm, iftop, iptraf, nethogs
 	- 终端里面显示网络流量
 	- 第一个不用root，后两个要root
+    - nethogs, 按进程显示网络流量 https://github.com/raboof/nethogs
 * redsocks
 	- redirect any TCP connection to a SOCKS or HTTP proxy
 * tsocks
