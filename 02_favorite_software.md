@@ -118,3 +118,5 @@ latest update: graphviz
 	- 电子书管理软件，我用来转换电子书格式
 * 包：poppler-data
 	- 解决没有正确嵌入字体的PDF文件看不到中文的问题
+* [piper](https://github.com/libratbag/piper)
+	- 罗技鼠标键位设置
