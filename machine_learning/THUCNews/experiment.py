@@ -63,9 +63,10 @@ class ExperimentParameters:
     quick_test_dataset: Subset = None
     tag_list: List[str] = field(default_factory=list)
 
-    LEARNING_RATE_INITIAL = 0.03
-    SCHEDULER_GAMMA = 0.98
+    LEARNING_RATE_INITIAL = 0.06
+    SCHEDULER_GAMMA = 0.95
     BATCH_SIZE = 200
+    EPOCHES = 1
 
     MODEL = None
     tester: "Tester" = None
@@ -203,16 +204,7 @@ class NewsTitleClassifierBaseline(nn.Module):
         self._tokenizer = AutoTokenizer.from_pretrained(model_name)
         self._hidden_size = model_hidden_size
 
-        self._xs_classifier = nn.Sequential(
-            # nn.Linear(self._hidden_size, self._hidden_size),
-            # nn.ReLU(),
-            # nn.Linear(self._hidden_size, self._hidden_size),
-            # nn.ReLU(),
-            nn.Linear(self._hidden_size, len(self._tag_list)),
-            # nn.ReLU(),
-        )
-
-        # self._softmax = torch.nn.Softmax(dim=1)
+        self._xs_classifier = nn.Linear(self._hidden_size, len(self._tag_list))
 
     def tokenize(self, input: List[str]):
         encoded = self._tokenizer(
@@ -221,6 +213,7 @@ class NewsTitleClassifierBaseline(nn.Module):
             truncation=True,
             max_length=512,
             return_tensors="pt",
+            add_special_tokens=True,
         ).to(self._device)
         return encoded
 
@@ -228,7 +221,8 @@ class NewsTitleClassifierBaseline(nn.Module):
         out: BaseModelOutputWithPoolingAndCrossAttentions = self._model(
             **encoded, output_attentions=True
         )
-        return out.pooler_output
+        out = out.last_hidden_state.select(1, 0)
+        return out
 
     def forward(self, encoded_xs):
         xs_embedding = self._invoke_model(encoded_xs)
@@ -238,7 +232,7 @@ class NewsTitleClassifierBaseline(nn.Module):
         # return matrix
 
 
-def train(params: ExperimentParameters, symmetric_loss: False):
+def train(params: ExperimentParameters, symmetric_loss=False):
     train_accuracy_record = []
     test_accuracy_record = []
 
@@ -263,7 +257,7 @@ def train(params: ExperimentParameters, symmetric_loss: False):
         xs_batches.append(xs)
         xs_encoded_batches.append(params.MODEL.tokenize(xs))
 
-    for epoch in range(2):
+    for epoch in range(params.EPOCHES):
         print(f"epoch: {epoch}")
 
         correct = 0
@@ -294,12 +288,12 @@ def train(params: ExperimentParameters, symmetric_loss: False):
                     correct += 1
             total += len(yps)
 
-            if i % 100 == 0:
+            if i != 0 and i % 100 == 0:
                 train_accuracy = correct / total
                 correct = 0
                 total = 0
                 test_metrics = params.tester.test()
-                params.tester.pretty_print(*test_metrics)
+                # params.tester.pretty_print(*test_metrics)
                 (
                     tag_list,
                     test_recall,
@@ -314,6 +308,9 @@ def train(params: ExperimentParameters, symmetric_loss: False):
 
             if i % 200 == 0 and i != 0:
                 scheduler.step()
+
+    test_metrics = params.tester.test()
+    params.tester.pretty_print(*test_metrics)
 
     return train_accuracy_record, test_accuracy_record
 
