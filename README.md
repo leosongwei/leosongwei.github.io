@@ -23,9 +23,9 @@
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
 <a href="./剪报.md">
-<b>* Naive Bayes is all you need?  https://kexue.fm/archives/9648</b>
+<b>剪报</b>
 </a></td>
-<td><code>2023年07月25日 19:54</code></td>
+<td><code>2023年07月25日 19:55</code></td>
 </tr>
 <tr><td>
 <a href="./02_favorite_software.md">
