@@ -25,7 +25,7 @@
 <a href="./剪报.md">
 <b>剪报</b>
 </a></td>
-<td><code>2023年07月27日 01:02</code></td>
+<td><code>2023年08月01日 10:40</code></td>
 </tr>
 <tr><td>
 <a href="./02_favorite_software.md">
