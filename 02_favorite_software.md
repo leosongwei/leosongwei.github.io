@@ -120,3 +120,5 @@ latest update: graphviz
 	- 解决没有正确嵌入字体的PDF文件看不到中文的问题
 * [piper](https://github.com/libratbag/piper)
 	- 罗技鼠标键位设置
+* [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)
+    - VSCode Markdown预览插件，支持LaTeX公式
