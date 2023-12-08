@@ -15,3 +15,7 @@ $ ffmpeg -y -i 【ガルパン】隊長十色-Ql1yRt6ADj4.mkv -c:v libx264 -b:v 
 从图片制作gif动画：
 
 `ffmpeg -f image2 -r 4 -i '%d.jpg' -vf scale=640x360 a.gif`
+
+NVDEC + NVENC:
+
+`ffmpeg -hwaccel cuda -i 2.mp4 -c:v h264_nvenc -pixel_format yuv444p -preset default -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" 2_output.mp4`
