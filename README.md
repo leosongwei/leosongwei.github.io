@@ -23,9 +23,9 @@
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
 <a href="./flash-attn安装困难.md">
-<b># flash-attn安装困难</b>
+<b>flash-attn安装困难</b>
 </a></td>
-<td><code>2024年02月16日 18:58</code></td>
+<td><code>2024年02月16日 19:00</code></td>
 </tr>
 <tr><td>
 <a href="./ffmpeg.md">
