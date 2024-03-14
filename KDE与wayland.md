@@ -45,6 +45,10 @@ tags: Linux; KDE; NVIDIA; wayland; Firefox; zink; Electron
 
 https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ozone_overview.md
 
+### Electron输入法
+
+https://bbs.archlinuxcn.org/viewtopic.php?id=13291
+
 ### wayland缺egl包
 
 `apt install libnvidia-egl-wayland-dev`

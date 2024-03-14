@@ -22,10 +22,16 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./Norms.md">
+<b>Norms</b>
+</a></td>
+<td><code>2024年03月14日 15:11</code></td>
+</tr>
+<tr><td>
 <a href="./KDE与wayland.md">
 <b>Nvidia，KDE与Wayland</b>
 </a></td>
-<td><code>2024年03月02日 20:13</code></td>
+<td><code>2024年03月07日 13:15</code></td>
 </tr>
 <tr><td>
 <a href="./flash-attn安装困难.md">
