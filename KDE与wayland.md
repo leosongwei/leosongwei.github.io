@@ -38,6 +38,7 @@ tags: Linux; KDE; NVIDIA; wayland; Firefox; zink; Electron
 ### Chromium和Electron应用闪烁
 
 加上选项：`--enable-features=UseOzonePlatform --ozone-platform=wayland`
+  * `--ozone-platform=x11`似乎好用些
 
 这个Ozone是Chromium自己的玩意儿：
 
