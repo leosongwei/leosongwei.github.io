@@ -22,16 +22,22 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
-<a href="./Norms.md">
-<b>Norms</b>
+<a href="./简单易懂的现代风水学.md">
+<b>简单易懂的现代风水学</b>
 </a></td>
-<td><code>2024年03月14日 15:11</code></td>
+<td><code>2024年04月02日 07:00</code></td>
 </tr>
 <tr><td>
 <a href="./KDE与wayland.md">
 <b>Nvidia，KDE与Wayland</b>
 </a></td>
-<td><code>2024年03月07日 13:15</code></td>
+<td><code>2024年03月27日 08:45</code></td>
+</tr>
+<tr><td>
+<a href="./Norms.md">
+<b>Norms</b>
+</a></td>
+<td><code>2024年03月14日 15:11</code></td>
 </tr>
 <tr><td>
 <a href="./flash-attn安装困难.md">
