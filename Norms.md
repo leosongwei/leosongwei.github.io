@@ -25,7 +25,7 @@ $y=\frac{x - E[x]}{\sqrt{Var[x] + \epsilon}} * \gamma + \beta$
 
 ## RMS Norm
 
-Root Mean Square Layer Normalization. 计算上比标准的LayerNorm来得简单。
+Root Mean Square Layer Normalization. 去掉了原LayerNorm中的中心偏移(效果不显著)，计算上比标准的LayerNorm来得简单。
 
 公式（LlamaRMSNorm `src/transformers/models/llama/modeling_llama.py`）：
 
