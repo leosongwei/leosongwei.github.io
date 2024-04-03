@@ -3,7 +3,13 @@ Norms
 
 TAG: layernorm; normalization; rmsnorm;
 
+## BatchNorm
+
+在batch范围内对其中的每个值进行规范化。
+
 ## LayerNorm
+
+在值的范围内对该张量的每个元素进行规范化。
 
 公式：
 
@@ -19,7 +25,7 @@ $y=\frac{x - E[x]}{\sqrt{Var[x] + \epsilon}} * \gamma + \beta$
 
 ## RMS Norm
 
-Root Mean Square Layer Normalization.
+Root Mean Square Layer Normalization. 计算上比标准的LayerNorm来得简单。
 
 公式（LlamaRMSNorm `src/transformers/models/llama/modeling_llama.py`）：
 
@@ -27,3 +33,4 @@ $y = \frac{Wx}{\sqrt{mean(x^2) + \epsilon}}$
 
 * LlamaRMSNorm的mean只处理`dim=-1`
 * $\epsilon$ = `1e-6`来防止除以0
+* `LlamaRMSNorm is equivalent to T5LayerNorm`
