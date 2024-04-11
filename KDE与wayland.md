@@ -46,6 +46,12 @@ tags: Linux; KDE; NVIDIA; wayland; Firefox; zink; Electron
 
 https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ozone_overview.md
 
+ozone+wayland-ime:
+
+`--ozone-platform-hint=auto --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --log=debug --crash-reporter-directory /home/user/vscode-crash`
+
+或者单纯：`XWAYLAND_NO_GLAMOR=1`
+
 ### Electron输入法
 
 https://bbs.archlinuxcn.org/viewtopic.php?id=13291
