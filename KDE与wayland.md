@@ -50,7 +50,7 @@ ozone+wayland-ime:
 
 `--ozone-platform-hint=auto --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --log=debug --crash-reporter-directory /home/user/vscode-crash`
 
-或者单纯：`XWAYLAND_NO_GLAMOR=1`
+或者单纯：`XWAYLAND_NO_GLAMOR=1` （听说更慢，但在我这个2x4K@60Hz场景下足够了）
 
 ### Electron输入法
 
