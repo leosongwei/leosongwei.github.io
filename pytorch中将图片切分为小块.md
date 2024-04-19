@@ -3,7 +3,14 @@ pytorch中将图片切分为小块
 
 tags: pytorch, split, image, tiles, fold, unfold
 
-能搜到一些pytorch中切tile的讨论，但都很抽象，故作此文，好歹能有个图。不多BB，直接上代码，你可以拷到Jupyter Notebook里面玩玩。
+效果图放前面：
+
+![2.png](./attachment/pytorch中将图片切分为小块/2.png)
+
+
+能搜到一些pytorch中切tile的讨论，但都很抽象没有图片，也不知道能不能用，故作此文。
+
+不多BB，直接上代码，你可以拷到Jupyter Notebook里面玩玩，Lenna奶奶的图请自备。
 
 ```python
 import torch
@@ -17,6 +24,7 @@ h, w = original_image.shape
 
 # 注意，Unfold只接受形如(N, C, <Dimension>)的张量，N为batch size，C为channel
 # 此处我们就一张图，一个灰度channel，故为：(1, 1, h, w)，此处为[1, 1, 300, 400]
+# 原图为512x512，我裁切了一下变为宽400，高300，让你能分清高度和宽度，便于直接使用
 original_image = original_image.view(1, 1, h, w).to(torch.float)
 print(original_image.shape)
 plt.imshow(original_image[0][0])
