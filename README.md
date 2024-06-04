@@ -22,6 +22,12 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./llama_internal_visualize.md">
+<b># LLama Internals Visualized</b>
+</a></td>
+<td><code>2024年06月04日 14:48</code></td>
+</tr>
+<tr><td>
 <a href="./llama_shapes.md">
 <b>Llama的形状</b>
 </a></td>
