@@ -39,7 +39,7 @@ $$
 * $\gamma$ 和 $\beta$ 为可训练参数
   * pytorch中有`elementwise_affine`开关，如果开启，则会增加`weight`（$\gamma$）和`bias`（$\beta$）两个可训练参数,后者可单独开关
 
-研究[A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)中有对BatchNorm vs LayerNorm的讨论（引用了 Rethinking "Batch" in BatchNorm https://arxiv.org/abs/2105.07576）。
+研究[A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)中有对BatchNorm vs LayerNorm的讨论（引用了 Rethinking "Batch" in BatchNorm https://arxiv.org/abs/2105.07576 ）。
 
 ## RMS Norm
 
