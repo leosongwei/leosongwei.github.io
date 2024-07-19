@@ -37,7 +37,7 @@ $$
 * $Var[x]$ 为标准差， $\sigma=\sqrt{\frac{1}{N}\sum_i(x_i-\bar{x})^2}$
 * $\epsilon$ 为一个小数用于防除0，pytorch的`nn.modules.normalization.LayerNorm`中该值默认为`1e-5`
 * $\gamma$ 和 $\beta$ 为可训练参数
-  * pytorch中有`elementwise_affine`开关，如果开启，则会增加`weight`（$\gamma$）和`bias`（$\beta$）两个可训练参数,后者可单独开关
+  * pytorch中有`elementwise_affine`开关，如果开启，则会增加`weight`（ $\gamma$ ）和`bias`（ $\beta$ ）两个可训练参数,后者可单独开关
 
 研究[A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)中有对BatchNorm vs LayerNorm的讨论（引用了 Rethinking "Batch" in BatchNorm https://arxiv.org/abs/2105.07576 ）。
 
