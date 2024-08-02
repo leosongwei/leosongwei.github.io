@@ -38,3 +38,7 @@ class Qwen2ForCausalLM(Qwen2PreTrainedModel):
 1. Qwen2 Technical Report https://arxiv.org/pdf/2407.10671
 2. Using the Output Embedding to Improve Language Models https://arxiv.org/abs/1608.05859
 3. src/transformers/modeling_utils.py https://github.com/huggingface/transformers/blob/main/src/transformers/modeling_utils.py
+4. Why do GPT models use a transpose of the embedding matrix to convert outputs to logits? https://datascience.stackexchange.com/questions/123149/why-do-gpt-models-use-a-transpose-of-the-embedding-matrix-to-convert-outputs-to
+   * 啊？最早的GPT也做embedding tying?
+5. Tying Word Vectors and Word Classifiers: A Loss Framework for Language Modeling https://arxiv.org/pdf/1611.01462
+   * 感觉这篇写得比[2]好些
