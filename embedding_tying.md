@@ -5,6 +5,8 @@ tags: embedding, tying, llm, weight-tying
 
 今天在读Qwen2[1]论文的时候看到了一个Embedding Tying的概念。查了一下，来自于一篇16年的论文 Using the Output Embedding to Improve Language Models[2]，说是通过共享一部分权重实现输出头的正则化，同时提升性能减少大小。
 
+## 读代码
+
 huggingface/transformers已经实现了这个功能。接下来读一下代码：
 
 `src/transformers/modeling_utils.py`[3]的`class PreTrainedModel`中，有`def tie_weights()`调用了，`def _tie_or_clone_weights()`，大意为：
@@ -33,7 +35,7 @@ class Qwen2ForCausalLM(Qwen2PreTrainedModel):
 
 就是说，直接把embedding的权重赋给了lm_head。太神奇了，我来试试能不能训练出来。
 
-### 引用
+## 引用和额外资料
 
 1. Qwen2 Technical Report https://arxiv.org/pdf/2407.10671
 2. Using the Output Embedding to Improve Language Models https://arxiv.org/abs/1608.05859
