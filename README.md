@@ -22,6 +22,24 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./embedding_tying.md">
+<b>Embedding Tying</b>
+</a></td>
+<td><code>2024年08月02日 21:33</code></td>
+</tr>
+<tr><td>
+<a href="./Norms.md">
+<b>Norms</b>
+</a></td>
+<td><code>2024年07月19日 20:09</code></td>
+</tr>
+<tr><td>
+<a href="./space_game_requirements.md">
+<b>对航天游戏的需求</b>
+</a></td>
+<td><code>2024年06月10日 11:59</code></td>
+</tr>
+<tr><td>
 <a href="./llama_internal_visualize.md">
 <b># LLama Internals Visualized</b>
 </a></td>
@@ -44,12 +62,6 @@
 <b>Nvidia，KDE与Wayland</b>
 </a></td>
 <td><code>2024年04月11日 14:50</code></td>
-</tr>
-<tr><td>
-<a href="./Norms.md">
-<b>Norms</b>
-</a></td>
-<td><code>2024年04月03日 15:03</code></td>
 </tr>
 <tr><td>
 <a href="./简单易懂的现代风水学.md">
