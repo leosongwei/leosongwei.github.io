@@ -7,7 +7,7 @@ tags: embedding, tying, llm, weight-tying
 
 huggingface/transformers已经实现了这个功能。接下来读一下代码：
 
-`src/transformers/modeling_utils.py` 的`class PreTrainedModel`中，有`def tie_weights()`调用了，`def _tie_or_clone_weights()`，大意为：
+`src/transformers/modeling_utils.py`[3]的`class PreTrainedModel`中，有`def tie_weights()`调用了，`def _tie_or_clone_weights()`，大意为：
 
 ```python
 # （为易于阅读，进行了适当修改）
@@ -34,5 +34,7 @@ class Qwen2ForCausalLM(Qwen2PreTrainedModel):
 就是说，直接把embedding的权重赋给了lm_head。太神奇了，我来试试能不能训练出来。
 
 ### 引用
+
 1. Qwen2 Technical Report https://arxiv.org/pdf/2407.10671
 2. Using the Output Embedding to Improve Language Models https://arxiv.org/abs/1608.05859
+3. src/transformers/modeling_utils.py https://github.com/huggingface/transformers/blob/main/src/transformers/modeling_utils.py
