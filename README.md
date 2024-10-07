@@ -22,10 +22,16 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./grad_on_finetuning.md">
+<b>梯度与微调</b>
+</a></td>
+<td><code>2024年10月07日 15:11</code></td>
+</tr>
+<tr><td>
 <a href="./embedding_tying.md">
 <b>Embedding Tying</b>
 </a></td>
-<td><code>2024年08月02日 21:33</code></td>
+<td><code>2024年08月02日 23:08</code></td>
 </tr>
 <tr><td>
 <a href="./Norms.md">
