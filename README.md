@@ -22,6 +22,12 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./claude_code_with_kimi_k2.md">
+<b># Claude Code with Kimi k2</b>
+</a></td>
+<td><code>2025年07月19日 09:11</code></td>
+</tr>
+<tr><td>
 <a href="./grad_on_finetuning.md">
 <b>梯度与微调</b>
 </a></td>
