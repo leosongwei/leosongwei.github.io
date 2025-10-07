@@ -22,6 +22,12 @@
 <table><tbody>
 <tr><td>文章</td><td>更新日期<sup>TZ:+10</sup></td></tr>
 <tr><td>
+<a href="./5th_computer.md">
+<b># 从第五代计算机迈向技能科学</b>
+</a></td>
+<td><code>2025年10月07日 18:27</code></td>
+</tr>
+<tr><td>
 <a href="./claude_code_with_kimi_k2.md">
 <b># Claude Code with Kimi k2</b>
 </a></td>
