@@ -381,6 +381,7 @@ TAGS
 ### SOFTWARE<a name="SOFTWARE"/>
 
 * [喜欢的软件](./02_favorite_software.md)
+* [# 技术堆](./技术堆.md)
 
 ### SSH<a name="SSH"/>
 
